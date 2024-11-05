@@ -14,7 +14,7 @@ constrained by the quantity and quality of existing kinetic databases, posing a 
 challenge to their robust application in kinetic model generation.  
 We propose a framework for the robust application of deep learning models to accelerate kinetic
 model generation. This framework filters out kinetically unfavorable reactions using deep learning
-models, thereby __narrowing the reaction space__. `NetGen-Py` integrates deep learning models,
+models, thereby __narrowing the reaction space__. `NetGen-Py` achieves this framework and integrates deep learning models,
 empirical methods, and QM techniques for efficient kinetic model generation.
 ### Installation
 #### 1. Installing the conda package manager
