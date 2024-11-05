@@ -60,6 +60,6 @@ The code for kinetic rate calculation using Transition State Theory was provided
 thermodynamic property calculation, and reaction rate estimation. We do not provide the scripts for 
 controlling your remote servers.
 
-### 7. Running NetGen codes
+### Running NetGen codes
 We will release `NetGen-Py` as a python package in the future. Now, these codes are developed for the coupling of machine learning and 
 other method for kinetic model generation. Try our demo `n-C5H12_pyrolysis/crns_test.ipynb` on jupyter notebook.
