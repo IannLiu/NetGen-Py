@@ -1,0 +1,2372 @@
+generator: ck2yaml
+input-files: [chem.inp]
+cantera-version: 2.6.0
+date: Sun, 08 Oct 2023 14:39:11 +0800
+
+units: {length: cm, time: s, quantity: mol, activation-energy: kcal/mol}
+
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, F, Cl, Br, I,
+    X]
+  species: [C(T)(1), CH2(S)(2), N2(3), HNO(4), CH3OH(5), HOCN(6), HCNO(7),
+    HCNN(8), CH2O(9), CH2OH(10), O2(11), NO2(12), N2O(13), CH2CHO(14), C2H4(15),
+    H2O2(16), HCCOH(17), NO(18), HCN(19), C2H2(20), HNCO(21), CH3(22), HO2(23),
+    CH4(24), C2H(25), O(T)(26), HCCO(27), CH2(T)(28), NH(29), CH(30), CO(31),
+    CN(32), H(33), N(34), C3H8(35), NH3(36), NH2(37), CH3CHO(38), C2H6(39),
+    C2H5(40), CH3O(41), C2H3(42), HCO(43), CO2(44), OH(45), H2(46), NNH(47),
+    H2O(48), NCO(49), CH2CO(50), H2CN(51)]
+  kinetics: gas
+  state: {T: 300.0, P: 1 atm}
+
+elements:
+- symbol: Ci
+  atomic-weight: 13.003
+- symbol: D
+  atomic-weight: 2.014
+- symbol: Oi
+  atomic-weight: 17.999
+- symbol: T
+  atomic-weight: 3.016
+- symbol: X
+  atomic-weight: 195.083
+
+species:
+- name: C(T)(1)
+  composition: {C: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [2.55424, -3.21538e-04, 7.33792e-07, -7.32235e-10, 2.66521e-13, 8.54439e+04,
+      4.53131]
+    - [2.49267, 4.79889e-05, -7.24335e-08, 3.74291e-11, -4.87278e-15, 8.54513e+04,
+      4.8015]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: C(T)(1)
+- name: CH2(S)(2)
+  composition: {C: 1, H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1442.37, 5000.0]
+    data:
+    - [4.10264, -1.44068e-03, 5.45067e-06, -3.58e-09, 7.56187e-13, 5.04006e+04,
+      -0.411763]
+    - [2.62649, 3.94761e-03, -1.49923e-06, 2.54537e-10, -1.62954e-14, 5.06917e+04,
+      6.78371]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH2(S)(2)
+- name: N2(3)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53101, -1.23661e-04, -5.02999e-07, 2.43531e-09, -1.40881e-12, -1046.98,
+      2.96747]
+    - [2.95258, 1.3969e-03, -4.92632e-07, 7.8601e-11, -4.60755e-15, -923.949,
+      5.87189]
+    note: 'Thermo library: Narayanaswamy'
+  note: N2(3)
+- name: HNO(4)
+  composition: {H: 1, N: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [4.53349, -5.66962e-03, 1.84732e-05, -1.71371e-08, 5.54546e-12, 1.15483e+04,
+      1.74984]
+    - [2.97925, 3.49441e-03, -7.85498e-07, 5.74796e-11, -1.93359e-16, 1.17506e+04,
+      8.60637]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: HNO(4)
+- name: CH3OH(5)
+  composition: {C: 1, H: 4, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [5.7154, -0.0152309, 6.52441e-05, -7.10807e-08, 2.61353e-11, -2.56428e+04,
+      -1.5041]
+    - [1.78971, 0.0140938, -6.36501e-06, 1.38171e-09, -1.1706e-13, -2.53749e+04,
+      14.5024]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH3OH(5)
+- name: HOCN(6)
+  composition: {C: 1, H: 1, N: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1368.0, 5000.0]
+    data:
+    - [3.78605, 6.88668e-03, -3.21488e-06, 5.17196e-10, 1.19361e-14, -2826.98,
+      5.63292]
+    - [5.89785, 3.16789e-03, -1.11801e-06, 1.77243e-10, -1.04339e-14, -3706.53,
+      -6.18168]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: HOCN(6)
+- name: HCNO(7)
+  composition: {C: 1, H: 1, N: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 2375.51, 5000.0]
+    data:
+    - [3.04435693, 0.0104241949, -6.23368668e-06, 1.5940607e-09, -1.55359787e-13,
+      1.92497129e+04, 8.9967704]
+    - [7.32902389, 3.20927277e-03, -1.67775193e-06, 3.15442666e-10, -2.07937634e-14,
+      1.72141127e+04, -15.3813038]
+    note: 'Thermo library: GRI-Mech3.0-N'
+  note: HCNO(7)
+- name: HCNN(8)
+  composition: {C: 1, H: 1, N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1253.38, 5000.0]
+    data:
+    - [2.84385142, 0.0135715943, -1.29069115e-05, 6.24756199e-09, -1.20278176e-12,
+      5.42255185e+04, 10.3497655]
+    - [5.75490258, 4.28142026e-03, -1.78884837e-06, 3.33962629e-10, -2.32600742e-14,
+      5.34957824e+04, -4.35183825]
+    note: 'Thermo library: GRI-Mech3.0-N'
+  note: HCNN(8)
+- name: CH2O(9)
+  composition: {C: 1, H: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [4.79372, -9.90833e-03, 3.7322e-05, -3.79285e-08, 1.31773e-11, -1.4309e+04,
+      0.602813]
+    - [1.76069, 9.2e-03, -4.42259e-06, 1.00641e-09, -8.83856e-14, -1.39958e+04,
+      13.6563]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH2O(9)
+- name: CH2OH(10)
+  composition: {C: 1, H: 3, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [3.86389, 5.59672e-03, 5.93272e-06, -1.04532e-08, 4.36967e-12, -3193.91,
+      5.47302]
+    - [3.69267, 8.64577e-03, -3.75101e-06, 7.87235e-10, -6.48554e-14, -3242.51,
+      5.81043]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH2OH(10)
+- name: O2(11)
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1074.56, 5000.0]
+    data:
+    - [3.53732, -1.21571e-03, 5.31618e-06, -4.89443e-09, 1.45845e-12, -1038.59,
+      4.68368]
+    - [3.15382, 1.67804e-03, -7.69971e-07, 1.51275e-10, -1.08782e-14, -1040.82,
+      6.16754]
+    note: 'Thermo library: Narayanaswamy'
+  note: O2(11)
+- name: NO2(12)
+  composition: {N: 1, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.94403, -1.58543e-03, 1.66578e-05, -2.04754e-08, 7.83506e-12, 2896.62,
+      6.31199]
+    - [4.88475, 2.1724e-03, -8.28069e-07, 1.57475e-10, -1.05109e-14, 2316.5,
+      -0.117417]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: NO2(12)
+- name: N2O(13)
+  composition: {N: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.25715, 0.0113047, -1.36713e-05, 9.68198e-09, -2.93072e-12, 8741.77,
+      10.758]
+    - [4.82307, 2.62703e-03, -9.58509e-07, 1.60007e-10, -9.77523e-15, 8073.4,
+      -2.20172]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: N2O(13)
+- name: CH2CHO(14)
+  composition: {C: 2, H: 3, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 3000.0]
+    data:
+    - [1.09686, 0.0220229, -1.44583e-05, 3.0078e-09, 6.08993e-13, 1069.43,
+      19.0095]
+    - [2.42606, 0.01724, -9.77132e-06, 2.66556e-09, -2.8212e-13, 833.107,
+      12.6039]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH2CHO(14)
+- name: C2H4(15)
+  composition: {C: 2, H: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [3.9592, -7.57052e-03, 5.7099e-05, -6.91589e-08, 2.69884e-11, 5089.78,
+      4.09733]
+    - [2.03611, 0.0146454, -6.71078e-06, 1.47223e-09, -1.25706e-13, 4939.89,
+      10.3054]
+    note: 'Thermo library: Narayanaswamy'
+  note: C2H4(15)
+- name: H2O2(16)
+  composition: {H: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [4.27611, -5.42822e-04, 1.67336e-05, -2.15771e-08, 8.62454e-12, -1.77026e+04,
+      3.43505]
+    - [4.165, 4.90832e-03, -1.90139e-06, 3.71186e-10, -2.87908e-14, -1.78618e+04,
+      2.91616]
+    note: 'Thermo library: Narayanaswamy'
+  note: H2O2(16)
+- name: HCCOH(17)
+  composition: {C: 2, H: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 5000.0]
+    data:
+    - [1.24237, 0.0310722, -5.08669e-05, 4.31371e-08, -1.40146e-11, 8031.61,
+      13.8743]
+    - [5.92383, 6.79236e-03, -2.56586e-06, 4.49878e-10, -2.99401e-14, 7264.63,
+      -7.60177]
+    note: 'Thermo library: Narayanaswamy'
+  note: HCCOH(17)
+- name: NO(18)
+  composition: {N: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [4.21848, -4.63898e-03, 1.1041e-05, -9.33614e-09, 2.80358e-12, 9844.62,
+      2.28085]
+    - [3.26061, 1.1911e-03, -4.2917e-07, 6.94577e-11, -4.03361e-15, 9920.97,
+      6.3693]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: NO(18)
+- name: HCN(19)
+  composition: {C: 1, H: 1, N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.25899, 0.0100512, -1.33518e-05, 1.00923e-08, -3.0089e-12, 1.47126e+04,
+      8.91644]
+    - [3.80224, 3.14642e-03, -1.06322e-06, 1.66198e-10, -9.79976e-15, 1.44073e+04,
+      1.57546]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: HCN(19)
+- name: C2H2(20)
+  composition: {C: 2, H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [0.808681, 0.0233616, -3.55172e-05, 2.80152e-08, -8.50073e-12, 2.6429e+04,
+      13.9397]
+    - [4.14757, 5.96167e-03, -2.37295e-06, 4.67412e-10, -3.61235e-14, 2.5936e+04,
+      -1.23028]
+    note: 'Thermo library: Narayanaswamy'
+  note: C2H2(20)
+- name: HNCO(21)
+  composition: {C: 1, H: 1, N: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1478.0, 5000.0]
+    data:
+    - [3.63096, 7.30282e-03, -2.2805e-06, -6.61271e-10, 3.62236e-13, -1.55874e+04,
+      6.19458]
+    - [6.22395, 3.17864e-03, -1.09379e-06, 1.70735e-10, -9.95022e-15, -1.66599e+04,
+      -8.38225]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: HNCO(21)
+- name: CH3(22)
+  composition: {C: 1, H: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.65718, 2.1266e-03, 5.45839e-06, -6.6181e-09, 2.46571e-12, 1.64227e+04,
+      1.67354]
+    - [2.97812, 5.79785e-03, -1.97558e-06, 3.07298e-10, -1.79174e-14, 1.65095e+04,
+      4.72248]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH3(22)
+- name: HO2(23)
+  composition: {H: 1, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [4.3018, -4.74912e-03, 2.11583e-05, -2.42764e-08, 9.29225e-12, 294.808,
+      3.71666]
+    - [4.01721, 2.23982e-03, -6.33658e-07, 1.14246e-10, -1.07909e-14, 111.857,
+      3.7851]
+    note: 'Thermo library: Narayanaswamy'
+  note: HO2(23)
+- name: CH4(24)
+  composition: {C: 1, H: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1084.11, 5000.0]
+    data:
+    - [4.20542, -5.35566e-03, 2.51126e-05, -2.13766e-08, 5.97538e-12, -1.01619e+04,
+      -0.921305]
+    - [0.908224, 0.0114542, -4.57178e-06, 8.29201e-10, -5.66322e-14, -9719.96,
+      13.9933]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH4(24)
+- name: C2H(25)
+  composition: {C: 2, H: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [2.88966, 0.01341, -2.8477e-05, 2.94791e-08, -1.09332e-11, 6.68394e+04,
+      6.22296]
+    - [3.16781, 4.75222e-03, -1.83787e-06, 3.0419e-10, -1.77233e-14, 6.71211e+04,
+      6.63589]
+    note: 'Thermo library: Narayanaswamy'
+  note: C2H(25)
+- name: O(T)(26)
+  composition: {O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 4563.27, 5000.0]
+    data:
+    - [2.5, -1.91243e-12, 2.45329e-15, -1.02377e-18, 1.31369e-22, 2.92302e+04,
+      4.09104]
+    - [2.50167, -1.43051e-06, 4.6025e-10, -6.57826e-14, 3.52412e-18, 2.92287e+04,
+      4.08044]
+    note: 'Thermo library: Narayanaswamy'
+  note: O(T)(26)
+- name: HCCO(27)
+  composition: {C: 2, H: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 4000.0]
+    data:
+    - [2.25172, 0.017655, -2.37291e-05, 1.72758e-08, -5.06648e-12, 2.00594e+04,
+      12.4904]
+    - [5.62821, 4.08534e-03, -1.59345e-06, 2.86261e-10, -1.94078e-14, 1.93272e+04,
+      -3.93026]
+    note: 'Thermo library: Narayanaswamy'
+  note: HCCO(27)
+- name: CH2(T)(28)
+  composition: {C: 1, H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1104.58, 5000.0]
+    data:
+    - [4.01192, -1.54979e-04, 3.26298e-06, -2.40422e-09, 5.69497e-13, 4.58677e+04,
+      0.5332]
+    - [3.14983, 2.96674e-03, -9.76055e-07, 1.54115e-10, -9.50337e-15, 4.60581e+04,
+      4.77807]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH2(T)(28)
+- name: NH(29)
+  composition: {H: 1, N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.49291, 3.11792e-04, -1.48905e-06, 2.48164e-09, -1.0357e-12, 4.18806e+04,
+      1.84833]
+    - [2.78369, 1.32984e-03, -4.2478e-07, 7.83485e-11, -5.50445e-15, 4.21208e+04,
+      5.74078]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: NH(29)
+- name: CH(30)
+  composition: {C: 1, H: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [3.48982, 3.23836e-04, -1.68899e-06, 3.16217e-09, -1.40609e-12, 7.07973e+04,
+      2.08401]
+    - [2.87846, 9.70914e-04, 1.44446e-07, -1.30688e-10, 1.76079e-14, 7.10124e+04,
+      5.48498]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: CH(30)
+- name: CO(31)
+  composition: {C: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [3.57953, -6.10354e-04, 1.01681e-06, 9.07006e-10, -9.04424e-13, -1.43441e+04,
+      3.50841]
+    - [2.71519, 2.06253e-03, -9.98826e-07, 2.30053e-10, -2.03648e-14, -1.41519e+04,
+      7.81869]
+    note: 'Thermo library: Narayanaswamy'
+  note: CO(31)
+- name: CN(32)
+  composition: {C: 1, N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.61294, -9.55513e-04, 2.1443e-06, -3.15163e-10, -4.64304e-13, 5.17083e+04,
+      3.9805]
+    - [3.74598, 4.34508e-05, 2.9706e-07, -6.86518e-11, 4.41342e-15, 5.15362e+04,
+      2.78676]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: CN(32)
+- name: H(33)
+  composition: {H: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 4563.27, 5000.0]
+    data:
+    - [2.5, -1.91243e-12, 2.45329e-15, -1.02377e-18, 1.31369e-22, 2.54742e+04,
+      -0.444973]
+    - [2.50167, -1.43051e-06, 4.6025e-10, -6.57826e-14, 3.52412e-18, 2.54727e+04,
+      -0.455578]
+    note: 'Thermo library: Narayanaswamy'
+  note: H(33)
+- name: N(34)
+  composition: {N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 4879.8, 5000.0]
+    data:
+    - [2.5, -3.01680531e-12, 3.74582141e-15, -1.50856878e-18, 1.86626471e-22,
+      5.60986144e+04, 4.19198858]
+    - [4.28461071, -1.45494649e-03, 4.44804306e-07, -6.04359642e-11, 3.07921551e-15,
+      5.43474889e+04, -7.25616923]
+    note: 'Thermo library: primaryNS'
+  note: N(34)
+- name: C3H8(35)
+  composition: {C: 3, H: 8}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 5000.0]
+    data:
+    - [0.933554, 0.0264246, 6.10597e-06, -2.19775e-08, 9.51493e-12, -1.39585e+04,
+      19.2017]
+    - [7.53414, 0.0188722, -6.27185e-06, 9.14756e-10, -4.78381e-14, -1.64675e+04,
+      -17.8923]
+    note: 'Thermo library: Narayanaswamy'
+  note: C3H8(35)
+- name: NH3(36)
+  composition: {H: 3, N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [4.28603, -4.66052e-03, 2.17185e-05, -2.28089e-08, 8.2638e-12, -6741.73,
+      -0.625373]
+    - [2.63445, 5.66626e-03, -1.72787e-06, 2.38672e-10, -1.25788e-14, -6544.7,
+      6.56629]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: NH3(36)
+- name: NH2(37)
+  composition: {H: 2, N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [4.204, -2.10614e-03, 7.10683e-06, -5.61152e-09, 1.64407e-12, 2.18859e+04,
+      -0.141842]
+    - [2.83474, 3.20731e-03, -9.33908e-07, 1.3703e-10, -7.92061e-15, 2.2172e+04,
+      6.52042]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: NH2(37)
+- name: CH3CHO(38)
+  composition: {C: 2, H: 4, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 3000.0]
+    data:
+    - [1.40654, 0.0216984, -1.47573e-05, 7.30435e-09, -2.09119e-12, -2.17973e+04,
+      17.7513]
+    - [2.68543, 0.0176802, -8.65403e-06, 2.03681e-09, -1.87631e-13, -2.21654e+04,
+      11.1636]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH3CHO(38)
+- name: C2H6(39)
+  composition: {C: 2, H: 6}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [4.29142, -5.50154e-03, 5.99438e-05, -7.08466e-08, 2.68686e-11, -1.15222e+04,
+      2.66682]
+    - [1.07188, 0.0216853, -1.00256e-05, 2.21412e-09, -1.90003e-13, -1.14264e+04,
+      15.1156]
+    note: 'Thermo library: Narayanaswamy'
+  note: C2H6(39)
+- name: C2H5(40)
+  composition: {C: 2, H: 5}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [4.30647, -4.18659e-03, 4.97143e-05, -5.99127e-08, 2.30509e-11, 1.28416e+04,
+      4.70721]
+    - [1.95466, 0.0173973, -7.98207e-06, 1.75218e-09, -1.49642e-13, 1.28575e+04,
+      13.4624]
+    note: 'Thermo library: Narayanaswamy'
+  note: C2H5(40)
+- name: CH3O(41)
+  composition: {C: 1, H: 3, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 3000.0]
+    data:
+    - [2.1062, 7.2166e-03, 5.33847e-06, -7.37764e-09, 2.07561e-12, 978.601,
+      13.1522]
+    - [3.7708, 7.8715e-03, -2.65638e-06, 3.94443e-10, -2.11262e-14, 127.833,
+      2.92957]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH3O(41)
+- name: C2H3(42)
+  composition: {C: 2, H: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [3.21247, 1.51479e-03, 2.59209e-05, -3.57658e-08, 1.47151e-11, 3.48598e+04,
+      8.51054]
+    - [3.01672, 0.0103302, -4.68082e-06, 1.01763e-09, -8.62607e-14, 3.46129e+04,
+      7.78732]
+    note: 'Thermo library: Narayanaswamy'
+  note: C2H3(42)
+- name: HCO(43)
+  composition: {C: 1, H: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [4.22119, -3.24393e-03, 1.37799e-05, -1.33144e-08, 4.33769e-12, 3839.56,
+      3.39437]
+    - [2.77217, 4.95696e-03, -2.48446e-06, 5.89162e-10, -5.33509e-14, 4011.92,
+      9.79834]
+    note: 'Thermo library: Narayanaswamy'
+  note: HCO(43)
+- name: CO2(44)
+  composition: {C: 1, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [2.35677, 8.9846e-03, -7.12356e-06, 2.45919e-09, -1.437e-13, -4.8372e+04,
+      9.90105]
+    - [3.85746, 4.41437e-03, -2.21481e-06, 5.2349e-10, -4.72084e-14, -4.87592e+04,
+      2.27164]
+    note: 'Thermo library: Narayanaswamy'
+  note: CO2(44)
+- name: OH(45)
+  composition: {H: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1145.75, 5000.0]
+    data:
+    - [3.51457, 2.92796e-05, -5.32171e-07, 1.0195e-09, -3.85948e-13, 3414.25,
+      2.10435]
+    - [3.07194, 6.04013e-04, -1.3977e-08, -2.13449e-11, 2.48068e-15, 3579.39,
+      4.57799]
+    note: 'Thermo library: Narayanaswamy'
+  note: OH(45)
+- name: H2(46)
+  composition: {H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1959.09, 5000.0]
+    data:
+    - [3.43536, 2.12707e-04, -2.78618e-07, 3.40262e-10, -7.76019e-14, -1031.36,
+      -3.90842]
+    - [2.78813, 5.87687e-04, 1.58989e-07, -5.52696e-11, 4.34279e-15, -596.123,
+      0.112943]
+    note: 'Thermo library: Narayanaswamy'
+  note: H2(46)
+- name: NNH(47)
+  composition: {H: 1, N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [4.34469, -4.84971e-03, 2.00595e-05, -2.17265e-08, 7.94695e-12, 2.8792e+04,
+      2.97794]
+    - [3.76675, 2.89151e-03, -1.04166e-06, 1.68426e-10, -1.00919e-14, 2.86507e+04,
+      4.47051]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: NNH(47)
+- name: H2O(48)
+  composition: {H: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1130.24, 5000.0]
+    data:
+    - [4.05764, -7.87936e-04, 2.90878e-06, -1.47519e-09, 2.12843e-13, -3.02816e+04,
+      -0.311364]
+    - [2.84325, 2.75109e-03, -7.81032e-07, 1.07244e-10, -5.79392e-15, -2.99586e+04,
+      5.91042]
+    note: 'Thermo library: Narayanaswamy'
+  note: H2O(48)
+- name: NCO(49)
+  composition: {C: 1, N: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.82693, 8.80517e-03, -8.38661e-06, 4.8017e-09, -1.33136e-12, 1.46825e+04,
+      9.55046]
+    - [5.15218, 2.30518e-03, -8.80332e-07, 1.47891e-10, -9.0978e-15, 1.40041e+04,
+      -2.54427]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: NCO(49)
+- name: CH2CO(50)
+  composition: {C: 2, H: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [2.13584, 0.0181189, -1.73947e-05, 9.34398e-09, -2.01458e-12, -7042.92,
+      12.2156]
+    - [4.5113, 9.0036e-03, -4.1694e-06, 9.23346e-10, -7.94838e-14, -7551.05,
+      0.632247]
+    note: 'Thermo library: Narayanaswamy'
+  note: CH2CO(50)
+- name: H2CN(51)
+  composition: {C: 1, H: 2, N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 4000.0]
+    data:
+    - [2.85166, 5.69523e-03, 1.07114e-06, -1.62261e-09, -2.35111e-13, 2.86378e+04,
+      8.99275]
+    - [5.2097, 2.96929e-03, -2.85559e-07, -1.63555e-10, 3.04326e-14, 2.76771e+04,
+      -4.44448]
+    note: 'Thermo library: GRI-Mech3.0'
+  note: H2CN(51)
+
+reactions:
+- equation: O(T)(26) + H2(46) <=> H(33) + OH(45)  # Reaction 1
+  rate-constant: {A: 3.87e+04, b: 2.7, Ea: 6.26}
+  note: |-
+    Reaction index: Chemkin #1; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + HO2(23) <=> OH(45) + O2(11)  # Reaction 2
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #2; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + H2O2(16) <=> OH(45) + HO2(23)  # Reaction 3
+  rate-constant: {A: 9.63e+06, b: 2.0, Ea: 4.0}
+  note: |-
+    Reaction index: Chemkin #3; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH(30) <=> H(33) + CO(31)  # Reaction 4
+  rate-constant: {A: 5.7e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #4; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH2(T)(28) <=> H(33) + HCO(43)  # Reaction 5
+  rate-constant: {A: 8.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #5; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH2(S)(2) <=> H2(46) + CO(31)  # Reaction 6
+  rate-constant: {A: 1.5e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #6; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH2(S)(2) <=> H(33) + HCO(43)  # Reaction 7
+  rate-constant: {A: 1.5e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #7; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH3(22) <=> H(33) + CH2O(9)  # Reaction 8
+  rate-constant: {A: 5.06e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #8; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH4(24) <=> OH(45) + CH3(22)  # Reaction 9
+  rate-constant: {A: 1.02e+09, b: 1.5, Ea: 8.6}
+  note: |-
+    Reaction index: Chemkin #9; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + HCO(43) <=> OH(45) + CO(31)  # Reaction 10
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #10; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + HCO(43) <=> H(33) + CO2(44)  # Reaction 11
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #11; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH2O(9) <=> OH(45) + HCO(43)  # Reaction 12
+  rate-constant: {A: 3.9e+13, b: 0.0, Ea: 3.54}
+  note: |-
+    Reaction index: Chemkin #12; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH2OH(10) <=> OH(45) + CH2O(9)  # Reaction 13
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #13; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH3O(41) <=> OH(45) + CH2O(9)  # Reaction 14
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #14; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH3OH(5) <=> OH(45) + CH2OH(10)  # Reaction 15
+  rate-constant: {A: 3.88e+05, b: 2.5, Ea: 3.1}
+  note: |-
+    Reaction index: Chemkin #15; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH3OH(5) <=> OH(45) + CH3O(41)  # Reaction 16
+  rate-constant: {A: 1.3e+05, b: 2.5, Ea: 5.0}
+  note: |-
+    Reaction index: Chemkin #16; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H(25) <=> CH(30) + CO(31)  # Reaction 17
+  rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #17; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H2(20) <=> H(33) + HCCO(27)  # Reaction 18
+  rate-constant: {A: 1.35e+07, b: 2.0, Ea: 1.9}
+  note: |-
+    Reaction index: Chemkin #18; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H2(20) <=> OH(45) + C2H(25)  # Reaction 19
+  rate-constant: {A: 4.6e+19, b: -1.41, Ea: 28.95}
+  note: |-
+    Reaction index: Chemkin #19; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H2(20) <=> CO(31) + CH2(T)(28)  # Reaction 20
+  rate-constant: {A: 6.94e+06, b: 2.0, Ea: 1.9}
+  note: |-
+    Reaction index: Chemkin #20; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H3(42) <=> H(33) + CH2CO(50)  # Reaction 21
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #21; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H4(15) <=> CH3(22) + HCO(43)  # Reaction 22
+  rate-constant: {A: 1.25e+07, b: 1.83, Ea: 0.22}
+  note: |-
+    Reaction index: Chemkin #22; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H5(40) <=> CH3(22) + CH2O(9)  # Reaction 23
+  rate-constant: {A: 2.24e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #23; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H6(39) <=> OH(45) + C2H5(40)  # Reaction 24
+  rate-constant: {A: 8.98e+07, b: 1.92, Ea: 5.69}
+  note: |-
+    Reaction index: Chemkin #24; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + HCCO(27) <=> H(33) + CO(31) + CO(31)  # Reaction 25
+  rate-constant: {A: 1.0e+14, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #25; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH2CO(50) <=> OH(45) + HCCO(27)  # Reaction 26
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 8.0}
+  note: |-
+    Reaction index: Chemkin #26; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH2CO(50) <=> CH2(T)(28) + CO2(44)  # Reaction 27
+  rate-constant: {A: 1.75e+12, b: 0.0, Ea: 1.35}
+  note: |-
+    Reaction index: Chemkin #27; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O2(11) + CO(31) <=> O(T)(26) + CO2(44)  # Reaction 28
+  rate-constant: {A: 2.5e+12, b: 0.0, Ea: 47.8}
+  note: |-
+    Reaction index: Chemkin #28; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O2(11) + CH2O(9) <=> HO2(23) + HCO(43)  # Reaction 29
+  rate-constant: {A: 1.0e+14, b: 0.0, Ea: 40.0}
+  note: |-
+    Reaction index: Chemkin #29; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + O2(11) + O2(11) <=> HO2(23) + O2(11)  # Reaction 30
+  rate-constant: {A: 2.08e+19, b: -1.24, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #30; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + O2(11) + H2O(48) <=> HO2(23) + H2O(48)  # Reaction 31
+  rate-constant: {A: 1.126e+19, b: -0.76, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #31; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + O2(11) + N2(3) <=> HO2(23) + N2(3)  # Reaction 32
+  rate-constant: {A: 2.6e+19, b: -1.24, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #32; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + O2(11) <=> O(T)(26) + OH(45)  # Reaction 33
+  rate-constant: {A: 2.65e+16, b: -0.671, Ea: 17.041}
+  note: |-
+    Reaction index: Chemkin #33; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + H(33) + H2(46) <=> H2(46) + H2(46)  # Reaction 34
+  rate-constant: {A: 9.0e+16, b: -0.6, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #34; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + H(33) + H2O(48) <=> H2(46) + H2O(48)  # Reaction 35
+  rate-constant: {A: 6.0e+19, b: -1.25, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #35; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + H(33) + CO2(44) <=> H2(46) + CO2(44)  # Reaction 36
+  rate-constant: {A: 5.5e+20, b: -2.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #36; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + HO2(23) <=> O(T)(26) + H2O(48)  # Reaction 37
+  rate-constant: {A: 3.97e+12, b: 0.0, Ea: 0.671}
+  note: |-
+    Reaction index: Chemkin #37; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + HO2(23) <=> O2(11) + H2(46)  # Reaction 38
+  rate-constant: {A: 4.48e+13, b: 0.0, Ea: 1.068}
+  note: |-
+    Reaction index: Chemkin #38; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + HO2(23) <=> OH(45) + OH(45)  # Reaction 39
+  rate-constant: {A: 8.4e+13, b: 0.0, Ea: 0.635}
+  note: |-
+    Reaction index: Chemkin #39; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + H2O2(16) <=> HO2(23) + H2(46)  # Reaction 40
+  rate-constant: {A: 1.21e+07, b: 2.0, Ea: 5.2}
+  note: |-
+    Reaction index: Chemkin #40; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + H2O2(16) <=> OH(45) + H2O(48)  # Reaction 41
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 3.6}
+  note: |-
+    Reaction index: Chemkin #41; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH(30) <=> C(T)(1) + H2(46)  # Reaction 42
+  rate-constant: {A: 1.65e+14, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #42; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2(S)(2) <=> CH(30) + H2(46)  # Reaction 43
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #43; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH4(24) <=> CH3(22) + H2(46)  # Reaction 44
+  rate-constant: {A: 6.6e+08, b: 1.62, Ea: 10.84}
+  note: |-
+    Reaction index: Chemkin #44; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + HCO(43) <=> H2(46) + CO(31)  # Reaction 45
+  rate-constant: {A: 7.34e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #45; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2O(9) <=> HCO(43) + H2(46)  # Reaction 46
+  rate-constant: {A: 5.74e+07, b: 1.9, Ea: 2.742}
+  note: |-
+    Reaction index: Chemkin #46; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2OH(10) <=> H2(46) + CH2O(9)  # Reaction 47
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #47; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2OH(10) <=> OH(45) + CH3(22)  # Reaction 48
+  rate-constant: {A: 1.65e+11, b: 0.65, Ea: -0.284}
+  note: |-
+    Reaction index: Chemkin #48; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2OH(10) <=> CH2(S)(2) + H2O(48)  # Reaction 49
+  rate-constant: {A: 3.28e+13, b: -0.09, Ea: 0.61}
+  note: |-
+    Reaction index: Chemkin #49; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3O(41) <=> H(33) + CH2OH(10)  # Reaction 50
+  rate-constant: {A: 4.15e+07, b: 1.63, Ea: 1.924}
+  note: |-
+    Reaction index: Chemkin #50; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3O(41) <=> H2(46) + CH2O(9)  # Reaction 51
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #51; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3O(41) <=> OH(45) + CH3(22)  # Reaction 52
+  rate-constant: {A: 1.5e+12, b: 0.5, Ea: -0.11}
+  note: |-
+    Reaction index: Chemkin #52; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3O(41) <=> CH2(S)(2) + H2O(48)  # Reaction 53
+  rate-constant: {A: 2.62e+14, b: -0.23, Ea: 1.07}
+  note: |-
+    Reaction index: Chemkin #53; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3OH(5) <=> CH2OH(10) + H2(46)  # Reaction 54
+  rate-constant: {A: 1.7e+07, b: 2.1, Ea: 4.87}
+  note: |-
+    Reaction index: Chemkin #54; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3OH(5) <=> CH3O(41) + H2(46)  # Reaction 55
+  rate-constant: {A: 4.2e+06, b: 2.1, Ea: 4.87}
+  note: |-
+    Reaction index: Chemkin #55; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H3(42) <=> H2(46) + C2H2(20)  # Reaction 56
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #56; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H4(15) <=> C2H3(42) + H2(46)  # Reaction 57
+  rate-constant: {A: 1.325e+06, b: 2.53, Ea: 12.24}
+  note: |-
+    Reaction index: Chemkin #57; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H5(40) <=> H2(46) + C2H4(15)  # Reaction 58
+  rate-constant: {A: 2.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #58; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H6(39) <=> C2H5(40) + H2(46)  # Reaction 59
+  rate-constant: {A: 1.15e+08, b: 1.9, Ea: 7.53}
+  note: |-
+    Reaction index: Chemkin #59; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + HCCO(27) <=> CH2(S)(2) + CO(31)  # Reaction 60
+  rate-constant: {A: 1.0e+14, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #60; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2CO(50) <=> HCCO(27) + H2(46)  # Reaction 61
+  rate-constant: {A: 5.0e+13, b: 0.0, Ea: 8.0}
+  note: |-
+    Reaction index: Chemkin #61; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2CO(50) <=> CH3(22) + CO(31)  # Reaction 62
+  rate-constant: {A: 1.13e+13, b: 0.0, Ea: 3.428}
+  note: |-
+    Reaction index: Chemkin #62; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + HCCOH(17) <=> H(33) + CH2CO(50)  # Reaction 63
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #63; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + H2(46) <=> H(33) + H2O(48)  # Reaction 64
+  rate-constant: {A: 2.16e+08, b: 1.51, Ea: 3.43}
+  note: |-
+    Reaction index: Chemkin #64; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + OH(45) <=> O(T)(26) + H2O(48)  # Reaction 65
+  rate-constant: {A: 3.57e+04, b: 2.4, Ea: -2.11}
+  note: |-
+    Reaction index: Chemkin #65; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + HO2(23) <=> O2(11) + H2O(48)  # Reaction 66
+  duplicate: true
+  rate-constant: {A: 1.45e+13, b: 0.0, Ea: -0.5}
+  note: |-
+    Reaction index: Chemkin #66; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + HO2(23) <=> O2(11) + H2O(48)  # Reaction 67
+  duplicate: true
+  rate-constant: {A: 5.0e+15, b: 0.0, Ea: 17.33}
+  note: |-
+    Reaction index: Chemkin #67; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + H2O2(16) <=> HO2(23) + H2O(48)  # Reaction 68
+  duplicate: true
+  rate-constant: {A: 2.0e+12, b: 0.0, Ea: 0.427}
+  note: |-
+    Reaction index: Chemkin #68; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + H2O2(16) <=> HO2(23) + H2O(48)  # Reaction 69
+  duplicate: true
+  rate-constant: {A: 1.7e+18, b: 0.0, Ea: 29.41}
+  note: |-
+    Reaction index: Chemkin #69; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C(T)(1) <=> H(33) + CO(31)  # Reaction 70
+  rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #70; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH(30) <=> H(33) + HCO(43)  # Reaction 71
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #71; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH2(T)(28) <=> H(33) + CH2O(9)  # Reaction 72
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #72; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH2(T)(28) <=> CH(30) + H2O(48)  # Reaction 73
+  rate-constant: {A: 1.13e+07, b: 2.0, Ea: 3.0}
+  note: |-
+    Reaction index: Chemkin #73; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH2(S)(2) <=> H(33) + CH2O(9)  # Reaction 74
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #74; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH3(22) <=> CH2(T)(28) + H2O(48)  # Reaction 75
+  rate-constant: {A: 5.6e+07, b: 1.6, Ea: 5.42}
+  note: |-
+    Reaction index: Chemkin #75; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH3(22) <=> CH2(S)(2) + H2O(48)  # Reaction 76
+  rate-constant: {A: 6.44e+17, b: -1.34, Ea: 1.417}
+  note: |-
+    Reaction index: Chemkin #76; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH4(24) <=> CH3(22) + H2O(48)  # Reaction 77
+  rate-constant: {A: 1.0e+08, b: 1.6, Ea: 3.12}
+  note: |-
+    Reaction index: Chemkin #77; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CO(31) <=> H(33) + CO2(44)  # Reaction 78
+  rate-constant: {A: 4.76e+07, b: 1.228, Ea: 0.07}
+  note: |-
+    Reaction index: Chemkin #78; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + HCO(43) <=> H2O(48) + CO(31)  # Reaction 79
+  rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #79; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH2O(9) <=> HCO(43) + H2O(48)  # Reaction 80
+  rate-constant: {A: 3.43e+09, b: 1.18, Ea: -0.447}
+  note: |-
+    Reaction index: Chemkin #80; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH2OH(10) <=> H2O(48) + CH2O(9)  # Reaction 81
+  rate-constant: {A: 5.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #81; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH3O(41) <=> H2O(48) + CH2O(9)  # Reaction 82
+  rate-constant: {A: 5.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #82; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH3OH(5) <=> CH2OH(10) + H2O(48)  # Reaction 83
+  rate-constant: {A: 1.44e+06, b: 2.0, Ea: -0.84}
+  note: |-
+    Reaction index: Chemkin #83; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH3OH(5) <=> CH3O(41) + H2O(48)  # Reaction 84
+  rate-constant: {A: 6.3e+06, b: 2.0, Ea: 1.5}
+  note: |-
+    Reaction index: Chemkin #84; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C2H(25) <=> H(33) + HCCO(27)  # Reaction 85
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #85; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C2H2(20) <=> H(33) + CH2CO(50)  # Reaction 86
+  rate-constant: {A: 2.18e-04, b: 4.5, Ea: -1.0}
+  note: |-
+    Reaction index: Chemkin #86; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C2H2(20) <=> H(33) + HCCOH(17)  # Reaction 87
+  rate-constant: {A: 5.04e+05, b: 2.3, Ea: 13.5}
+  note: |-
+    Reaction index: Chemkin #87; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C2H2(20) <=> C2H(25) + H2O(48)  # Reaction 88
+  rate-constant: {A: 3.37e+07, b: 2.0, Ea: 14.0}
+  note: |-
+    Reaction index: Chemkin #88; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C2H2(20) <=> CH3(22) + CO(31)  # Reaction 89
+  rate-constant: {A: 4.83e-04, b: 4.0, Ea: -2.0}
+  note: |-
+    Reaction index: Chemkin #89; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C2H3(42) <=> H2O(48) + C2H2(20)  # Reaction 90
+  rate-constant: {A: 5.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #90; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C2H4(15) <=> C2H3(42) + H2O(48)  # Reaction 91
+  rate-constant: {A: 3.6e+06, b: 2.0, Ea: 2.5}
+  note: |-
+    Reaction index: Chemkin #91; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + C2H6(39) <=> C2H5(40) + H2O(48)  # Reaction 92
+  rate-constant: {A: 3.54e+06, b: 2.12, Ea: 0.87}
+  note: |-
+    Reaction index: Chemkin #92; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH2CO(50) <=> HCCO(27) + H2O(48)  # Reaction 93
+  rate-constant: {A: 7.5e+12, b: 0.0, Ea: 2.0}
+  note: |-
+    Reaction index: Chemkin #93; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + HO2(23) <=> O2(11) + H2O2(16)  # Reaction 94
+  duplicate: true
+  rate-constant: {A: 1.3e+11, b: 0.0, Ea: -1.63}
+  note: |-
+    Reaction index: Chemkin #94; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + HO2(23) <=> O2(11) + H2O2(16)  # Reaction 95
+  duplicate: true
+  rate-constant: {A: 4.2e+14, b: 0.0, Ea: 12.0}
+  note: |-
+    Reaction index: Chemkin #95; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + CH2(T)(28) <=> OH(45) + CH2O(9)  # Reaction 96
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #96; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + CH3(22) <=> O2(11) + CH4(24)  # Reaction 97
+  rate-constant: {A: 1.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #97; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + CH3(22) <=> OH(45) + CH3O(41)  # Reaction 98
+  rate-constant: {A: 3.78e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #98; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + CO(31) <=> OH(45) + CO2(44)  # Reaction 99
+  rate-constant: {A: 1.5e+14, b: 0.0, Ea: 23.6}
+  note: |-
+    Reaction index: Chemkin #99; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + CH2O(9) <=> HCO(43) + H2O2(16)  # Reaction 100
+  rate-constant: {A: 5.6e+06, b: 2.0, Ea: 12.0}
+  note: |-
+    Reaction index: Chemkin #100; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C(T)(1) + O2(11) <=> O(T)(26) + CO(31)  # Reaction 101
+  rate-constant: {A: 5.8e+13, b: 0.0, Ea: 0.576}
+  note: |-
+    Reaction index: Chemkin #101; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C(T)(1) + CH2(T)(28) <=> H(33) + C2H(25)  # Reaction 102
+  rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #102; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C(T)(1) + CH3(22) <=> H(33) + C2H2(20)  # Reaction 103
+  rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #103; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + O2(11) <=> O(T)(26) + HCO(43)  # Reaction 104
+  rate-constant: {A: 6.71e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #104; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + H2(46) <=> H(33) + CH2(T)(28)  # Reaction 105
+  rate-constant: {A: 1.08e+14, b: 0.0, Ea: 3.11}
+  note: |-
+    Reaction index: Chemkin #105; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + H2O(48) <=> H(33) + CH2O(9)  # Reaction 106
+  rate-constant: {A: 5.71e+12, b: 0.0, Ea: -0.755}
+  note: |-
+    Reaction index: Chemkin #106; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + CH2(T)(28) <=> H(33) + C2H2(20)  # Reaction 107
+  rate-constant: {A: 4.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #107; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + CH3(22) <=> H(33) + C2H3(42)  # Reaction 108
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #108; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + CH4(24) <=> H(33) + C2H4(15)  # Reaction 109
+  rate-constant: {A: 6.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #109; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + CO2(44) <=> HCO(43) + CO(31)  # Reaction 110
+  rate-constant: {A: 1.9e+14, b: 0.0, Ea: 15.792}
+  note: |-
+    Reaction index: Chemkin #110; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + CH2O(9) <=> H(33) + CH2CO(50)  # Reaction 111
+  rate-constant: {A: 9.46e+13, b: 0.0, Ea: -0.515}
+  note: |-
+    Reaction index: Chemkin #111; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + HCCO(27) <=> CO(31) + C2H2(20)  # Reaction 112
+  rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #112; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + O2(11) => OH(45) + H(33) + CO(31)  # Reaction 113
+  rate-constant: {A: 5.0e+12, b: 0.0, Ea: 1.5}
+  note: |-
+    Reaction index: Chemkin #113; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + H2(46) <=> H(33) + CH3(22)  # Reaction 114
+  rate-constant: {A: 5.0e+05, b: 2.0, Ea: 7.23}
+  note: |-
+    Reaction index: Chemkin #114; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + CH2(T)(28) <=> H2(46) + C2H2(20)  # Reaction 115
+  rate-constant: {A: 1.6e+15, b: 0.0, Ea: 11.944}
+  note: |-
+    Reaction index: Chemkin #115; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + CH3(22) <=> H(33) + C2H4(15)  # Reaction 116
+  rate-constant: {A: 4.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #116; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + CH4(24) <=> CH3(22) + CH3(22)  # Reaction 117
+  rate-constant: {A: 2.46e+06, b: 2.0, Ea: 8.27}
+  note: |-
+    Reaction index: Chemkin #117; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + HCCO(27) <=> C2H3(42) + CO(31)  # Reaction 118
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #118; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + N2(3) <=> CH2(T)(28) + N2(3)  # Reaction 119
+  rate-constant: {A: 1.5e+13, b: 0.0, Ea: 0.6}
+  note: |-
+    Reaction index: Chemkin #119; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + O2(11) <=> H(33) + OH(45) + CO(31)  # Reaction 120
+  rate-constant: {A: 2.8e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #120; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + O2(11) <=> CO(31) + H2O(48)  # Reaction 121
+  rate-constant: {A: 1.2e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #121; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + H2(46) <=> CH3(22) + H(33)  # Reaction 122
+  rate-constant: {A: 7.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #122; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + H2O(48) <=> CH2(T)(28) + H2O(48)  # Reaction 123
+  rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #123; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + CH3(22) <=> H(33) + C2H4(15)  # Reaction 124
+  rate-constant: {A: 1.2e+13, b: 0.0, Ea: -0.57}
+  note: |-
+    Reaction index: Chemkin #124; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + CH4(24) <=> CH3(22) + CH3(22)  # Reaction 125
+  rate-constant: {A: 1.6e+13, b: 0.0, Ea: -0.57}
+  note: |-
+    Reaction index: Chemkin #125; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + CO(31) <=> CH2(T)(28) + CO(31)  # Reaction 126
+  rate-constant: {A: 9.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #126; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + CO2(44) <=> CH2(T)(28) + CO2(44)  # Reaction 127
+  rate-constant: {A: 7.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #127; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + CO2(44) <=> CO(31) + CH2O(9)  # Reaction 128
+  rate-constant: {A: 1.4e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #128; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + C2H6(39) <=> CH3(22) + C2H5(40)  # Reaction 129
+  rate-constant: {A: 4.0e+13, b: 0.0, Ea: -0.55}
+  note: |-
+    Reaction index: Chemkin #129; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + O2(11) <=> O(T)(26) + CH3O(41)  # Reaction 130
+  rate-constant: {A: 3.56e+13, b: 0.0, Ea: 30.48}
+  note: |-
+    Reaction index: Chemkin #130; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + O2(11) <=> OH(45) + CH2O(9)  # Reaction 131
+  rate-constant: {A: 2.31e+12, b: 0.0, Ea: 20.315}
+  note: |-
+    Reaction index: Chemkin #131; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + H2O2(16) <=> HO2(23) + CH4(24)  # Reaction 132
+  rate-constant: {A: 2.45e+04, b: 2.47, Ea: 5.18}
+  note: |-
+    Reaction index: Chemkin #132; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + CH3(22) <=> H(33) + C2H5(40)  # Reaction 133
+  rate-constant: {A: 6.84e+12, b: 0.1, Ea: 10.6}
+  note: |-
+    Reaction index: Chemkin #133; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + HCO(43) <=> CH4(24) + CO(31)  # Reaction 134
+  rate-constant: {A: 2.648e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #134; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + CH2O(9) <=> HCO(43) + CH4(24)  # Reaction 135
+  rate-constant: {A: 3320.0, b: 2.81, Ea: 5.86}
+  note: |-
+    Reaction index: Chemkin #135; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + CH3OH(5) <=> CH2OH(10) + CH4(24)  # Reaction 136
+  rate-constant: {A: 3.0e+07, b: 1.5, Ea: 9.94}
+  note: |-
+    Reaction index: Chemkin #136; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + CH3OH(5) <=> CH3O(41) + CH4(24)  # Reaction 137
+  rate-constant: {A: 1.0e+07, b: 1.5, Ea: 9.94}
+  note: |-
+    Reaction index: Chemkin #137; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + C2H4(15) <=> C2H3(42) + CH4(24)  # Reaction 138
+  rate-constant: {A: 2.27e+05, b: 2.0, Ea: 9.2}
+  note: |-
+    Reaction index: Chemkin #138; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + C2H6(39) <=> C2H5(40) + CH4(24)  # Reaction 139
+  rate-constant: {A: 6.14e+06, b: 1.74, Ea: 10.45}
+  note: |-
+    Reaction index: Chemkin #139; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCO(43) + H2O(48) <=> H(33) + CO(31) + H2O(48)  # Reaction 140
+  rate-constant: {A: 1.5e+18, b: -1.0, Ea: 17.0}
+  note: |-
+    Reaction index: Chemkin #140; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCO(43) + O2(11) <=> HO2(23) + CO(31)  # Reaction 141
+  rate-constant: {A: 1.345e+13, b: 0.0, Ea: 0.4}
+  note: |-
+    Reaction index: Chemkin #141; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2OH(10) + O2(11) <=> HO2(23) + CH2O(9)  # Reaction 142
+  rate-constant: {A: 1.8e+13, b: 0.0, Ea: 0.9}
+  note: |-
+    Reaction index: Chemkin #142; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3O(41) + O2(11) <=> HO2(23) + CH2O(9)  # Reaction 143
+  rate-constant: {A: 4.28e-13, b: 7.6, Ea: -3.53}
+  note: |-
+    Reaction index: Chemkin #143; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C2H(25) + O2(11) <=> HCO(43) + CO(31)  # Reaction 144
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: -0.755}
+  note: |-
+    Reaction index: Chemkin #144; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C2H(25) + H2(46) <=> H(33) + C2H2(20)  # Reaction 145
+  rate-constant: {A: 5.68e+10, b: 0.9, Ea: 1.993}
+  note: |-
+    Reaction index: Chemkin #145; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C2H3(42) + O2(11) <=> HCO(43) + CH2O(9)  # Reaction 146
+  rate-constant: {A: 4.58e+16, b: -1.39, Ea: 1.015}
+  note: |-
+    Reaction index: Chemkin #146; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C2H5(40) + O2(11) <=> HO2(23) + C2H4(15)  # Reaction 147
+  rate-constant: {A: 8.4e+11, b: 0.0, Ea: 3.875}
+  note: |-
+    Reaction index: Chemkin #147; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCCO(27) + O2(11) <=> OH(45) + CO(31) + CO(31)  # Reaction 148
+  rate-constant: {A: 3.2e+12, b: 0.0, Ea: 0.854}
+  note: |-
+    Reaction index: Chemkin #148; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCCO(27) + HCCO(27) <=> CO(31) + CO(31) + C2H2(20)  # Reaction 149
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #149; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N(34) + NO(18) <=> N2(3) + O(T)(26)  # Reaction 150
+  rate-constant: {A: 2.7e+13, b: 0.0, Ea: 0.355}
+  note: |-
+    Reaction index: Chemkin #150; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N(34) + O2(11) <=> NO(18) + O(T)(26)  # Reaction 151
+  rate-constant: {A: 9.0e+09, b: 1.0, Ea: 6.5}
+  note: |-
+    Reaction index: Chemkin #151; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N(34) + OH(45) <=> NO(18) + H(33)  # Reaction 152
+  rate-constant: {A: 3.36e+13, b: 0.0, Ea: 0.385}
+  note: |-
+    Reaction index: Chemkin #152; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N2O(13) + O(T)(26) <=> N2(3) + O2(11)  # Reaction 153
+  rate-constant: {A: 1.4e+12, b: 0.0, Ea: 10.81}
+  note: |-
+    Reaction index: Chemkin #153; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N2O(13) + O(T)(26) <=> NO(18) + NO(18)  # Reaction 154
+  rate-constant: {A: 2.9e+13, b: 0.0, Ea: 23.15}
+  note: |-
+    Reaction index: Chemkin #154; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N2O(13) + H(33) <=> N2(3) + OH(45)  # Reaction 155
+  rate-constant: {A: 3.87e+14, b: 0.0, Ea: 18.88}
+  note: |-
+    Reaction index: Chemkin #155; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N2O(13) + OH(45) <=> N2(3) + HO2(23)  # Reaction 156
+  rate-constant: {A: 2.0e+12, b: 0.0, Ea: 21.06}
+  note: |-
+    Reaction index: Chemkin #156; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + NO(18) <=> NO2(12) + OH(45)  # Reaction 157
+  rate-constant: {A: 2.11e+12, b: 0.0, Ea: -0.48}
+  note: |-
+    Reaction index: Chemkin #157; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NO2(12) + O(T)(26) <=> NO(18) + O2(11)  # Reaction 158
+  rate-constant: {A: 3.9e+12, b: 0.0, Ea: -0.24}
+  note: |-
+    Reaction index: Chemkin #158; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NO2(12) + H(33) <=> NO(18) + OH(45)  # Reaction 159
+  rate-constant: {A: 1.32e+14, b: 0.0, Ea: 0.36}
+  note: |-
+    Reaction index: Chemkin #159; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + O(T)(26) <=> NO(18) + H(33)  # Reaction 160
+  rate-constant: {A: 4.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #160; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + H(33) <=> N(34) + H2(46)  # Reaction 161
+  rate-constant: {A: 3.2e+13, b: 0.0, Ea: 0.33}
+  note: |-
+    Reaction index: Chemkin #161; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + OH(45) <=> HNO(4) + H(33)  # Reaction 162
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #162; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + OH(45) <=> N(34) + H2O(48)  # Reaction 163
+  rate-constant: {A: 2.0e+09, b: 1.2, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #163; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + O2(11) <=> HNO(4) + O(T)(26)  # Reaction 164
+  rate-constant: {A: 4.61e+05, b: 2.0, Ea: 6.5}
+  note: |-
+    Reaction index: Chemkin #164; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + O2(11) <=> NO(18) + OH(45)  # Reaction 165
+  rate-constant: {A: 1.28e+06, b: 1.5, Ea: 0.1}
+  note: |-
+    Reaction index: Chemkin #165; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + N(34) <=> N2(3) + H(33)  # Reaction 166
+  rate-constant: {A: 1.5e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #166; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + H2O(48) <=> HNO(4) + H2(46)  # Reaction 167
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 13.85}
+  note: |-
+    Reaction index: Chemkin #167; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + NO(18) <=> N2(3) + OH(45)  # Reaction 168
+  rate-constant: {A: 2.16e+13, b: -0.23, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #168; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + NO(18) <=> N2O(13) + H(33)  # Reaction 169
+  rate-constant: {A: 3.65e+14, b: -0.45, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #169; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH2(37) + O(T)(26) <=> OH(45) + NH(29)  # Reaction 170
+  rate-constant: {A: 3.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #170; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH2(37) + O(T)(26) <=> H(33) + HNO(4)  # Reaction 171
+  rate-constant: {A: 3.9e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #171; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH2(37) + H(33) <=> NH(29) + H2(46)  # Reaction 172
+  rate-constant: {A: 4.0e+13, b: 0.0, Ea: 3.65}
+  note: |-
+    Reaction index: Chemkin #172; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH2(37) + OH(45) <=> NH(29) + H2O(48)  # Reaction 173
+  rate-constant: {A: 9.0e+07, b: 1.5, Ea: -0.46}
+  note: |-
+    Reaction index: Chemkin #173; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NNH(47) <=> N2(3) + H(33)  # Reaction 174
+  rate-constant: {A: 3.3e+08, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #174; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NNH(47) + O2(11) <=> HO2(23) + N2(3)  # Reaction 175
+  rate-constant: {A: 5.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #175; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NNH(47) + O(T)(26) <=> OH(45) + N2(3)  # Reaction 176
+  rate-constant: {A: 2.5e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #176; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NNH(47) + O(T)(26) <=> NH(29) + NO(18)  # Reaction 177
+  rate-constant: {A: 7.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #177; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NNH(47) + H(33) <=> H2(46) + N2(3)  # Reaction 178
+  rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #178; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NNH(47) + OH(45) <=> H2O(48) + N2(3)  # Reaction 179
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #179; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NNH(47) + CH3(22) <=> CH4(24) + N2(3)  # Reaction 180
+  rate-constant: {A: 2.5e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #180; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNO(4) + O(T)(26) <=> NO(18) + OH(45)  # Reaction 181
+  rate-constant: {A: 2.5e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #181; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNO(4) + H(33) <=> H2(46) + NO(18)  # Reaction 182
+  rate-constant: {A: 9.0e+11, b: 0.72, Ea: 0.66}
+  note: |-
+    Reaction index: Chemkin #182; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNO(4) + OH(45) <=> NO(18) + H2O(48)  # Reaction 183
+  rate-constant: {A: 1.3e+07, b: 1.9, Ea: -0.95}
+  note: |-
+    Reaction index: Chemkin #183; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNO(4) + O2(11) <=> HO2(23) + NO(18)  # Reaction 184
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 13.0}
+  note: |-
+    Reaction index: Chemkin #184; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CN(32) + O(T)(26) <=> CO(31) + N(34)  # Reaction 185
+  rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #185; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CN(32) + OH(45) <=> NCO(49) + H(33)  # Reaction 186
+  rate-constant: {A: 4.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #186; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CN(32) + H2O(48) <=> HCN(19) + OH(45)  # Reaction 187
+  rate-constant: {A: 8.0e+12, b: 0.0, Ea: 7.46}
+  note: |-
+    Reaction index: Chemkin #187; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CN(32) + O2(11) <=> NCO(49) + O(T)(26)  # Reaction 188
+  rate-constant: {A: 6.14e+12, b: 0.0, Ea: -0.44}
+  note: |-
+    Reaction index: Chemkin #188; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CN(32) + H2(46) <=> HCN(19) + H(33)  # Reaction 189
+  rate-constant: {A: 2.95e+05, b: 2.45, Ea: 2.24}
+  note: |-
+    Reaction index: Chemkin #189; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + O(T)(26) <=> NO(18) + CO(31)  # Reaction 190
+  rate-constant: {A: 2.35e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #190; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + H(33) <=> NH(29) + CO(31)  # Reaction 191
+  rate-constant: {A: 5.4e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #191; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + OH(45) <=> NO(18) + H(33) + CO(31)  # Reaction 192
+  rate-constant: {A: 2.5e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #192; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + N(34) <=> N2(3) + CO(31)  # Reaction 193
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #193; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + O2(11) <=> NO(18) + CO2(44)  # Reaction 194
+  rate-constant: {A: 2.0e+12, b: 0.0, Ea: 20.0}
+  note: |-
+    Reaction index: Chemkin #194; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + NO(18) <=> N2O(13) + CO(31)  # Reaction 195
+  rate-constant: {A: 1.9e+17, b: -1.52, Ea: 0.74}
+  note: |-
+    Reaction index: Chemkin #195; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + NO(18) <=> N2(3) + CO2(44)  # Reaction 196
+  rate-constant: {A: 3.8e+18, b: -2.0, Ea: 0.8}
+  note: |-
+    Reaction index: Chemkin #196; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCN(19) + O(T)(26) <=> NCO(49) + H(33)  # Reaction 197
+  rate-constant: {A: 2.03e+04, b: 2.64, Ea: 4.98}
+  note: |-
+    Reaction index: Chemkin #197; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCN(19) + O(T)(26) <=> NH(29) + CO(31)  # Reaction 198
+  rate-constant: {A: 5070.0, b: 2.64, Ea: 4.98}
+  note: |-
+    Reaction index: Chemkin #198; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCN(19) + O(T)(26) <=> CN(32) + OH(45)  # Reaction 199
+  rate-constant: {A: 3.91e+09, b: 1.58, Ea: 26.6}
+  note: |-
+    Reaction index: Chemkin #199; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCN(19) + OH(45) <=> HOCN(6) + H(33)  # Reaction 200
+  rate-constant: {A: 1.1e+06, b: 2.03, Ea: 13.37}
+  note: |-
+    Reaction index: Chemkin #200; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCN(19) + OH(45) <=> HNCO(21) + H(33)  # Reaction 201
+  rate-constant: {A: 4400.0, b: 2.26, Ea: 6.4}
+  note: |-
+    Reaction index: Chemkin #201; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCN(19) + OH(45) <=> NH2(37) + CO(31)  # Reaction 202
+  rate-constant: {A: 160.0, b: 2.56, Ea: 9.0}
+  note: |-
+    Reaction index: Chemkin #202; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H2CN(51) + N(34) <=> N2(3) + CH2(T)(28)  # Reaction 203
+  rate-constant: {A: 6.0e+13, b: 0.0, Ea: 0.4}
+  note: |-
+    Reaction index: Chemkin #203; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C(T)(1) + N2(3) <=> CN(32) + N(34)  # Reaction 204
+  rate-constant: {A: 6.3e+13, b: 0.0, Ea: 46.02}
+  note: |-
+    Reaction index: Chemkin #204; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + N2(3) <=> HCN(19) + N(34)  # Reaction 205
+  rate-constant: {A: 3.12e+09, b: 0.88, Ea: 20.13}
+  note: |-
+    Reaction index: Chemkin #205; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + N2(3) <=> HCN(19) + NH(29)  # Reaction 206
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 74.0}
+  note: |-
+    Reaction index: Chemkin #206; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + N2(3) <=> NH(29) + HCN(19)  # Reaction 207
+  rate-constant: {A: 1.0e+11, b: 0.0, Ea: 65.0}
+  note: |-
+    Reaction index: Chemkin #207; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C(T)(1) + NO(18) <=> CN(32) + O(T)(26)  # Reaction 208
+  rate-constant: {A: 1.9e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #208; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C(T)(1) + NO(18) <=> CO(31) + N(34)  # Reaction 209
+  rate-constant: {A: 2.9e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #209; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + NO(18) <=> HCN(19) + O(T)(26)  # Reaction 210
+  rate-constant: {A: 4.1e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #210; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + NO(18) <=> H(33) + NCO(49)  # Reaction 211
+  rate-constant: {A: 1.62e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #211; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + NO(18) <=> N(34) + HCO(43)  # Reaction 212
+  rate-constant: {A: 2.46e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #212; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + NO(18) <=> H(33) + HNCO(21)  # Reaction 213
+  rate-constant: {A: 3.1e+17, b: -1.38, Ea: 1.27}
+  note: |-
+    Reaction index: Chemkin #213; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + NO(18) <=> OH(45) + HCN(19)  # Reaction 214
+  rate-constant: {A: 2.9e+14, b: -0.69, Ea: 0.76}
+  note: |-
+    Reaction index: Chemkin #214; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + NO(18) <=> H(33) + HCNO(7)  # Reaction 215
+  rate-constant: {A: 3.8e+13, b: -0.36, Ea: 0.58}
+  note: |-
+    Reaction index: Chemkin #215; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + NO(18) <=> H(33) + HNCO(21)  # Reaction 216
+  rate-constant: {A: 3.1e+17, b: -1.38, Ea: 1.27}
+  note: |-
+    Reaction index: Chemkin #216; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + NO(18) <=> OH(45) + HCN(19)  # Reaction 217
+  rate-constant: {A: 2.9e+14, b: -0.69, Ea: 0.76}
+  note: |-
+    Reaction index: Chemkin #217; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + NO(18) <=> H(33) + HCNO(7)  # Reaction 218
+  rate-constant: {A: 3.8e+13, b: -0.36, Ea: 0.58}
+  note: |-
+    Reaction index: Chemkin #218; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + NO(18) <=> HCN(19) + H2O(48)  # Reaction 219
+  rate-constant: {A: 9.6e+13, b: 0.0, Ea: 28.8}
+  note: |-
+    Reaction index: Chemkin #219; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + NO(18) <=> H2CN(51) + OH(45)  # Reaction 220
+  rate-constant: {A: 1.0e+12, b: 0.0, Ea: 21.75}
+  note: |-
+    Reaction index: Chemkin #220; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCNN(8) + O(T)(26) <=> CO(31) + H(33) + N2(3)  # Reaction 221
+  rate-constant: {A: 2.2e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #221; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCNN(8) + O(T)(26) <=> HCN(19) + NO(18)  # Reaction 222
+  rate-constant: {A: 2.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #222; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCNN(8) + O2(11) <=> O(T)(26) + HCO(43) + N2(3)  # Reaction 223
+  rate-constant: {A: 1.2e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #223; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCNN(8) + OH(45) <=> H(33) + HCO(43) + N2(3)  # Reaction 224
+  rate-constant: {A: 1.2e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #224; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCNN(8) + H(33) <=> CH2(T)(28) + N2(3)  # Reaction 225
+  rate-constant: {A: 1.0e+14, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #225; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNCO(21) + O(T)(26) <=> NH(29) + CO2(44)  # Reaction 226
+  rate-constant: {A: 9.8e+07, b: 1.41, Ea: 8.5}
+  note: |-
+    Reaction index: Chemkin #226; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNCO(21) + O(T)(26) <=> HNO(4) + CO(31)  # Reaction 227
+  rate-constant: {A: 1.5e+08, b: 1.57, Ea: 44.0}
+  note: |-
+    Reaction index: Chemkin #227; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNCO(21) + O(T)(26) <=> NCO(49) + OH(45)  # Reaction 228
+  rate-constant: {A: 2.2e+06, b: 2.11, Ea: 11.4}
+  note: |-
+    Reaction index: Chemkin #228; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNCO(21) + H(33) <=> NH2(37) + CO(31)  # Reaction 229
+  rate-constant: {A: 2.25e+07, b: 1.7, Ea: 3.8}
+  note: |-
+    Reaction index: Chemkin #229; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNCO(21) + H(33) <=> H2(46) + NCO(49)  # Reaction 230
+  rate-constant: {A: 1.05e+05, b: 2.5, Ea: 13.3}
+  note: |-
+    Reaction index: Chemkin #230; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNCO(21) + OH(45) <=> NCO(49) + H2O(48)  # Reaction 231
+  rate-constant: {A: 3.3e+07, b: 1.5, Ea: 3.6}
+  note: |-
+    Reaction index: Chemkin #231; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNCO(21) + OH(45) <=> NH2(37) + CO2(44)  # Reaction 232
+  rate-constant: {A: 3.3e+06, b: 1.5, Ea: 3.6}
+  note: |-
+    Reaction index: Chemkin #232; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCNO(7) + H(33) <=> H(33) + HNCO(21)  # Reaction 233
+  rate-constant: {A: 2.1e+15, b: -0.69, Ea: 2.85}
+  note: |-
+    Reaction index: Chemkin #233; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCNO(7) + H(33) <=> OH(45) + HCN(19)  # Reaction 234
+  rate-constant: {A: 2.7e+11, b: 0.18, Ea: 2.12}
+  note: |-
+    Reaction index: Chemkin #234; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCNO(7) + H(33) <=> NH2(37) + CO(31)  # Reaction 235
+  rate-constant: {A: 1.7e+14, b: -0.75, Ea: 2.89}
+  note: |-
+    Reaction index: Chemkin #235; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HOCN(6) + H(33) <=> H(33) + HNCO(21)  # Reaction 236
+  rate-constant: {A: 2.0e+07, b: 2.0, Ea: 2.0}
+  note: |-
+    Reaction index: Chemkin #236; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCCO(27) + NO(18) <=> HCNO(7) + CO(31)  # Reaction 237
+  rate-constant: {A: 9.0e+12, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #237; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + N(34) <=> H2CN(51) + H(33)  # Reaction 238
+  rate-constant: {A: 6.1e+14, b: -0.31, Ea: 0.29}
+  note: |-
+    Reaction index: Chemkin #238; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + N(34) <=> HCN(19) + H2(46)  # Reaction 239
+  rate-constant: {A: 3.7e+12, b: 0.15, Ea: -0.09}
+  note: |-
+    Reaction index: Chemkin #239; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH3(36) + H(33) <=> NH2(37) + H2(46)  # Reaction 240
+  rate-constant: {A: 5.4e+05, b: 2.4, Ea: 9.915}
+  note: |-
+    Reaction index: Chemkin #240; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH3(36) + OH(45) <=> NH2(37) + H2O(48)  # Reaction 241
+  rate-constant: {A: 5.0e+07, b: 1.6, Ea: 0.955}
+  note: |-
+    Reaction index: Chemkin #241; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH3(36) + O(T)(26) <=> NH2(37) + OH(45)  # Reaction 242
+  rate-constant: {A: 9.4e+06, b: 1.94, Ea: 6.46}
+  note: |-
+    Reaction index: Chemkin #242; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NH(29) + CO2(44) <=> HNO(4) + CO(31)  # Reaction 243
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 14.35}
+  note: |-
+    Reaction index: Chemkin #243; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CN(32) + NO2(12) <=> NCO(49) + NO(18)  # Reaction 244
+  rate-constant: {A: 6.16e+15, b: -0.752, Ea: 0.345}
+  note: |-
+    Reaction index: Chemkin #244; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + NO2(12) <=> N2O(13) + CO2(44)  # Reaction 245
+  rate-constant: {A: 3.25e+12, b: 0.0, Ea: -0.705}
+  note: |-
+    Reaction index: Chemkin #245; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N(34) + CO2(44) <=> NO(18) + CO(31)  # Reaction 246
+  rate-constant: {A: 3.0e+12, b: 0.0, Ea: 11.3}
+  note: |-
+    Reaction index: Chemkin #246; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH3(22) => H(33) + H2(46) + CO(31)  # Reaction 247
+  rate-constant: {A: 3.37e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #247; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H4(15) <=> H(33) + CH2CHO(14)  # Reaction 248
+  rate-constant: {A: 6.7e+06, b: 1.83, Ea: 0.22}
+  note: |-
+    Reaction index: Chemkin #248; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + C2H5(40) <=> H(33) + CH3CHO(38)  # Reaction 249
+  rate-constant: {A: 1.096e+14, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #249; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH3(22) => H2(46) + CH2O(9)  # Reaction 250
+  rate-constant: {A: 8.0e+09, b: 0.5, Ea: -1.755}
+  note: |-
+    Reaction index: Chemkin #250; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + O2(11) => H(33) + H(33) + CO2(44)  # Reaction 251
+  rate-constant: {A: 5.8e+12, b: 0.0, Ea: 1.5}
+  note: |-
+    Reaction index: Chemkin #251; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + O2(11) <=> O(T)(26) + CH2O(9)  # Reaction 252
+  rate-constant: {A: 2.4e+12, b: 0.0, Ea: 1.5}
+  note: |-
+    Reaction index: Chemkin #252; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + CH2(T)(28) => H(33) + H(33) + C2H2(20)  # Reaction 253
+  rate-constant: {A: 2.0e+14, b: 0.0, Ea: 10.989}
+  note: |-
+    Reaction index: Chemkin #253; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + H2O(48) => H2(46) + CH2O(9)  # Reaction 254
+  rate-constant: {A: 6.82e+10, b: 0.25, Ea: -0.935}
+  note: |-
+    Reaction index: Chemkin #254; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C2H3(42) + O2(11) <=> O(T)(26) + CH2CHO(14)  # Reaction 255
+  rate-constant: {A: 3.03e+11, b: 0.29, Ea: 0.011}
+  note: |-
+    Reaction index: Chemkin #255; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C2H3(42) + O2(11) <=> HO2(23) + C2H2(20)  # Reaction 256
+  rate-constant: {A: 1.337e+06, b: 1.61, Ea: -0.384}
+  note: |-
+    Reaction index: Chemkin #256; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH3CHO(38) <=> OH(45) + CH2CHO(14)  # Reaction 257
+  rate-constant: {A: 2.92e+12, b: 0.0, Ea: 1.808}
+  note: |-
+    Reaction index: Chemkin #257; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH3CHO(38) => OH(45) + CH3(22) + CO(31)  # Reaction 258
+  rate-constant: {A: 2.92e+12, b: 0.0, Ea: 1.808}
+  note: |-
+    Reaction index: Chemkin #258; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O2(11) + CH3CHO(38) => HO2(23) + CH3(22) + CO(31)  # Reaction 259
+  rate-constant: {A: 3.01e+13, b: 0.0, Ea: 39.15}
+  note: |-
+    Reaction index: Chemkin #259; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3CHO(38) <=> CH2CHO(14) + H2(46)  # Reaction 260
+  rate-constant: {A: 2.05e+09, b: 1.16, Ea: 2.405}
+  note: |-
+    Reaction index: Chemkin #260; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3CHO(38) => CH3(22) + H2(46) + CO(31)  # Reaction 261
+  rate-constant: {A: 2.05e+09, b: 1.16, Ea: 2.405}
+  note: |-
+    Reaction index: Chemkin #261; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH3CHO(38) => CH3(22) + H2O(48) + CO(31)  # Reaction 262
+  rate-constant: {A: 2.343e+10, b: 0.73, Ea: -1.113}
+  note: |-
+    Reaction index: Chemkin #262; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HO2(23) + CH3CHO(38) => CH3(22) + H2O2(16) + CO(31)  # Reaction 263
+  rate-constant: {A: 3.01e+12, b: 0.0, Ea: 11.923}
+  note: |-
+    Reaction index: Chemkin #263; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + CH3CHO(38) => CH3(22) + CH4(24) + CO(31)  # Reaction 264
+  rate-constant: {A: 2.72e+06, b: 1.77, Ea: 5.92}
+  note: |-
+    Reaction index: Chemkin #264; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CH2CHO(14) => H(33) + CH2(T)(28) + CO2(44)  # Reaction 265
+  rate-constant: {A: 1.5e+14, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #265; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O2(11) + CH2CHO(14) => OH(45) + CO(31) + CH2O(9)  # Reaction 266
+  rate-constant: {A: 1.81e+10, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #266; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O2(11) + CH2CHO(14) => OH(45) + HCO(43) + HCO(43)  # Reaction 267
+  rate-constant: {A: 2.35e+10, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #267; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2CHO(14) <=> CH3(22) + HCO(43)  # Reaction 268
+  rate-constant: {A: 2.2e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #268; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2CHO(14) <=> CH2CO(50) + H2(46)  # Reaction 269
+  rate-constant: {A: 1.1e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #269; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH2CHO(14) <=> H2O(48) + CH2CO(50)  # Reaction 270
+  rate-constant: {A: 1.2e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #270; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH2CHO(14) <=> HCO(43) + CH2OH(10)  # Reaction 271
+  rate-constant: {A: 3.01e+13, b: 0.0, Ea: 0.0}
+  note: |-
+    Reaction index: Chemkin #271; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + O(T)(26) + M <=> O2(11) + M  # Reaction 272
+  type: three-body
+  rate-constant: {A: 1.2e+17, b: -1.0, Ea: 0.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 3.6, C2H6(39): 3.0, H2O(48): 15.4,
+    H2(46): 2.4}
+  note: |-
+    Reaction index: Chemkin #272; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + H(33) + M <=> OH(45) + M  # Reaction 273
+  type: three-body
+  rate-constant: {A: 5.0e+17, b: -1.0, Ea: 0.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #273; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + O2(11) + M <=> HO2(23) + M  # Reaction 274
+  type: three-body
+  rate-constant: {A: 2.8e+18, b: -0.86, Ea: 0.0}
+  efficiencies: {CO2(44): 1.5, C2H6(39): 1.5, H2O(48): 0.0, O2(11): 0.0,
+    N2(3): 0.0}
+  note: |-
+    Reaction index: Chemkin #274; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + H(33) + M <=> H2(46) + M  # Reaction 275
+  type: three-body
+  rate-constant: {A: 1.0e+18, b: -1.0, Ea: 0.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 0.0, C2H6(39): 3.0, H2O(48): 0.0,
+    H2(46): 0.0}
+  note: |-
+    Reaction index: Chemkin #275; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + OH(45) + M <=> H2O(48) + M  # Reaction 276
+  type: three-body
+  rate-constant: {A: 2.2e+22, b: -2.0, Ea: 0.0}
+  efficiencies: {C2H6(39): 3.0, CH4(24): 2.0, H2(46): 0.73, H2O(48): 3.65}
+  note: |-
+    Reaction index: Chemkin #276; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCO(43) + M <=> H(33) + CO(31) + M  # Reaction 277
+  type: three-body
+  rate-constant: {A: 1.87e+17, b: -1.0, Ea: 17.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 0.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #277; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NO(18) + O(T)(26) + M <=> NO2(12) + M  # Reaction 278
+  type: three-body
+  rate-constant: {A: 1.06e+20, b: -1.41, Ea: 0.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #278; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NNH(47) + M <=> N2(3) + H(33) + M  # Reaction 279
+  type: three-body
+  rate-constant: {A: 1.3e+14, b: -0.11, Ea: 4.98}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #279; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + NO(18) + M <=> HNO(4) + M  # Reaction 280
+  type: three-body
+  rate-constant: {A: 4.48e+19, b: -1.32, Ea: 0.74}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #280; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: NCO(49) + M <=> N(34) + CO(31) + M  # Reaction 281
+  type: three-body
+  rate-constant: {A: 3.1e+14, b: 0.0, Ea: 54.05}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #281; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HCN(19) + M <=> H(33) + CN(32) + M  # Reaction 282
+  type: three-body
+  rate-constant: {A: 1.04e+29, b: -3.3, Ea: 126.6}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #282; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: HNCO(21) + M <=> NH(29) + CO(31) + M  # Reaction 283
+  type: three-body
+  rate-constant: {A: 1.18e+16, b: 0.0, Ea: 84.72}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #283; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: O(T)(26) + CO(31) (+M) <=> CO2(44) (+M)  # Reaction 284
+  type: falloff
+  low-P-rate-constant: {A: 6.02e+14, b: 0.0, Ea: 3.0}
+  high-P-rate-constant: {A: 1.8e+10, b: 0.0, Ea: 2.385}
+  efficiencies: {CH4(24): 2.0, CO2(44): 3.5, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0, O2(11): 6.0}
+  note: |-
+    Reaction index: Chemkin #284; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: N2O(13) (+M) <=> N2(3) + O(T)(26) (+M)  # Reaction 285
+  type: falloff
+  low-P-rate-constant: {A: 6.37e+14, b: 0.0, Ea: 56.64}
+  high-P-rate-constant: {A: 7.91e+10, b: 0.0, Ea: 56.02}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #285; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + HCN(19) (+M) <=> H2CN(51) (+M)  # Reaction 286
+  type: falloff
+  low-P-rate-constant: {A: 1.4e+26, b: -3.4, Ea: 1.9}
+  high-P-rate-constant: {A: 3.3e+13, b: 0.0, Ea: 0.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #286; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2(T)(28) (+M) <=> CH3(22) (+M)  # Reaction 287
+  type: falloff
+  low-P-rate-constant: {A: 1.04e+26, b: -2.76, Ea: 1.6}
+  high-P-rate-constant: {A: 6.0e+14, b: 0.0, Ea: 0.0}
+  Troe: {A: 0.562, T3: 91.0, T1: 5840.0, T2: 8550.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #287; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3(22) (+M) <=> CH4(24) (+M)  # Reaction 288
+  type: falloff
+  low-P-rate-constant: {A: 2.62e+33, b: -4.76, Ea: 2.44}
+  high-P-rate-constant: {A: 1.39e+16, b: -0.534, Ea: 0.536}
+  Troe: {A: 0.783, T3: 74.0, T1: 2940.0, T2: 6960.0}
+  efficiencies: {CH4(24): 3.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #288; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + HCO(43) (+M) <=> CH2O(9) (+M)  # Reaction 289
+  type: falloff
+  low-P-rate-constant: {A: 2.47e+24, b: -2.57, Ea: 0.425}
+  high-P-rate-constant: {A: 1.09e+12, b: 0.48, Ea: -0.26}
+  Troe: {A: 0.7824, T3: 271.0, T1: 2760.0, T2: 6570.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #289; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2O(9) (+M) <=> CH2OH(10) (+M)  # Reaction 290
+  type: falloff
+  low-P-rate-constant: {A: 1.27e+32, b: -4.82, Ea: 6.53}
+  high-P-rate-constant: {A: 5.4e+11, b: 0.454, Ea: 3.6}
+  Troe: {A: 0.7187, T3: 103.0, T1: 1290.0, T2: 4160.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #290; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2O(9) (+M) <=> CH3O(41) (+M)  # Reaction 291
+  type: falloff
+  low-P-rate-constant: {A: 2.2e+30, b: -4.8, Ea: 5.56}
+  high-P-rate-constant: {A: 5.4e+11, b: 0.454, Ea: 2.6}
+  Troe: {A: 0.758, T3: 94.0, T1: 1560.0, T2: 4200.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #291; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2OH(10) (+M) <=> CH3OH(5) (+M)  # Reaction 292
+  type: falloff
+  low-P-rate-constant: {A: 4.36e+31, b: -4.65, Ea: 5.08}
+  high-P-rate-constant: {A: 1.055e+12, b: 0.5, Ea: 0.086}
+  Troe: {A: 0.6, T3: 100.0, T1: 9.0e+04, T2: 1.0e+04}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #292; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH3O(41) (+M) <=> CH3OH(5) (+M)  # Reaction 293
+  type: falloff
+  low-P-rate-constant: {A: 4.66e+41, b: -7.44, Ea: 14.08}
+  high-P-rate-constant: {A: 2.43e+12, b: 0.515, Ea: 0.05}
+  Troe: {A: 0.7, T3: 100.0, T1: 9.0e+04, T2: 1.0e+04}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #293; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H(25) (+M) <=> C2H2(20) (+M)  # Reaction 294
+  type: falloff
+  low-P-rate-constant: {A: 3.75e+33, b: -4.8, Ea: 1.9}
+  high-P-rate-constant: {A: 1.0e+17, b: -1.0, Ea: 0.0}
+  Troe: {A: 0.6464, T3: 132.0, T1: 1320.0, T2: 5570.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #294; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H2(20) (+M) <=> C2H3(42) (+M)  # Reaction 295
+  type: falloff
+  low-P-rate-constant: {A: 3.8e+40, b: -7.27, Ea: 7.22}
+  high-P-rate-constant: {A: 5.6e+12, b: 0.0, Ea: 2.4}
+  Troe: {A: 0.7507, T3: 98.5, T1: 1300.0, T2: 4170.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #295; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H3(42) (+M) <=> C2H4(15) (+M)  # Reaction 296
+  type: falloff
+  low-P-rate-constant: {A: 1.4e+30, b: -3.86, Ea: 3.32}
+  high-P-rate-constant: {A: 6.08e+12, b: 0.27, Ea: 0.28}
+  Troe: {A: 0.782, T3: 208.0, T1: 2660.0, T2: 6100.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #296; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H4(15) (+M) <=> C2H5(40) (+M)  # Reaction 297
+  type: falloff
+  low-P-rate-constant: {A: 6.0e+41, b: -7.62, Ea: 6.97}
+  high-P-rate-constant: {A: 5.4e+11, b: 0.454, Ea: 1.82}
+  Troe: {A: 0.9753, T3: 210.0, T1: 984.0, T2: 4370.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #297; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + C2H5(40) (+M) <=> C2H6(39) (+M)  # Reaction 298
+  type: falloff
+  low-P-rate-constant: {A: 1.99e+41, b: -7.08, Ea: 6.685}
+  high-P-rate-constant: {A: 5.21e+17, b: -0.99, Ea: 1.58}
+  Troe: {A: 0.8422, T3: 125.0, T1: 2220.0, T2: 6880.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #298; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H2(46) + CO(31) (+M) <=> CH2O(9) (+M)  # Reaction 299
+  type: falloff
+  low-P-rate-constant: {A: 5.07e+27, b: -3.42, Ea: 84.35}
+  high-P-rate-constant: {A: 4.3e+07, b: 1.5, Ea: 79.6}
+  Troe: {A: 0.932, T3: 197.0, T1: 1540.0, T2: 1.03e+04}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #299; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + OH(45) (+M) <=> H2O2(16) (+M)  # Reaction 300
+  type: falloff
+  low-P-rate-constant: {A: 2.3e+18, b: -0.9, Ea: -1.7}
+  high-P-rate-constant: {A: 7.4e+13, b: -0.37, Ea: 0.0}
+  Troe: {A: 0.7346, T3: 94.0, T1: 1760.0, T2: 5180.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #300; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: OH(45) + CH3(22) (+M) <=> CH3OH(5) (+M)  # Reaction 301
+  type: falloff
+  low-P-rate-constant: {A: 4.0e+36, b: -5.92, Ea: 3.14}
+  high-P-rate-constant: {A: 2.79e+18, b: -1.43, Ea: 1.33}
+  Troe: {A: 0.412, T3: 195.0, T1: 5900.0, T2: 6390.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #301; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + CO(31) (+M) <=> HCCO(27) (+M)  # Reaction 302
+  type: falloff
+  low-P-rate-constant: {A: 2.69e+28, b: -3.74, Ea: 1.936}
+  high-P-rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
+  Troe: {A: 0.5757, T3: 237.0, T1: 1650.0, T2: 5070.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #302; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(T)(28) + CO(31) (+M) <=> CH2CO(50) (+M)  # Reaction 303
+  type: falloff
+  low-P-rate-constant: {A: 2.69e+33, b: -5.11, Ea: 7.095}
+  high-P-rate-constant: {A: 8.1e+11, b: 0.5, Ea: 4.51}
+  Troe: {A: 0.5907, T3: 275.0, T1: 1230.0, T2: 5180.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #303; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH2(S)(2) + H2O(48) (+M) <=> CH3OH(5) (+M)  # Reaction 304
+  type: falloff
+  low-P-rate-constant: {A: 1.88e+38, b: -6.36, Ea: 5.04}
+  high-P-rate-constant: {A: 4.82e+17, b: -1.16, Ea: 1.145}
+  Troe: {A: 0.6027, T3: 208.0, T1: 3920.0, T2: 1.02e+04}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #304; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + CH3(22) (+M) <=> C2H6(39) (+M)  # Reaction 305
+  type: falloff
+  low-P-rate-constant: {A: 3.4e+41, b: -7.03, Ea: 2.762}
+  high-P-rate-constant: {A: 6.77e+16, b: -1.18, Ea: 0.654}
+  Troe: {A: 0.619, T3: 73.2, T1: 1180.0, T2: 1.0e+04}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #305; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: C2H4(15) (+M) <=> H2(46) + C2H2(20) (+M)  # Reaction 306
+  type: falloff
+  low-P-rate-constant: {A: 1.58e+51, b: -9.3, Ea: 97.8}
+  high-P-rate-constant: {A: 8.0e+12, b: 0.44, Ea: 86.77}
+  Troe: {A: 0.7345, T3: 180.0, T1: 1040.0, T2: 5420.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #306; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + N2(3) (+M) <=> HCNN(8) (+M)  # Reaction 307
+  type: falloff
+  low-P-rate-constant: {A: 1.3e+25, b: -3.16, Ea: 0.74}
+  high-P-rate-constant: {A: 3.1e+12, b: 0.15, Ea: 0.0}
+  Troe: {A: 0.667, T3: 235.0, T1: 2120.0, T2: 4540.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #307; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH(30) + H2(46) (+M) <=> CH3(22) (+M)  # Reaction 308
+  type: falloff
+  low-P-rate-constant: {A: 4.82e+25, b: -2.8, Ea: 0.59}
+  high-P-rate-constant: {A: 1.97e+12, b: 0.43, Ea: -0.37}
+  Troe: {A: 0.578, T3: 122.0, T1: 2540.0, T2: 9360.0}
+  efficiencies: {H2O(48): 6.0, H2(46): 2.0, CH4(24): 2.0, CO2(44): 2.0,
+    C2H6(39): 3.0}
+  note: |-
+    Reaction index: Chemkin #308; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: H(33) + CH2CO(50) (+M) <=> CH2CHO(14) (+M)  # Reaction 309
+  type: falloff
+  low-P-rate-constant: {A: 1.012e+42, b: -7.63, Ea: 3.854}
+  high-P-rate-constant: {A: 4.865e+11, b: 0.422, Ea: -1.755}
+  Troe: {A: 0.465, T3: 201.0, T1: 1770.0, T2: 5330.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #309; RMG #-1
+    Library reaction: GRI-Mech3.0-N
+- equation: CH3(22) + C2H5(40) (+M) <=> C3H8(35) (+M)  # Reaction 310
+  type: falloff
+  low-P-rate-constant: {A: 2.71e+74, b: -16.82, Ea: 13.065}
+  high-P-rate-constant: {A: 9.43e+12, b: 0.0, Ea: 0.0}
+  Troe: {A: 0.1527, T3: 291.0, T1: 2740.0, T2: 7750.0}
+  efficiencies: {CH4(24): 2.0, CO2(44): 2.0, C2H6(39): 3.0, H2O(48): 6.0,
+    H2(46): 2.0}
+  note: |-
+    Reaction index: Chemkin #310; RMG #-1
+    Library reaction: GRI-Mech3.0-N

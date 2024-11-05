@@ -1,0 +1,464 @@
+- equation: C1=CCC=C1.[CH]1C=CC=C1>>[CH]1CC=CC1C1C=CC=C1
+  note: 'Reaction index: Chemkin #1; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 288.0
+    Ea: 8.7
+    b: 2.8
+- equation: C1=CCC=C1.[CH]1C=CC=C1>>[CH]1C=CCC1C1C=CC=C1
+  note: 'Reaction index: Chemkin #2; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 288.0
+    Ea: 3.3
+    b: 2.74
+- equation: '[CH]1C=CCC1C1C=CC=C1>>[CH]1C=CC2C1C1CC=CC21'
+  note: 'Reaction index: Chemkin #3; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 189000000000.0
+    Ea: 15.4
+    b: 0.29
+- equation: '[CH]1C=CC2C1C1CC=CC21>>[CH]1C=CC=CC2CC=CC12'
+  note: 'Reaction index: Chemkin #4; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 351000000000.0
+    Ea: 29.1
+    b: 0.58
+- equation: '[CH]1C=CC=CC2CC=CC12>>[CH]1C=CC=CC=CC=CC1'
+  note: 'Reaction index: Chemkin #5; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 83900000000.0
+    Ea: 36.4
+    b: 0.91
+- equation: '[CH]1C=CC=CC=CC=CC1>>[CH]1C=CCC2C=CC=CC12'
+  note: 'Reaction index: Chemkin #6; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 6250000000.0
+    Ea: 6.2
+    b: 0.76
+- equation: '[CH]1CC=CC1C1C=CC=C1>>[CH]1C=CC2C1C1CC=CC21'
+  note: 'Reaction index: Chemkin #7; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 343000000000.0
+    Ea: 8.5
+    b: 0.21
+- equation: C1=CCC2C=CC=CC2=C1.[H]>>[CH]1C=CCC2C=CC=CC12
+  note: 'Reaction index: Chemkin #8; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 90900000.0
+    Ea: 2.9
+    b: 1.71
+- equation: '[CH]1C=CCC2C=CC=CC12>>C=CC=CC1[CH]C=CC=C1'
+  note: 'Reaction index: Chemkin #9; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 87600000000.0
+    Ea: 24.5
+    b: 0.78
+- equation: C=CC=CC1[CH]C=CC=C1>>c1ccccc1.[CH]=CC=C
+  note: 'Reaction index: Chemkin #10; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 7140000000000.0
+    Ea: 22.9
+    b: 0.52
+- equation: C=CC=Cc1ccccc1.[H]>>C=CC=CC1[CH]C=CC=C1
+  note: 'Reaction index: Chemkin #11; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 8810000.0
+    Ea: 5.9
+    b: 1.95
+- equation: '[CH]1C=CCC1C1C=CC=C1>>C=CC=C[CH]C1C=CC=C1'
+  note: 'Reaction index: Chemkin #12; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 102000000000.0
+    Ea: 46.1
+    b: 0.85
+- equation: '[CH]1C=CCC1C1C=CC=C1>>[CH]1C=CCC1C1=CC=CC1'
+  note: 'Reaction index: Chemkin #13; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 112000000.0
+    Ea: 22.7
+    b: 1.64
+- equation: '[CH]1C=CCC1C1=CC=CC1>>C=CC=CC=C1[CH]C=CC1'
+  note: 'Reaction index: Chemkin #14; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 5290000000.0
+    Ea: 31.2
+    b: 1.04
+- equation: C=CC=CC=C1[CH]C=CC1>>[CH]1C=CCC12C=CC=CC2
+  note: 'Reaction index: Chemkin #15; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 43600000000.0
+    Ea: 32.2
+    b: 0.44
+- equation: '[CH]1C=CCC12C=CC=CC2>>C=CC=CC1=CC=C[CH]C1'
+  note: 'Reaction index: Chemkin #16; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 54700000000.0
+    Ea: 29.0
+    b: 0.79
+- equation: C=CC=CC1=CC=C[CH]C1>>[CH]1C=CCC2=CC=CCC12
+  note: 'Reaction index: Chemkin #17; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 669000000000.0
+    Ea: 40.0
+    b: 0.22
+- equation: C=CC=C[CH]C1C=CC=C1>>C=CC=CC=C1[CH]C=CC1
+  note: 'Reaction index: Chemkin #18; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 128000000.0
+    Ea: 18.4
+    b: 1.55
+- equation: C=CC=C[CH]C1C=CC=C1>>CC=CC=CC1=CC=C[CH]1
+  note: 'Reaction index: Chemkin #19; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 0.107
+    Ea: 29.6
+    b: 3.67
+- equation: CC=CC=CC1=CC=C[CH]1>>CC1C=CC=C2C=C[CH]C21
+  note: 'Reaction index: Chemkin #20; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 79000000000.0
+    Ea: 21.1
+    b: 0.29
+- equation: C1=CC2=CC=CC2C=C1.[CH3]>>CC1C=CC=C2C=C[CH]C21
+  note: 'Reaction index: Chemkin #21; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 2480.0
+    Ea: -0.9
+    b: 2.89
+- equation: C=CC=C[CH]C1C=CC=C1>>[CH]1C=CC2C=CC=CCC12
+  note: 'Reaction index: Chemkin #22; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 119000000000.0
+    Ea: 16.7
+    b: 0.08
+- equation: C1=CC2=CC=CC2C=C1>>C1=Cc2ccccc2C1
+  note: 'Reaction index: Chemkin #23; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 5200000000.0
+    Ea: 6.8
+    b: 0.96
+- equation: '[CH]1C=CC2C=CC=CCC12>>[CH]1C=CC=CC=CC=CC1'
+  note: 'Reaction index: Chemkin #24; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 12700000000.0
+    Ea: 40.7
+    b: 1.01
+- equation: '[CH]1C=CC2C=CC=CCC12>>C1=CCC2C=CC=C2C=C1.[H]'
+  note: 'Reaction index: Chemkin #25; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1490000000.0
+    Ea: 38.3
+    b: 1.41
+- equation: C1=CCC2=CC=CCC2=C1.[H]>>[CH]1C=CCC2=CC=CCC12
+  note: 'Reaction index: Chemkin #26; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 90900000.0
+    Ea: 2.9
+    b: 1.71
+- equation: C=CC=CC1=CC=C[CH]C1>>CC=C[CH]c1ccccc1
+  note: 'Reaction index: Chemkin #27; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 250000.0
+    Ea: 24.0
+    b: 1.95
+- equation: C=CC=Cc1ccccc1.[H]>>CC=C[CH]c1ccccc1
+  note: 'Reaction index: Chemkin #28; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 240000000.0
+    Ea: 1.6
+    b: 1.58
+- equation: C1=CC=C2C=CCC2C=C1.[H]>>[CH]1C=CC=CC2CC=CC12
+  note: 'Reaction index: Chemkin #29; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 126000000.0
+    Ea: 1.9
+    b: 1.63
+- equation: '[CH]1C=CCC12C=CC=CC2>>[CH]1C=CCC23CC=CC2C13'
+  note: 'Reaction index: Chemkin #30; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 248000000000.0
+    Ea: 7.2
+    b: 0.26
+- equation: '[CH]1C=CCC23CC=CC2C13>>C1=CC[C]2CC=CC2C=C1'
+  note: 'Reaction index: Chemkin #31; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 2430000000000.0
+    Ea: 18.2
+    b: 0.31
+- equation: CC1C=CC=C2C=C[CH]C21>>CC1C=CC=C2C=CC[C]21
+  note: 'Reaction index: Chemkin #32; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 6070000.0
+    Ea: 26.1
+    b: 2.0
+- equation: C1=Cc2ccccc2C1.[CH3]>>CC1C=CC=C2C=CC[C]21
+  note: 'Reaction index: Chemkin #33; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 643.0
+    Ea: 8.6
+    b: 2.8
+- equation: C=CC=CC=C1[CH]C=CC1>>CC=CC=CC1=CC=C[CH]1
+  note: 'Reaction index: Chemkin #34; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 259000000.0
+    Ea: 26.4
+    b: 1.01
+- equation: C1=CC[C]2CC=CC2C=C1>>[CH]1C=CC=C2C=CCC2C1
+  note: 'Reaction index: Chemkin #35; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1670000000.0
+    Ea: 22.4
+    b: 1.14
+- equation: C1=CC[C]2CC=CC2C=C1>>[CH]1C=CC2C=CC=CCC12
+  note: 'Reaction index: Chemkin #36; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 14600000.0
+    Ea: 31.6
+    b: 1.66
+- equation: CC=C[CH]c1ccccc1>>CC1C=CC2=CC=C[CH]C21
+  note: 'Reaction index: Chemkin #37; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 100000000000.0
+    Ea: 32.4
+    b: 0.41
+- equation: CC1C=CC2=CC=C[CH]C21>>C1=CC2=CC=CC2C=C1.[CH3]
+  note: 'Reaction index: Chemkin #38; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 57200000000.0
+    Ea: 51.9
+    b: 1.33
+- equation: C=CC=CC=C1[CH]C=CC1>>C=CC=CC=C1[CH]CC=C1
+  note: 'Reaction index: Chemkin #39; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 11800000.0
+    Ea: 15.8
+    b: 1.8
+- equation: C=CC=CC=C1[CH]CC=C1>>CC=CC=CC1=CC=C[CH]1
+  note: 'Reaction index: Chemkin #40; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 2270000.0
+    Ea: 33.7
+    b: 1.5
+- equation: C=CC=CC=C1[CH]CC=C1>>[CH]1C=CC=C2C=CCC2C1
+  note: 'Reaction index: Chemkin #41; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 91600000000.0
+    Ea: 24.2
+    b: 0.2
+- equation: C1=CC=C2C=CCC2C=C1.[H]>>[CH]1C=CC=C2C=CCC2C1
+  note: 'Reaction index: Chemkin #42; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 193000000.0
+    Ea: 1.4
+    b: 1.6
+- equation: C1=CCC2C=CC=C2C=C1.[H]>>[CH]1C=CC=C2C=CCC2C1
+  note: 'Reaction index: Chemkin #43; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 193000000.0
+    Ea: 1.4
+    b: 1.6
+- equation: C1=CCC2=C(C=C1)C=CC2.[H]>>[CH]1C=CC=C2C=CCC2C1
+  note: 'Reaction index: Chemkin #44; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 193000000.0
+    Ea: 1.4
+    b: 1.6
+- equation: '[CH]1C=CCC2C=CC=CC12>>[CH]1C=CC=C2CC=CCC12'
+  note: 'Reaction index: Chemkin #45; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 183000000.0
+    Ea: 31.9
+    b: 1.45
+- equation: C1=CCc2ccccc2C1.[H]>>[CH]1C=CC=C2CC=CCC12
+  note: 'Reaction index: Chemkin #46; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 76100000.0
+    Ea: 4.7
+    b: 1.71
+- equation: '[CH]1C=CCC1C1=CC=CC1>>[CH]1C=CCC1C1=CCC=C1'
+  note: 'Reaction index: Chemkin #47; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 118000000.0
+    Ea: 21.8
+    b: 1.8
+- equation: '[CH]1C=CCC1C1=CCC=C1>>C=CC=CC=C1[CH]CC=C1'
+  note: 'Reaction index: Chemkin #48; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 9380000000.0
+    Ea: 42.3
+    b: 1.08
+- equation: C=CC=C[CH]C1C=CC=C1>>C=CC=CC1C2[CH]C=CC21
+  note: 'Reaction index: Chemkin #49; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 551000000000.0
+    Ea: 12.9
+    b: 0.28
+- equation: C=CC=CC1C2[CH]C=CC21>>C=CC=CC1[CH]C=CC=C1
+  note: 'Reaction index: Chemkin #50; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 775000000000.0
+    Ea: 18.7
+    b: 0.44
+- equation: '[CH]1C=CCC1C1C=CC=C1>>[CH]1C=CC=C1C1CC=CC1'
+  note: 'Reaction index: Chemkin #51; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 6360000.0
+    Ea: 31.7
+    b: 1.7
+- equation: '[CH]1C=CCC1C1=CC=CC1>>[CH]1C=CC=C1C1CC=CC1'
+  note: 'Reaction index: Chemkin #52; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1780000.0
+    Ea: 25.3
+    b: 1.75
+- equation: '[CH]1C=CC=C1C1CC=CC1>>C=C[CH]CC=C1C=CC=C1'
+  note: 'Reaction index: Chemkin #53; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 202000000000.0
+    Ea: 35.3
+    b: 0.79
+- equation: C=C[CH]CC=C1C=CC=C1>>CC=CC=CC1=CC=C[CH]1
+  note: 'Reaction index: Chemkin #54; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 10400000.0
+    Ea: 27.1
+    b: 1.61
+- equation: '[CH]1C=Cc2ccccc21>>[CH]1C2=CC3C=CC2=CC13'
+  note: 'Reaction index: Chemkin #55; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1.0e-11
+    Ea: 0.0
+    b: 0.0
+- equation: '[CH]1C=Cc2ccccc21>>C1=CC2[C]3C(=C1)C=CC32'
+  note: 'Reaction index: Chemkin #56; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1.0e-11
+    Ea: 0.0
+    b: 0.0
+- equation: '[CH]1C=Cc2ccccc21>>[CH]1C2c3ccccc3C12'
+  note: 'Reaction index: Chemkin #57; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1.0e-11
+    Ea: 0.0
+    b: 0.0
+- equation: '[CH]1C=Cc2ccccc21>>[CH]1C=CC2C3=CC2C=C13'
+  note: 'Reaction index: Chemkin #58; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1.0e-11
+    Ea: 0.0
+    b: 0.0

@@ -1,0 +1,617 @@
+ELEMENTS
+	H
+	D /2.014/
+	T /3.016/
+	C
+	CI /13.003/
+	O
+	OI /17.999/
+	N
+	Ne
+	Ar
+	He
+	Si
+	S
+	F
+	Cl
+	Br
+	I
+	X /195.083/
+END
+
+SPECIES
+    benzene(1)          ! benzene(1)
+    pdt8(2)             ! pdt8(2)
+    pdt9(3)             ! pdt9(3)
+    pdt7(4)             ! pdt7(4)
+    CPD(5)              ! CPD(5)
+    INDENYL_ADD3(6)     ! INDENYL_ADD3(6)
+    INDENYL_ADD2(7)     ! INDENYL_ADD2(7)
+    pdt29(8)            ! pdt29(8)
+    pdt28(9)            ! pdt28(9)
+    INDENYL_ADD4(10)    ! INDENYL_ADD4(10)
+    pdt23(11)           ! pdt23(11)
+    pdt22(12)           ! pdt22(12)
+    pdt21(13)           ! pdt21(13)
+    pdt20(14)           ! pdt20(14)
+    pdt27(15)           ! pdt27(15)
+    pdt26(16)           ! pdt26(16)
+    pdt25(17)           ! pdt25(17)
+    pdt24(18)           ! pdt24(18)
+    pdt57(19)           ! pdt57(19)
+    CH3(20)             ! CH3(20)
+    adductd(21)         ! adductd(21)
+    adducte(22)         ! adducte(22)
+    INDENYL(23)         ! INDENYL(23)
+    H(24)               ! H(24)
+    pdt35(25)           ! pdt35(25)
+    pdt37(26)           ! pdt37(26)
+    pdt30(27)           ! pdt30(27)
+    CPDyl(28)           ! CPDyl(28)
+    pdt32(29)           ! pdt32(29)
+    pdt33(30)           ! pdt33(30)
+    pdt58(31)           ! pdt58(31)
+    pdt38(32)           ! pdt38(32)
+    pdt39(33)           ! pdt39(33)
+    pdt18(34)           ! pdt18(34)
+    pdt19(35)           ! pdt19(35)
+    pdt16(36)           ! pdt16(36)
+    pdt17(37)           ! pdt17(37)
+    pdt14(38)           ! pdt14(38)
+    pdt15(39)           ! pdt15(39)
+    pdt12(40)           ! pdt12(40)
+    pdt13(41)           ! pdt13(41)
+    pdt55(42)           ! pdt55(42)
+    pdt11(43)           ! pdt11(43)
+    INDENE(44)          ! INDENE(44)
+    butadieneyl(45)     ! butadieneyl(45)
+    pdt10bis(46)        ! pdt10bis(46)
+    INDENYL_ADD(47)     ! INDENYL_ADD(47)
+    pdt31(48)           ! pdt31(48)
+END
+
+
+
+THERM ALL
+   300.000  1000.000  5000.000
+
+! Thermo library: Narayanaswamy
+benzene(1)              C   6H   6          G   298.000  3000.000 1000.00      1
+-2.06241000E-01 4.64122000E-02-2.77654000E-05 7.88911000E-09-8.60365000E-13    2
+ 8.09884000E+03 2.06567000E+01-5.51558000E+00 6.45453000E-02-4.41403000E-05    3
+ 7.47712000E-09 3.10282000E-12 9.11031000E+03 4.65332000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt8(2)                 C  10H  11          G   200.000  3500.000 1059.50      1
+ 9.83820000E+00 5.95915000E-02-3.06486000E-05 7.57238000E-09-7.26045000E-13    2
+ 2.98688000E+04-3.04292000E+01-2.01660000E+00 7.28542000E-02-4.83780000E-06    3
+-3.67244000E-08 1.63463000E-11 3.41485000E+04 3.57904000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt9(3)                 C  10H  11          G   200.000  3500.000 1054.83      1
+ 1.16025000E+01 5.59151000E-02-2.76954000E-05 6.56470000E-09-6.04223000E-13    2
+ 6.63979000E+04-3.67938000E+01-2.69406000E+00 8.77044000E-02-4.10131000E-05    3
+-5.17153000E-09 6.95370000E-12 7.06616000E+04 3.88552000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt7(4)                 C  10H  11          G   200.000  3500.000 1077.23      1
+ 9.43916000E+00 6.15172000E-02-3.26350000E-05 8.32270000E-09-8.21130000E-13    2
+ 3.52493000E+04-2.97790000E+01-1.78188000E+00 6.78535000E-02 7.73733000E-06    3
+-4.71080000E-08 1.91087000E-11 3.97167000E+04 3.47055000E+01                   4
+
+! Thermo library: Narayanaswamy
+CPD(5)                  C   5H   6          G   298.000  3000.000 1000.00      1
+ 2.30537000E-01 4.09572000E-02-2.41589000E-05 6.79763000E-09-7.36374000E-13    2
+ 1.43779000E+04 2.02551000E+01-5.13691000E+00 6.06953000E-02-4.60553000E-05    3
+ 1.28457000E-08 7.41215000E-13 1.53676000E+04 4.61568000E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CbCsCsH) + group(Cs-CbCsCsH) + group(Cs-CsCsHH) + group(Cb-Cs) + group(Cb-Cs) + group(Cb-H) + group(Cb-H)
+! + group(Cb-H) + group(Cb-H) + polycyclic(s2_4_6_ben) + polycyclic(s2_3_4_ane) - ring(Cyclobutane) + radical(cyclopropane)
+INDENYL_ADD3(6)         C   9H   7          G   100.000  5000.000 1012.89      1
+ 1.22323636E+01 3.34995575E-02-1.39870366E-05 2.74927892E-09-2.02583510E-13    2
+ 6.22047204E+04-4.28672899E+01 1.86374494E+00 2.85815053E-02 6.12172053E-05    3
+-9.14529560E-08 3.40819856E-11 6.66579298E+04 1.89021244E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + group(Cs-(Cds-Cds)CsCsH) + group(Cs-(Cds-Cds)CsCsH) + group(Cds-Cds(Cds-Cds)Cs) +
+! group(Cds-CdsCsH) + group(Cds-CdsCsH) + group(Cds-Cds(Cds-Cds)H) + group(Cds-Cds(Cds-Cds)H) + group(Cds-Cds(Cds-Cds)H) +
+! polycyclic(s2_5_6_triene_0_2_7) + polycyclic(s2_3_6_diene_1_3) + polycyclic(s2_3_5_ene_1) - ring(1,3-Cyclohexadiene) - ring(Cyclopentene) -
+! ring(Cyclopropane) + radical(Aromatic_pi_S_1_3)
+INDENYL_ADD2(7)         C   9H   7          G   100.000  5000.000 1475.30      1
+ 1.50209136E+01 3.38928901E-02-1.58143446E-05 3.00355608E-09-2.06499100E-13    2
+ 3.85517944E+04-5.79130154E+01 1.09457010E+00 5.71588326E-02-2.47345134E-05    3
+ 3.75816228E-10 1.36713689E-12 4.42380883E+04 2.00342547E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt29(8)                C  10H  11          G   200.000  3500.000 1057.66      1
+ 9.40755000E+00 6.01350000E-02-3.08973000E-05 7.61717000E-09-7.28322000E-13    2
+ 2.42818000E+04-2.78143000E+01-1.94341000E+00 7.20203000E-02-3.72668000E-06    3
+-3.72601000E-08 1.64389000E-11 2.84192000E+04 3.57922000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt28(9)                C  10H  11          G   200.000  3500.000 1051.73      1
+ 9.53366000E+00 5.98493000E-02-3.05228000E-05 7.44945000E-09-7.04688000E-13    2
+ 3.92942000E+04-2.70987000E+01-2.06554000E+00 7.46143000E-02-9.72120000E-06    3
+-3.22703000E-08 1.50441000E-11 4.33573000E+04 3.71628000E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)(Cds-Cds)CsH) + group(Cs-(Cds-Cds)(Cds-Cds)CsH) + group(Cs-(Cds-Cds)(Cds-Cds)HH) + group(Cds-
+! Cds(Cds-Cds)Cs) + group(Cds-Cds(Cds-Cds)Cs) + group(Cds-CdsCsH) + group(Cds-CdsCsH) + group(Cds-CdsCsH) + group(Cds-CdsCsH) + Estimated bicyclic
+! component: polycyclic(s2_5_6_ane) - ring(Cyclohexane) - ring(Cyclopentane) + ring(Cyclohexene) + ring(Cyclopentadiene) + Estimated bicyclic component:
+! polycyclic(s2_4_6_ane) - ring(Cyclohexane) - ring(Cyclobutane) + ring(Cyclohexene) + ring(Cyclobutene) + polycyclic(s3_4_5_diene_1_3) -
+! ring(Cyclohexene) - ring(Cyclopentadiene) - ring(Cyclobutene) + radical(C=CCJC=C)
+INDENYL_ADD4(10)        C   9H   7          G   100.000  5000.000 1029.70      1
+ 9.35881440E+00 3.33140691E-02-1.26709010E-05 2.28381750E-09-1.57571117E-13    2
+ 8.82513485E+04-2.90589371E+01 1.59184469E+00 4.40716465E-02-6.03471978E-08    3
+-2.41913347E-08 1.07159485E-11 9.08800992E+04 1.36372089E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt23(11)               C  10H  11          G   200.000  3500.000 1057.66      1
+ 9.99935000E+00 5.92362000E-02-3.03620000E-05 7.47588000E-09-7.14577000E-13    2
+ 3.33936000E+04-3.11920000E+01-2.07118000E+00 7.38697000E-02-7.12738000E-06    3
+-3.48961000E-08 1.58547000E-11 3.76817000E+04 3.59192000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt22(12)               C   9H   8          G   200.000  3500.000 1073.66      1
+ 9.21678000E+00 4.72389000E-02-2.49031000E-05 6.31199000E-09-6.19537000E-13    2
+ 3.02240000E+04-2.74421000E+01-7.90747000E-01 5.68429000E-02 3.50157000E-07    3
+-3.33804000E-08 1.42139000E-11 3.39683000E+04 2.89794000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt21(13)               C  10H  11          G   200.000  3500.000 1054.62      1
+ 1.15271000E+01 5.59122000E-02-2.82282000E-05 6.86725000E-09-6.50570000E-13    2
+ 2.32251000E+04-3.86689000E+01-2.40936000E+00 7.96749000E-02-2.06425000E-05    3
+-2.40885000E-08 1.28890000E-11 2.77826000E+04 3.69787000E+01                   4
+
+! Thermo library: C10H11
+pdt20(14)               C  10H  11          G   100.000  5000.000  997.05      1
+ 1.90218667E+01 3.88630503E-02-1.49422052E-05 2.81012671E-09-2.02827414E-13    2
+ 2.89564348E+04-7.38231978E+01-2.65189600E-03 6.77106538E-02 1.30820318E-05    3
+-6.36843252E-08 2.84443039E-11 3.51099261E+04 2.97368334E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt27(15)               C  10H  11          G   200.000  3500.000 1051.55      1
+ 1.13938000E+01 5.60310000E-02-2.81493000E-05 6.79611000E-09-6.38275000E-13    2
+ 2.28784000E+04-3.70351000E+01-2.45883000E+00 8.12748000E-02-2.50019000E-05    3
+-2.00239000E-08 1.16399000E-11 2.73094000E+04 3.77088000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt26(16)               C  10H  10          G   200.000  3500.000 1054.77      1
+ 9.32759000E+00 5.67067000E-02-2.90379000E-05 7.12356000E-09-6.77478000E-13    2
+ 2.42328000E+04-2.78590000E+01-1.72548000E+00 6.99500000E-02-7.09459000E-06    3
+-3.25186000E-08 1.48271000E-11 2.81595000E+04 3.36160000E+01                   4
+
+! Thermo library: C10H11
+pdt25(17)               C  10H  11          G   100.000  5000.000  995.51      1
+ 1.83444954E+01 3.95760183E-02-1.52451106E-05 2.88068075E-09-2.08770296E-13    2
+ 1.81262362E+04-7.13115767E+01 2.14677328E-01 6.20092233E-02 2.69136774E-05    3
+-7.62203041E-08 3.24300442E-11 2.42340058E+04 2.86194621E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt24(18)               C  10H  11          G   200.000  3500.000 1064.01      1
+ 1.01489000E+01 5.94156000E-02-3.07489000E-05 7.65568000E-09-7.39777000E-13    2
+ 3.24613000E+04-3.30583000E+01-2.03258000E+00 7.25525000E-02-3.22930000E-06    3
+-3.84335000E-08 1.68671000E-11 3.69022000E+04 3.51531000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt57(19)               C  10H  11          G   200.000  3500.000 1071.59      1
+ 1.85118000E+01 4.62563000E-02-2.33695000E-05 5.79275000E-09-5.64477000E-13    2
+ 4.05528000E+04-7.47997000E+01-3.74655000E+00 9.72345000E-02-4.97854000E-05    3
+-5.73338000E-09 8.64760000E-12 4.71666000E+04 4.27242000E+01                   4
+
+! Thermo library: Narayanaswamy
+CH3(20)                 C   1H   3          G   200.000  6000.000 1000.00      1
+ 2.97812000E+00 5.79785000E-03-1.97558000E-06 3.07298000E-10-1.79174000E-14    2
+ 1.65095000E+04 4.72248000E+00 3.65718000E+00 2.12660000E-03 5.45839000E-06    3
+-6.61810000E-09 2.46571000E-12 1.64227000E+04 1.67354000E+00                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+adductd(21)             C  10H  11          G   200.000  3500.000 1061.48      1
+ 1.22326000E+01 5.59463000E-02-2.87112000E-05 7.09363000E-09-6.81083000E-13    2
+ 3.28994000E+04-4.02342000E+01-2.51725000E+00 8.00126000E-02-1.81839000E-05    3
+-2.74893000E-08 1.40517000E-11 3.78062000E+04 4.01686000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+adducte(22)             C  10H  11          G   200.000  3500.000 1059.43      1
+ 1.24430000E+01 5.53296000E-02-2.82024000E-05 6.92627000E-09-6.61801000E-13    2
+ 3.97618000E+04-4.10366000E+01-2.58699000E+00 8.14576000E-02-2.18434000E-05    3
+-2.43555000E-08 1.31574000E-11 4.46648000E+04 4.04518000E+01                   4
+
+! Thermo library: Narayanaswamy
+INDENYL(23)             C   9H   7          G   298.000  3000.000 1000.00      1
+ 3.65598000E+00 5.74808000E-02-3.42871000E-05 9.70279000E-09-1.05386000E-12    2
+ 3.06843000E+04 2.57680000E+00-8.73685000E+00 1.03422000E-01-9.23423000E-05    3
+ 3.75623000E-08-4.40605000E-12 3.31641000E+04 6.28218000E+01                   4
+
+! Thermo library: Narayanaswamy
+H(24)                   H   1               G   100.000  5000.000 4563.27      1
+ 2.50167000E+00-1.43051000E-06 4.60250000E-10-6.57826000E-14 3.52412000E-18    2
+ 2.54727000E+04-4.55578000E-01 2.50000000E+00-1.91243000E-12 2.45329000E-15    3
+-1.02377000E-18 1.31369000E-22 2.54742000E+04-4.44973000E-01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt35(25)               C  10H  10          G   200.000  3500.000 1055.88      1
+ 9.78642000E+00 5.60611000E-02-2.86984000E-05 7.04649000E-09-6.71186000E-13    2
+ 2.50997000E+04-3.01043000E+01-1.81284000E+00 7.10957000E-02-8.99155000E-06    3
+-3.13240000E-08 1.45527000E-11 2.91606000E+04 3.41167000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt37(26)               C  10H  11          G   200.000  3500.000 1057.69      1
+ 9.33980000E+00 6.02774000E-02-3.09862000E-05 7.64078000E-09-7.30643000E-13    2
+ 2.44150000E+04-2.75923000E+01-1.93094000E+00 7.18290000E-02-3.30215000E-06    3
+-3.75837000E-08 1.65238000E-11 2.85372000E+04 3.56310000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt30(27)               C  10H  10          G   200.000  3500.000 1059.89      1
+ 9.50012000E+00 5.66483000E-02-2.91893000E-05 7.21881000E-09-6.92354000E-13    2
+ 2.64455000E+04-2.86461000E+01-1.70186000E+00 6.89981000E-02-4.31405000E-06    3
+-3.50677000E-08 1.55656000E-11 3.05010000E+04 3.39782000E+01                   4
+
+! Thermo library: Narayanaswamy
+CPDyl(28)               C   5H   5          G   298.000  3000.000 1000.00      1
+ 4.21465000E+00 2.71835000E-02-1.33173000E-05 3.08980000E-09-2.77880000E-13    2
+ 2.88952000E+04-3.06000000E-02-7.37844000E+00 9.72392000E-02-1.69579000E-04    3
+ 1.51819000E-07-5.12075000E-11 3.05515000E+04 5.12830000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt32(29)               C  10H  11          G   200.000  3500.000 1054.57      1
+ 1.11595000E+01 5.65698000E-02-2.86468000E-05 6.98226000E-09-6.62125000E-13    2
+ 2.29375000E+04-3.65933000E+01-2.32872000E+00 7.83928000E-02-1.79579000E-05    3
+-2.61551000E-08 1.34473000E-11 2.74138000E+04 3.69307000E+01                   4
+
+! Thermo library: C10H11
+pdt33(30)               C  10H  11          G   100.000  5000.000  986.52      1
+ 2.00785893E+01 3.70089014E-02-1.38681833E-05 2.61025050E-09-1.90068843E-13    2
+ 3.13961306E+04-7.98472438E+01-5.88277234E-03 6.60909927E-02 2.15155379E-05    3
+-7.50946849E-08 3.31336590E-11 3.79064720E+04 2.96881362E+01                   4
+
+! Thermo library: C10H11
+pdt58(31)               C  10H  11          G   100.000  5000.000  982.62      1
+ 2.01314921E+01 3.65263873E-02-1.35239775E-05 2.53713478E-09-1.84868716E-13    2
+ 3.91703166E+04-7.76963421E+01 2.67171008E-02 6.51176016E-02 2.41187972E-05    3
+-7.81524873E-08 3.43758320E-11 4.56921595E+04 3.20262884E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt38(32)               C  10H  10          G   200.000  3500.000 1059.42      1
+ 8.40115000E+00 5.83630000E-02-3.02038000E-05 7.48284000E-09-7.17658000E-13    2
+ 1.02770000E+04-2.35261000E+01-1.47521000E+00 6.58007000E-02 1.53144000E-06    3
+-3.90842000E-08 1.65474000E-11 1.40449000E+04 3.25982000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt39(33)               C  10H  11          G   200.000  3500.000 1051.76      1
+ 1.19097000E+01 5.50273000E-02-2.74206000E-05 6.56467000E-09-6.11533000E-13    2
+ 3.19904000E+04-3.70009000E+01-2.62943000E+00 8.48730000E-02-3.36914000E-05    3
+-1.24659000E-08 9.38027000E-12 3.64563000E+04 4.05672000E+01                   4
+
+! Thermo library: C10H11
+pdt18(34)               C  10H  11          G   100.000  5000.000  988.01      1
+ 1.92674658E+01 3.80636091E-02-1.43847167E-05 2.71614561E-09-1.97892068E-13    2
+ 2.73649457E+04-7.67692770E+01 1.65444067E-01 6.20267759E-02 3.02647269E-05    3
+-8.20876133E-08 3.50953733E-11 3.37445231E+04 2.83395294E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt19(35)               C  10H  11          G   200.000  3500.000 1054.40      1
+ 9.72399000E+00 5.95147000E-02-3.04006000E-05 7.44823000E-09-7.08048000E-13    2
+ 2.93548000E+04-2.91898000E+01-2.05418000E+00 7.40543000E-02-8.20390000E-06    3
+-3.36984000E-08 1.54762000E-11 3.35141000E+04 3.62025000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt16(36)               C  10H  11          G   200.000  3500.000 1061.82      1
+ 1.25754000E+01 5.41782000E-02-2.66048000E-05 6.26809000E-09-5.74571000E-13    2
+ 3.00911000E+04-4.04085000E+01-2.89516000E+00 9.14870000E-02-4.96852000E-05    3
+ 2.15941000E-09 4.77199000E-12 3.45586000E+04 4.07230000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt17(37)               C  10H  11          G   200.000  3500.000 1056.00      1
+ 1.10358000E+01 5.74070000E-02-2.91657000E-05 7.13477000E-09-6.78969000E-13    2
+ 3.14649000E+04-3.54732000E+01-2.31476000E+00 7.77603000E-02-1.51544000E-05    3
+-2.88082000E-08 1.42454000E-11 3.59693000E+04 3.76405000E+01                   4
+
+! Thermo library: C10H11
+pdt14(38)               C  10H  11          G   100.000  5000.000  978.95      1
+ 2.06617467E+01 3.57420399E-02-1.30889638E-05 2.46166398E-09-1.80482693E-13    2
+ 3.57869662E+04-8.27785576E+01 4.50675819E-02 6.35795843E-02 3.06804042E-05    3
+-8.62004347E-08 3.74919395E-11 4.25261270E+04 3.00501184E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt15(39)               C  10H  11          G   200.000  3500.000 1050.95      1
+ 1.15884000E+01 5.55487000E-02-2.77637000E-05 6.66562000E-09-6.22458000E-13    2
+ 3.22745000E+04-3.51554000E+01-2.54183000E+00 8.32377000E-02-3.00436000E-05    3
+-1.55111000E-08 1.02724000E-11 3.66855000E+04 4.05722000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt12(40)               C  10H  11          G   200.000  3500.000 1080.52      1
+ 1.58047000E+01 4.87891000E-02-2.37769000E-05 5.58670000E-09-5.12563000E-13    2
+ 3.34719000E+04-5.74348000E+01-3.50273000E+00 1.00840000E-01-6.90709000E-05    3
+ 1.68962000E-08 7.19895000E-13 3.87782000E+04 4.24545000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt13(41)               C  10H  10          G   200.000  3500.000 1063.25      1
+ 1.36936000E+01 5.02241000E-02-2.57823000E-05 6.36496000E-09-6.10097000E-13    2
+ 1.70799000E+04-4.84159000E+01-2.61594000E+00 8.25326000E-02-3.03808000E-05    3
+-1.64474000E-08 1.07955000E-11 2.21902000E+04 3.89902000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt55(42)               C  10H  11          G   200.000  3500.000 1053.60      1
+ 1.07020000E+01 5.70651000E-02-2.88909000E-05 7.03809000E-09-6.66811000E-13    2
+ 3.08984000E+04-3.09868000E+01-2.22535000E+00 7.69941000E-02-1.57634000E-05    3
+-2.75278000E-08 1.37659000E-11 3.52403000E+04 3.97333000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt11(43)               C  10H  10          G   200.000  3500.000 1060.23      1
+ 9.23416000E+00 5.71407000E-02-2.95147000E-05 7.31202000E-09-7.02128000E-13    2
+ 2.38898000E+04-2.77105000E+01-1.64181000E+00 6.80772000E-02-2.40773000E-06    3
+-3.65068000E-08 1.59436000E-11 2.78875000E+04 3.33730000E+01                   4
+
+! Thermo library: Narayanaswamy
+INDENE(44)              C   9H   8          G   298.000  3000.000 1000.00      1
+ 1.15460000E+00 6.54224000E-02-3.92505000E-05 1.11569000E-08-1.21593000E-12    2
+ 1.68166000E+04 1.53482000E+01-8.12448000E+00 9.77657000E-02-7.30436000E-05    3
+ 1.88295000E-08 1.84033000E-12 1.86590000E+04 6.06775000E+01                   4
+
+! Thermo library: Narayanaswamy
+butadieneyl(45)         C   4H   5          G   298.000  3000.000 1000.00      1
+ 4.87675000E+00 2.27534000E-02-1.17715000E-05 2.95251000E-09-2.91457000E-13    2
+ 4.11081000E+04 2.21508000E+00-1.16850000E+00 4.79006000E-02-5.12377000E-05    3
+ 3.06244000E-08-7.59907000E-12 4.22787000E+04 3.11630000E+01                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt10bis(46)            C  10H  11          G   200.000  3500.000 1058.13      1
+ 9.89018000E+00 5.94731000E-02-3.05261000E-05 7.52372000E-09-7.19627000E-13    2
+ 2.99580000E+04-3.09259000E+01-2.04706000E+00 7.34581000E-02-6.20671000E-06    3
+-3.56113000E-08 1.60429000E-11 3.42275000E+04 3.55766000E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + group(Cs-(Cds-Cds)(Cds-Cds)CsH) + group(Cs-(Cds-Cds)CsHH) + group(Cds-Cds(Cds-Cds)Cs) +
+! group(Cds-Cds(Cds-Cds)(Cds-Cds)) + group(Cds-CdsCsH) + group(Cds-CdsCsH) + group(Cds-CdsCsH) + group(Cds-Cds(Cds-Cds)H) + Estimated bicyclic
+! component: polycyclic(s2_5_6_ane) - ring(Cyclohexane) - ring(Cyclopentane) + ring(1,4-Cyclohexadiene) + ring(Cyclopentene) + Estimated bicyclic
+! component: polycyclic(s3_5_6_ane) - ring(Cyclohexane) - ring(Cyclopentane) + ring(1,4-Cyclohexadiene) + ring(Cyclopentene) +
+! polycyclic(s3_5_5_diene_0_4) - ring(1,4-Cyclohexadiene) - ring(Cyclopentene) - ring(Cyclopentene) + radical(cyclopentene-allyl)
+INDENYL_ADD(47)         C   9H   7          G   100.000  5000.000 1861.60      1
+ 1.41811920E+01 3.06085244E-02-1.30123725E-05 2.29222374E-09-1.47766149E-13    2
+ 8.22500189E+04-6.26665358E+01 1.98692922E+00 4.63415871E-02-1.72542659E-05    3
+ 7.90562551E-10 4.59560772E-13 8.86041704E+04 8.61379332E+00                   4
+
+! Thermo library: SABIC_aromatics_1dHR
+pdt31(48)               C  10H  10          G   200.000  3500.000 1060.62      1
+ 9.41572000E+00 5.68415000E-02-2.93406000E-05 7.26855000E-09-6.98183000E-13    2
+ 2.51681000E+04-2.83480000E+01-1.67548000E+00 6.85275000E-02-3.23751000E-06    3
+-3.59344000E-08 1.58012000E-11 2.92162000E+04 3.38061000E+01                   4
+
+END
+
+
+
+REACTIONS    KCAL/MOLE   MOLES
+
+! Reaction index: Chemkin #1; RMG #-1
+! Library reaction: C10H11
+CPD(5)+CPDyl(28)<=>adducte(22)                      2.880000e+02 2.800     8.700    
+
+! Reaction index: Chemkin #2; RMG #-1
+! Library reaction: C10H11
+CPD(5)+CPDyl(28)<=>adductd(21)                      2.880000e+02 2.740     3.300    
+
+! Reaction index: Chemkin #3; RMG #-1
+! Library reaction: C10H11
+adductd(21)<=>pdt7(4)                               1.890000e+11 0.290     15.400   
+
+! Reaction index: Chemkin #4; RMG #-1
+! Library reaction: C10H11
+pdt7(4)<=>pdt8(2)                                   3.510000e+11 0.580     29.100   
+
+! Reaction index: Chemkin #5; RMG #-1
+! Library reaction: C10H11
+pdt8(2)<=>pdt9(3)                                   8.390000e+10 0.910     36.400   
+
+! Reaction index: Chemkin #6; RMG #-1
+! Library reaction: C10H11
+pdt9(3)<=>pdt10bis(46)                              6.250000e+09 0.760     6.200    
+
+! Reaction index: Chemkin #7; RMG #-1
+! Library reaction: C10H11
+adducte(22)<=>pdt7(4)                               3.430000e+11 0.210     8.500    
+
+! Reaction index: Chemkin #8; RMG #-1
+! Library reaction: C10H11
+pdt11(43)+H(24)<=>pdt10bis(46)                      9.090000e+07 1.710     2.900    
+
+! Reaction index: Chemkin #9; RMG #-1
+! Library reaction: C10H11
+pdt10bis(46)<=>pdt12(40)                            8.760000e+10 0.780     24.500   
+
+! Reaction index: Chemkin #10; RMG #-1
+! Library reaction: C10H11
+pdt12(40)<=>benzene(1)+butadieneyl(45)              7.140000e+12 0.520     22.900   
+
+! Reaction index: Chemkin #11; RMG #-1
+! Library reaction: C10H11
+pdt13(41)+H(24)<=>pdt12(40)                         8.810000e+06 1.950     5.900    
+
+! Reaction index: Chemkin #12; RMG #-1
+! Library reaction: C10H11
+adductd(21)<=>pdt14(38)                             1.020000e+11 0.850     46.100   
+
+! Reaction index: Chemkin #13; RMG #-1
+! Library reaction: C10H11
+adductd(21)<=>pdt15(39)                             1.120000e+08 1.640     22.700   
+
+! Reaction index: Chemkin #14; RMG #-1
+! Library reaction: C10H11
+pdt15(39)<=>pdt16(36)                               5.290000e+09 1.040     31.200   
+
+! Reaction index: Chemkin #15; RMG #-1
+! Library reaction: C10H11
+pdt16(36)<=>pdt17(37)                               4.360000e+10 0.440     32.200   
+
+! Reaction index: Chemkin #16; RMG #-1
+! Library reaction: C10H11
+pdt17(37)<=>pdt18(34)                               5.470000e+10 0.790     29.000   
+
+! Reaction index: Chemkin #17; RMG #-1
+! Library reaction: C10H11
+pdt18(34)<=>pdt19(35)                               6.690000e+11 0.220     40.000   
+
+! Reaction index: Chemkin #18; RMG #-1
+! Library reaction: C10H11
+pdt14(38)<=>pdt16(36)                               1.280000e+08 1.550     18.400   
+
+! Reaction index: Chemkin #19; RMG #-1
+! Library reaction: C10H11
+pdt14(38)<=>pdt20(14)                               1.070000e-01 3.670     29.600   
+
+! Reaction index: Chemkin #20; RMG #-1
+! Library reaction: C10H11
+pdt20(14)<=>pdt21(13)                               7.900000e+10 0.290     21.100   
+
+! Reaction index: Chemkin #21; RMG #-1
+! Library reaction: C10H11
+pdt22(12)+CH3(20)<=>pdt21(13)                       2.480000e+03 2.890     -0.900   
+
+! Reaction index: Chemkin #22; RMG #-1
+! Library reaction: C10H11
+pdt14(38)<=>pdt23(11)                               1.190000e+11 0.080     16.700   
+
+! Reaction index: Chemkin #23; RMG #-1
+! Library reaction: C10H11
+pdt22(12)<=>INDENE(44)                              5.200000e+09 0.960     6.800    
+
+! Reaction index: Chemkin #24; RMG #-1
+! Library reaction: C10H11
+pdt23(11)<=>pdt9(3)                                 1.270000e+10 1.010     40.700   
+
+! Reaction index: Chemkin #25; RMG #-1
+! Library reaction: C10H11
+pdt23(11)<=>pdt30(27)+H(24)                         1.490000e+09 1.410     38.300   
+
+! Reaction index: Chemkin #26; RMG #-1
+! Library reaction: C10H11
+pdt26(16)+H(24)<=>pdt19(35)                         9.090000e+07 1.710     2.900    
+
+! Reaction index: Chemkin #27; RMG #-1
+! Library reaction: C10H11
+pdt18(34)<=>pdt25(17)                               2.500000e+05 1.950     24.000   
+
+! Reaction index: Chemkin #28; RMG #-1
+! Library reaction: C10H11
+pdt13(41)+H(24)<=>pdt25(17)                         2.400000e+08 1.580     1.600    
+
+! Reaction index: Chemkin #29; RMG #-1
+! Library reaction: C10H11
+pdt31(48)+H(24)<=>pdt8(2)                           1.260000e+08 1.630     1.900    
+
+! Reaction index: Chemkin #30; RMG #-1
+! Library reaction: C10H11
+pdt17(37)<=>pdt24(18)                               2.480000e+11 0.260     7.200    
+
+! Reaction index: Chemkin #31; RMG #-1
+! Library reaction: C10H11
+pdt24(18)<=>pdt28(9)                                2.430000e+12 0.310     18.200   
+
+! Reaction index: Chemkin #32; RMG #-1
+! Library reaction: C10H11
+pdt21(13)<=>pdt27(15)                               6.070000e+06 2.000     26.100   
+
+! Reaction index: Chemkin #33; RMG #-1
+! Library reaction: C10H11
+INDENE(44)+CH3(20)<=>pdt27(15)                      6.430000e+02 2.800     8.600    
+
+! Reaction index: Chemkin #34; RMG #-1
+! Library reaction: C10H11
+pdt16(36)<=>pdt20(14)                               2.590000e+08 1.010     26.400   
+
+! Reaction index: Chemkin #35; RMG #-1
+! Library reaction: C10H11
+pdt28(9)<=>pdt29(8)                                 1.670000e+09 1.140     22.400   
+
+! Reaction index: Chemkin #36; RMG #-1
+! Library reaction: C10H11
+pdt28(9)<=>pdt23(11)                                1.460000e+07 1.660     31.600   
+
+! Reaction index: Chemkin #37; RMG #-1
+! Library reaction: C10H11
+pdt25(17)<=>pdt32(29)                               1.000000e+11 0.410     32.400   
+
+! Reaction index: Chemkin #38; RMG #-1
+! Library reaction: C10H11
+pdt32(29)<=>pdt22(12)+CH3(20)                       5.720000e+10 1.330     51.900   
+
+! Reaction index: Chemkin #39; RMG #-1
+! Library reaction: C10H11
+pdt16(36)<=>pdt33(30)                               1.180000e+07 1.800     15.800   
+
+! Reaction index: Chemkin #40; RMG #-1
+! Library reaction: C10H11
+pdt33(30)<=>pdt20(14)                               2.270000e+06 1.500     33.700   
+
+! Reaction index: Chemkin #41; RMG #-1
+! Library reaction: C10H11
+pdt33(30)<=>pdt29(8)                                9.160000e+10 0.200     24.200   
+
+! Reaction index: Chemkin #42; RMG #-1
+! Library reaction: C10H11
+pdt31(48)+H(24)<=>pdt29(8)                          1.930000e+08 1.600     1.400    
+
+! Reaction index: Chemkin #43; RMG #-1
+! Library reaction: C10H11
+pdt30(27)+H(24)<=>pdt29(8)                          1.930000e+08 1.600     1.400    
+
+! Reaction index: Chemkin #44; RMG #-1
+! Library reaction: C10H11
+pdt35(25)+H(24)<=>pdt29(8)                          1.930000e+08 1.600     1.400    
+
+! Reaction index: Chemkin #45; RMG #-1
+! Library reaction: C10H11
+pdt10bis(46)<=>pdt37(26)                            1.830000e+08 1.450     31.900   
+
+! Reaction index: Chemkin #46; RMG #-1
+! Library reaction: C10H11
+pdt38(32)+H(24)<=>pdt37(26)                         7.610000e+07 1.710     4.700    
+
+! Reaction index: Chemkin #47; RMG #-1
+! Library reaction: C10H11
+pdt15(39)<=>pdt39(33)                               1.180000e+08 1.800     21.800   
+
+! Reaction index: Chemkin #48; RMG #-1
+! Library reaction: C10H11
+pdt39(33)<=>pdt33(30)                               9.380000e+09 1.080     42.300   
+
+! Reaction index: Chemkin #49; RMG #-1
+! Library reaction: C10H11
+pdt14(38)<=>pdt57(19)                               5.510000e+11 0.280     12.900   
+
+! Reaction index: Chemkin #50; RMG #-1
+! Library reaction: C10H11
+pdt57(19)<=>pdt12(40)                               7.750000e+11 0.440     18.700   
+
+! Reaction index: Chemkin #51; RMG #-1
+! Library reaction: C10H11
+adductd(21)<=>pdt55(42)                             6.360000e+06 1.700     31.700   
+
+! Reaction index: Chemkin #52; RMG #-1
+! Library reaction: C10H11
+pdt15(39)<=>pdt55(42)                               1.780000e+06 1.750     25.300   
+
+! Reaction index: Chemkin #53; RMG #-1
+! Library reaction: C10H11
+pdt55(42)<=>pdt58(31)                               2.020000e+11 0.790     35.300   
+
+! Reaction index: Chemkin #54; RMG #-1
+! Library reaction: C10H11
+pdt58(31)<=>pdt20(14)                               1.040000e+07 1.610     27.100   
+
+! Reaction index: Chemkin #55; RMG #-1
+! Library reaction: C10H11
+INDENYL(23)<=>INDENYL_ADD(47)                       1.000000e-11 0.000     0.000    
+
+! Reaction index: Chemkin #56; RMG #-1
+! Library reaction: C10H11
+INDENYL(23)<=>INDENYL_ADD2(7)                       1.000000e-11 0.000     0.000    
+
+! Reaction index: Chemkin #57; RMG #-1
+! Library reaction: C10H11
+INDENYL(23)<=>INDENYL_ADD3(6)                       1.000000e-11 0.000     0.000    
+
+! Reaction index: Chemkin #58; RMG #-1
+! Library reaction: C10H11
+INDENYL(23)<=>INDENYL_ADD4(10)                      1.000000e-11 0.000     0.000    
+
+END
+

@@ -1,0 +1,165 @@
+Fold 0
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 2.901877 on epoch 11
+Model 0 test rmse = 4.577444
+Ensemble test rmse = 4.577444
+Fold 1
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 4.443084 on epoch 7
+Model 0 test rmse = 3.230210
+Ensemble test rmse = 3.230210
+Fold 2
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 1.948997 on epoch 37
+Model 0 test rmse = 2.812208
+Ensemble test rmse = 2.812208
+Fold 3
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.886509 on epoch 18
+Model 0 test rmse = 2.264678
+Ensemble test rmse = 2.264678
+Fold 4
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 2.783975 on epoch 6
+Model 0 test rmse = 2.491929
+Ensemble test rmse = 2.491929
+5-fold cross validation
+	Seed 0 ==> test rmse = 4.577444
+	Seed 1 ==> test rmse = 3.230210
+	Seed 2 ==> test rmse = 2.812208
+	Seed 3 ==> test rmse = 2.264678
+	Seed 4 ==> test rmse = 2.491929
+Overall test rmse = 3.075294 +/- 0.818179
+Elapsed time = 1:24:10
+Fold 0
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.118248 on epoch 14
+Model 0 test rmse = 4.797035
+Ensemble test rmse = 4.797035
+Fold 1
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 4.414331 on epoch 8
+Model 0 test rmse = 3.077589
+Ensemble test rmse = 3.077589
+Fold 2
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 1.941294 on epoch 40
+Model 0 test rmse = 2.898854
+Ensemble test rmse = 2.898854
+Fold 3
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.848892 on epoch 18
+Model 0 test rmse = 2.261227
+Ensemble test rmse = 2.261227
+Fold 4
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 2.790971 on epoch 6
+Model 0 test rmse = 2.562065
+Ensemble test rmse = 2.562065
+5-fold cross validation
+	Seed 0 ==> test rmse = 4.797035
+	Seed 1 ==> test rmse = 3.077589
+	Seed 2 ==> test rmse = 2.898854
+	Seed 3 ==> test rmse = 2.261227
+	Seed 4 ==> test rmse = 2.562065
+Overall test rmse = 3.119354 +/- 0.884526
+Elapsed time = 1:25:05
+Fold 0
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.229950 on epoch 11
+Model 0 test rmse = 4.839147
+Ensemble test rmse = 4.839147
+Fold 1
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 4.596368 on epoch 8
+Model 0 test rmse = 3.313212
+Ensemble test rmse = 3.313212
+Fold 2
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 1.853480 on epoch 40
+Model 0 test rmse = 3.038803
+Ensemble test rmse = 3.038803
+Fold 3
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.653571 on epoch 37
+Model 0 test rmse = 2.276532
+Ensemble test rmse = 2.276532
+Fold 4
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 2.757953 on epoch 11
+Model 0 test rmse = 2.678451
+Ensemble test rmse = 2.678451
+5-fold cross validation
+	Seed 0 ==> test rmse = 4.839147
+	Seed 1 ==> test rmse = 3.313212
+	Seed 2 ==> test rmse = 3.038803
+	Seed 3 ==> test rmse = 2.276532
+	Seed 4 ==> test rmse = 2.678451
+Overall test rmse = 3.229229 +/- 0.877056
+Elapsed time = 1:24:51
+Fold 0
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.211705 on epoch 15
+Model 0 test rmse = 4.890672
+Ensemble test rmse = 4.890672
+Fold 1
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 4.602614 on epoch 8
+Model 0 test rmse = 3.125982
+Ensemble test rmse = 3.125982
+Fold 2
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 1.940125 on epoch 34
+Model 0 test rmse = 2.932110
+Ensemble test rmse = 2.932110
+Fold 3
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.729112 on epoch 34
+Model 0 test rmse = 2.327141
+Ensemble test rmse = 2.327141
+Fold 4
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 2.788757 on epoch 6
+Model 0 test rmse = 2.591369
+Ensemble test rmse = 2.591369
+5-fold cross validation
+	Seed 0 ==> test rmse = 4.890672
+	Seed 1 ==> test rmse = 3.125982
+	Seed 2 ==> test rmse = 2.932110
+	Seed 3 ==> test rmse = 2.327141
+	Seed 4 ==> test rmse = 2.591369
+Overall test rmse = 3.173455 +/- 0.901599
+Elapsed time = 1:25:38
+Fold 0
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.417294 on epoch 9
+Model 0 test rmse = 4.714630
+Ensemble test rmse = 4.714630
+Fold 1
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 4.471235 on epoch 8
+Model 0 test rmse = 3.035032
+Ensemble test rmse = 3.035032
+Fold 2
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 1.892531 on epoch 39
+Model 0 test rmse = 2.854077
+Ensemble test rmse = 2.854077
+Fold 3
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 3.774388 on epoch 37
+Model 0 test rmse = 2.400164
+Ensemble test rmse = 2.400164
+Fold 4
+Warning: Repeated SMILES found in data, pickle file of split indices cannot distinguish entries and will not be generated.
+Model 0 best validation rmse = 2.790442 on epoch 5
+Model 0 test rmse = 2.770002
+Ensemble test rmse = 2.770002
+5-fold cross validation
+	Seed 0 ==> test rmse = 4.714630
+	Seed 1 ==> test rmse = 3.035032
+	Seed 2 ==> test rmse = 2.854077
+	Seed 3 ==> test rmse = 2.400164
+	Seed 4 ==> test rmse = 2.770002
+Overall test rmse = 3.154781 +/- 0.806895
+Elapsed time = 1:25:48

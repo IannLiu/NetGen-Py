@@ -1,0 +1,522 @@
+- equation: C1=CCC=C1.[CH]1C=CC=C1>>[CH]1CC=CC1C1C=CC=C1
+  mapped_rxn: '[C:12]1([H:17])[C:13]([H:18])=[C:14]([H:19])[C:15]([H:20])=[C:16]1[H:21].[C:1]1([H:6])=[C:2]([H:7])[C:3]([H:8])([H:9])[C:4]([H:10])=[C:5]1[H:11]>>[C:1]1([H:6])([C:12]2([H:17])[C:13]([H:18])=[C:14]([H:19])[C:15]([H:20])=[C:16]2[H:21])[C:2]([H:7])[C:3]([H:8])([H:9])[C:4]([H:10])=[C:5]1[H:11]'
+  note: 'Reaction index: Chemkin #1; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 288.0
+    Ea: 8.7
+    b: 2.8
+- equation: C1=CCC=C1.[CH]1C=CC=C1>>[CH]1C=CCC1C1C=CC=C1
+  mapped_rxn: '[C:12]1([H:17])[C:13]([H:18])=[C:14]([H:19])[C:15]([H:20])=[C:16]1[H:21].[C:1]1([H:6])=[C:2]([H:7])[C:3]([H:8])([H:9])[C:4]([H:10])=[C:5]1[H:11]>>[C:1]1([H:6])[C:2]([H:7])([C:12]2([H:17])[C:13]([H:18])=[C:14]([H:19])[C:15]([H:20])=[C:16]2[H:21])[C:3]([H:8])([H:9])[C:4]([H:10])=[C:5]1[H:11]'
+  note: 'Reaction index: Chemkin #2; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 288.0
+    Ea: 3.3
+    b: 2.74
+- equation: '[CH]1C=CCC1C1C=CC=C1>>[CH]1C=CC2C1C1CC=CC21'
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([H:7])=[C:8]([H:9])[C:10]1([C:12]1([H:14])[C:15]([H:16])([H:17])[C:18]([H:19])=[C:20]([H:21])[C:22]1[H:24])[H:25]>>[C:1]1([H:3])[C:4]([H:5])=[C:6]([H:7])[C:8]2([H:9])[C:10]1([H:25])[C:12]1([H:14])[C:15]([H:16])([H:17])[C:18]([H:19])=[C:20]([H:21])[C:22]21[H:24]'
+  note: 'Reaction index: Chemkin #3; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 189000000000.0
+    Ea: 15.4
+    b: 0.29
+- equation: '[CH]1C=CC2C1C1CC=CC21>>[CH]1C=CC=CC2CC=CC12'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]2([H:14])[C:5]1([H:15])[C:6]1([H:16])[C:7]([H:17])([H:18])[C:8]([H:19])=[C:9]([H:20])[C:10]21[H:21]>>[C:1]1([H:11])=[C:5]([H:15])[C:6]2([H:16])[C:7]([H:17])([H:18])[C:8]([H:19])=[C:9]([H:20])[C:10]2([H:21])[C:4]([H:14])[C:3]([H:13])=[C:2]1[H:12]'
+  note: 'Reaction index: Chemkin #4; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 351000000000.0
+    Ea: 29.1
+    b: 0.58
+- equation: '[CH]1C=CC=CC2CC=CC12>>[CH]1C=CC=CC=CC=CC1'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])=[C:5]([H:15])[C:6]2([H:16])[C:7]([H:17])([H:18])[C:8]([H:19])=[C:9]([H:20])[C:10]12[H:21]>>[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])=[C:5]([H:15])[C:6]([H:16])=[C:7]([H:18])[C:8]([H:19])=[C:9]([H:20])[C:10]1([H:17])[H:21]'
+  note: 'Reaction index: Chemkin #5; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 83900000000.0
+    Ea: 36.4
+    b: 0.91
+- equation: '[CH]1C=CC=CC=CC=CC1>>[CH]1C=CCC2C=CC=CC12'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])=[C:5]([H:15])[C:6]([H:16])=[C:7]([H:17])[C:8]([H:18])=[C:9]([H:19])[C:10]1([H:20])[H:21]>>[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:20])[C:5]2([H:15])[C:6]([H:16])=[C:7]([H:17])[C:8]([H:18])=[C:9]([H:19])[C:10]12[H:21]'
+  note: 'Reaction index: Chemkin #6; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 6250000000.0
+    Ea: 6.2
+    b: 0.76
+- equation: '[CH]1CC=CC1C1C=CC=C1>>[CH]1C=CC2C1C1CC=CC21'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])([H:13])[C:3]([H:14])=[C:4]([H:15])[C:5]1([C:6]1([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]([H:20])=[C:10]1[H:21])[H:16]>>[C:1]12([H:11])[C:2]([H:12])([H:13])[C:3]([H:14])=[C:4]([H:15])[C:5]1([H:16])[C:6]1([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]([H:20])[C:10]21[H:21]'
+  note: 'Reaction index: Chemkin #7; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 343000000000.0
+    Ea: 8.5
+    b: 0.21
+- equation: C1=CCC2C=CC=CC2=C1.[H]>>[CH]1C=CCC2C=CC=CC12
+  mapped_rxn: '[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])([H:14])[C:4]2([H:15])[C:5]([H:16])=[C:6]([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]2=[C:10]1[H:20].[H:21]>>[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])([H:14])[C:4]2([H:15])[C:5]([H:16])=[C:6]([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]2([H:21])[C:10]1[H:20]'
+  note: 'Reaction index: Chemkin #8; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 90900000.0
+    Ea: 2.9
+    b: 1.71
+- equation: '[CH]1C=CCC2C=CC=CC12>>C=CC=CC1[CH]C=CC=C1'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:15])[C:5]2([H:16])[C:6]([H:17])=[C:7]([H:18])[C:8]([H:19])=[C:9]([H:20])[C:10]12[H:21]>>[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:15])=[C:5]([H:16])[C:10]1([C:9](=[C:8]([C:7](=[C:6]([H:14])[H:17])[H:18])[H:19])[H:20])[H:21]'
+  note: 'Reaction index: Chemkin #9; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 87600000000.0
+    Ea: 24.5
+    b: 0.78
+- equation: C=CC=CC1[CH]C=CC=C1>>c1ccccc1.[CH]=CC=C
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5]1([H:16])[C:6]([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]([H:20])=[C:10]1[H:21])[H:15])[H:14])[H:13])([H:11])[H:12]>>[C:1](=[C:2]([C:3](=[C:4][H:15])[H:14])[H:13])([H:11])[H:12].[c:5]1([H:16])[c:6]([H:17])[c:7]([H:18])[c:8]([H:19])[c:9]([H:20])[c:10]1[H:21]'
+  note: 'Reaction index: Chemkin #10; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 7140000000000.0
+    Ea: 22.9
+    b: 0.52
+- equation: C=CC=Cc1ccccc1.[H]>>C=CC=CC1[CH]C=CC=C1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([c:5]1[c:7]([H:8])[c:9]([H:10])[c:11]([H:12])[c:13]([H:14])[c:15]1[H:17])[H:18])[H:19])[H:20])([H:21])[H:22].[H:23]>>[C:1](=[C:2]([C:3](=[C:4]([C:5]1([H:23])[C:7]([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])=[C:15]1[H:17])[H:18])[H:19])[H:20])([H:21])[H:22]'
+  note: 'Reaction index: Chemkin #11; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 8810000.0
+    Ea: 5.9
+    b: 1.95
+- equation: '[CH]1C=CCC1C1C=CC=C1>>C=CC=C[CH]C1C=CC=C1'
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([H:7])=[C:8]([H:9])[C:10]1([C:12]1([H:14])[C:15]([H:16])[C:17]([H:18])=[C:19]([H:20])[C:21]1([H:23])[H:24])[H:25]>>[C:1]([H:3])(=[C:15]([H:16])[C:17]([H:18])=[C:19]([H:20])[C:21]([C:12]1([H:14])[C:4]([H:5])=[C:6]([H:7])[C:8]([H:9])=[C:10]1[H:25])[H:24])[H:23]'
+  note: 'Reaction index: Chemkin #12; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 102000000000.0
+    Ea: 46.1
+    b: 0.85
+- equation: '[CH]1C=CCC1C1C=CC=C1>>[CH]1C=CCC1C1=CC=CC1'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:15])[C:5]1([C:6]1([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]([H:20])=[C:10]1[H:21])[H:16]>>[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:15])[C:5]1([C:6]1=[C:7]([H:18])[C:8]([H:19])=[C:9]([H:20])[C:10]1([H:17])[H:21])[H:16]'
+  note: 'Reaction index: Chemkin #13; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 112000000.0
+    Ea: 22.7
+    b: 1.64
+- equation: '[CH]1C=CCC1C1=CC=CC1>>C=CC=CC=C1[CH]C=CC1'
+  mapped_rxn: '[C:1]1([H:3])([H:4])[C:5]([H:6])=[C:7]([H:8])[C:9]([H:10])[C:11]1([C:13]1=[C:15]([H:16])[C:17]([H:18])=[C:19]([H:20])[C:21]1([H:23])[H:24])[H:25]>>[C:1]([H:3])([H:4])=[C:5]([H:6])[C:7]([H:8])=[C:9]([H:10])[C:11](=[C:13]1[C:15]([H:16])[C:17]([H:18])=[C:19]([H:20])[C:21]1([H:23])[H:24])[H:25]'
+  note: 'Reaction index: Chemkin #14; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 5290000000.0
+    Ea: 31.2
+    b: 1.04
+- equation: C=CC=CC=C1[CH]C=CC1>>[CH]1C=CCC12C=CC=CC2
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5](=[C:6]1[C:7]([H:17])[C:8]([H:18])=[C:9]([H:19])[C:10]1([H:20])[H:21])[H:16])[H:15])[H:14])[H:13])([H:11])[H:12]>>[C:1]1([H:12])=[C:2]([H:13])[C:3]([H:14])=[C:4]([H:15])[C:5]([H:11])([H:16])[C:6]12[C:7]([H:17])[C:8]([H:18])=[C:9]([H:19])[C:10]2([H:20])[H:21]'
+  note: 'Reaction index: Chemkin #15; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 43600000000.0
+    Ea: 32.2
+    b: 0.44
+- equation: '[CH]1C=CCC12C=CC=CC2>>C=CC=CC1=CC=C[CH]C1'
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([H:7])=[C:8]([H:9])[C:10]([H:11])([H:12])[C:13]12[C:15]([H:14])[C:17]([H:18])=[C:19]([H:20])[C:21]2([H:23])[H:24]>>[C:1]([H:3])(=[C:15]([H:14])[C:17]([H:18])=[C:19]([H:20])[C:21]1=[C:4]([H:5])[C:6]([H:7])=[C:8]([H:9])[C:10]([H:12])[C:13]1([H:11])[H:24])[H:23]'
+  note: 'Reaction index: Chemkin #16; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 54700000000.0
+    Ea: 29.0
+    b: 0.79
+- equation: C=CC=CC1=CC=C[CH]C1>>[CH]1C=CCC2=CC=CCC12
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5]1=[C:7]([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])[C:15]1([H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]>>[C:1]1([H:23])[C:2]([H:21])=[C:3]([H:20])[C:4]([H:19])([H:22])[C:5]2=[C:7]([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])([H:17])[C:15]12[H:18]'
+  note: 'Reaction index: Chemkin #17; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 669000000000.0
+    Ea: 40.0
+    b: 0.22
+- equation: C=CC=C[CH]C1C=CC=C1>>C=CC=CC=C1[CH]C=CC1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5]([C:6]1([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])=[C:15]1[H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]>>[C:1](=[C:2]([C:3](=[C:4]([C:5](=[C:6]1[C:9]([H:10])[C:11]([H:12])=[C:13]([H:14])[C:15]1([H:8])[H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #18; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 128000000.0
+    Ea: 18.4
+    b: 1.55
+- equation: C=CC=C[CH]C1C=CC=C1>>CC=CC=CC1=CC=C[CH]1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5]([C:6]1([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])=[C:15]1[H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]>>[C:1]([C:2](=[C:3]([C:4](=[C:5]([C:6]1=[C:9]([H:10])[C:11]([H:12])=[C:13]([H:14])[C:15]1[H:17])[H:18])[H:19])[H:20])[H:21])([H:8])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #19; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 0.107
+    Ea: 29.6
+    b: 3.67
+- equation: CC=CC=CC1=CC=C[CH]1>>CC1C=CC=C2C=C[CH]C21
+  mapped_rxn: '[C:1]([C:2](=[C:3]([C:4](=[C:5]([C:6]1=[C:8]([H:9])[C:10]([H:11])=[C:12]([H:13])[C:14]1[H:16])[H:17])[H:18])[H:19])[H:20])([H:21])([H:22])[H:23]>>[C:1]([C:5]1([H:17])[C:4]([H:18])=[C:3]([H:19])[C:2]([H:20])=[C:8]2[C:6]1([H:9])[C:14]([H:16])[C:12]([H:13])=[C:10]2[H:11])([H:21])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #20; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 79000000000.0
+    Ea: 21.1
+    b: 0.29
+- equation: C1=CC2=CC=CC2C=C1.[CH3]>>CC1C=CC=C2C=C[CH]C21
+  mapped_rxn: '[C:1]([H:2])([H:3])[H:4].[C:5]1([H:7])=[C:8]([H:9])[C:10]([H:11])=[C:12]([H:13])[C:14]2=[C:16]([H:17])[C:18]([H:19])=[C:20]([H:21])[C:22]12[H:24]>>[C:1]([H:2])([H:3])([H:4])[C:5]1([H:7])[C:8]([H:9])=[C:10]([H:11])[C:12]([H:13])=[C:14]2[C:16]([H:17])=[C:18]([H:19])[C:20]([H:21])[C:22]12[H:24]'
+  note: 'Reaction index: Chemkin #21; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 2480.0
+    Ea: -0.9
+    b: 2.89
+- equation: C=CC=C[CH]C1C=CC=C1>>[CH]1C=CC2C=CC=CCC12
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([C:7]([C:8](=[C:9]([C:10](=[C:11]([H:12])[H:13])[H:14])[H:15])[H:16])[H:17])([H:18])[C:19]([H:20])=[C:21]1[H:23]>>[C:1]1([H:3])[C:4]2([H:5])[C:6]([H:18])([C:11]([H:13])=[C:10]1[H:14])[C:19]([H:20])=[C:21]([H:23])[C:9]([H:15])=[C:8]([H:16])[C:7]2([H:12])[H:17]'
+  note: 'Reaction index: Chemkin #22; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 119000000000.0
+    Ea: 16.7
+    b: 0.08
+- equation: C1=CC2=CC=CC2C=C1>>C1=Cc2ccccc2C1
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]2([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])=[C:15]2[C:17]([H:18])=[C:19]1[H:21]>>[C:1]1([H:3])=[C:4]([H:5])[c:6]2[c:9]([H:10])[c:11]([H:12])[c:13]([H:14])[c:17]([H:18])[c:15]2[C:19]1([H:8])[H:21]'
+  note: 'Reaction index: Chemkin #23; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 5200000000.0
+    Ea: 6.8
+    b: 0.96
+- equation: '[CH]1C=CC2C=CC=CCC12>>[CH]1C=CC=CC=CC=CC1'
+  mapped_rxn: '[C:1]12([H:3])[C:4]([H:2])[C:6]([H:7])=[C:8]([H:9])[C:10]1([H:12])[C:13]([H:14])=[C:15]([H:16])[C:17]([H:18])=[C:19]([H:20])[C:21]2([H:23])[H:24]>>[C:1]1([H:3])[C:4]([H:2])=[C:6]([H:7])[C:8]([H:9])=[C:10]([H:12])[C:13]([H:14])=[C:15]([H:16])[C:17]([H:18])=[C:19]([H:20])[C:21]1([H:23])[H:24]'
+  note: 'Reaction index: Chemkin #24; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 12700000000.0
+    Ea: 40.7
+    b: 1.01
+- equation: '[CH]1C=CC2C=CC=CCC12>>C1=CCC2C=CC=C2C=C1.[H]'
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([H:7])([H:8])[C:9]2([H:11])[C:12]([H:13])[C:14]([H:15])=[C:16]([H:17])[C:18]2([H:20])[C:21]([H:22])=[C:23]1[H:25]>>[C:1]1([H:3])=[C:4]([H:5])[C:6]([H:7])([H:8])[C:9]2([H:11])[C:12]([H:13])=[C:14]([H:15])[C:16]([H:17])=[C:18]2[C:21]([H:22])=[C:23]1[H:25].[H:20]'
+  note: 'Reaction index: Chemkin #25; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1490000000.0
+    Ea: 38.3
+    b: 1.41
+- equation: C1=CCC2=CC=CCC2=C1.[H]>>[CH]1C=CCC2=CC=CCC12
+  mapped_rxn: '[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])([H:14])[C:4]2=[C:5]([H:15])[C:6]([H:16])=[C:7]([H:17])[C:8]([H:18])([H:19])[C:9]2=[C:10]1[H:20].[H:21]>>[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])([H:14])[C:4]2([H:21])[C:5]([H:15])[C:6]([H:16])=[C:7]([H:17])[C:8]([H:18])([H:19])[C:9]2=[C:10]1[H:20]'
+  note: 'Reaction index: Chemkin #26; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 90900000.0
+    Ea: 2.9
+    b: 1.71
+- equation: C=CC=CC1=CC=C[CH]C1>>CC=C[CH]c1ccccc1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5]1=[C:7]([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])[C:15]1([H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]>>[C:1]([C:2](=[C:3]([C:4]([c:5]1[c:7]([H:8])[c:9]([H:10])[c:11]([H:12])[c:13]([H:14])[c:15]1[H:18])[H:19])[H:20])[H:21])([H:17])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #27; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 250000.0
+    Ea: 24.0
+    b: 1.95
+- equation: C=CC=Cc1ccccc1.[H]>>CC=C[CH]c1ccccc1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([c:5]1[c:7]([H:8])[c:9]([H:10])[c:11]([H:12])[c:13]([H:14])[c:15]1[H:17])[H:18])[H:19])[H:20])([H:21])[H:22].[H:23]>>[C:1]([C:2](=[C:3]([C:4]([c:5]1[c:7]([H:8])[c:9]([H:10])[c:11]([H:12])[c:13]([H:14])[c:15]1[H:17])[H:18])[H:19])[H:20])([H:21])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #28; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 240000000.0
+    Ea: 1.6
+    b: 1.58
+- equation: C1=CC=C2C=CCC2C=C1.[H]>>[CH]1C=CC=CC2CC=CC12
+  mapped_rxn: '[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])=[C:4]2[C:5]([H:14])=[C:6]([H:15])[C:7]([H:16])([H:17])[C:8]2([H:18])[C:9]([H:19])=[C:10]1[H:20].[H:21]>>[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])[C:4]2([H:21])[C:5]([H:14])=[C:6]([H:15])[C:7]([H:16])([H:17])[C:8]2([H:18])[C:9]([H:19])=[C:10]1[H:20]'
+  note: 'Reaction index: Chemkin #29; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 126000000.0
+    Ea: 1.9
+    b: 1.63
+- equation: '[CH]1C=CCC12C=CC=CC2>>[CH]1C=CCC23CC=CC2C13'
+  mapped_rxn: '[C:1]1([H:3])[C:4]([H:5])=[C:6]([H:7])[C:8]([H:9])([H:10])[C:11]12[C:13]([H:14])([H:15])[C:16]([H:17])=[C:18]([H:19])[C:20]([H:21])=[C:22]2[H:24]>>[C:1]1([H:3])[C:4]([H:5])=[C:6]([H:7])[C:8]([H:9])([H:10])[C:11]23[C:13]([H:14])([H:15])[C:16]([H:17])=[C:18]([H:19])[C:20]2([H:21])[C:22]13[H:24]'
+  note: 'Reaction index: Chemkin #30; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 248000000000.0
+    Ea: 7.2
+    b: 0.26
+- equation: '[CH]1C=CCC23CC=CC2C13>>C1=CC[C]2CC=CC2C=C1'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:15])[C:5]23[C:6]([H:16])([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]2([H:20])[C:10]13[H:21]>>[C:1]1([H:11])=[C:10]([H:21])[C:9]2([H:20])[C:5]([C:4]([H:14])([H:15])[C:3]([H:13])=[C:2]1[H:12])[C:6]([H:16])([H:17])[C:7]([H:18])=[C:8]2[H:19]'
+  note: 'Reaction index: Chemkin #31; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 2430000000000.0
+    Ea: 18.2
+    b: 0.31
+- equation: CC1C=CC=C2C=C[CH]C21>>CC1C=CC=C2C=CC[C]21
+  mapped_rxn: '[C:1]([C:2]1([H:14])[C:3]([H:15])=[C:4]([H:16])[C:5]([H:17])=[C:6]2[C:7]([H:18])=[C:8]([H:19])[C:9]([H:20])[C:10]12[H:21])([H:11])([H:12])[H:13]>>[C:1]([C:2]1([H:14])[C:3]([H:15])=[C:4]([H:16])[C:5]([H:17])=[C:6]2[C:7]([H:18])=[C:8]([H:19])[C:9]([H:20])([H:21])[C:10]12)([H:11])([H:12])[H:13]'
+  note: 'Reaction index: Chemkin #32; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 6070000.0
+    Ea: 26.1
+    b: 2.0
+- equation: C1=Cc2ccccc2C1.[CH3]>>CC1C=CC=C2C=CC[C]21
+  mapped_rxn: '[C:1]([H:2])([H:3])[H:4].[c:5]1([H:7])[c:8]([H:9])[c:10]([H:11])[c:12]([H:13])[c:14]2[c:16]1[C:18]([H:19])([H:20])[C:21]([H:22])=[C:23]2[H:25]>>[C:1]([H:2])([H:3])([H:4])[C:5]1([H:7])[C:8]([H:9])=[C:10]([H:11])[C:12]([H:13])=[C:14]2[C:16]1[C:18]([H:19])([H:20])[C:21]([H:22])=[C:23]2[H:25]'
+  note: 'Reaction index: Chemkin #33; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 643.0
+    Ea: 8.6
+    b: 2.8
+- equation: C=CC=CC=C1[CH]C=CC1>>CC=CC=CC1=CC=C[CH]1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5](=[C:6]1[C:8]([H:9])[C:10]([H:11])=[C:12]([H:13])[C:14]1([H:16])[H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]>>[C:1]([C:2](=[C:3]([C:4](=[C:5]([C:6]1=[C:8]([H:9])[C:10]([H:11])=[C:12]([H:13])[C:14]1[H:17])[H:18])[H:19])[H:20])[H:21])([H:16])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #34; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 259000000.0
+    Ea: 26.4
+    b: 1.01
+- equation: C1=CC[C]2CC=CC2C=C1>>[CH]1C=CC=C2C=CCC2C1
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]2([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])=[C:15]([H:16])[C:17]([H:18])([H:19])[C:20]2[C:22]1([H:24])[H:25]>>[C:1]1([H:3])[C:4]([H:5])=[C:6]([H:8])[C:9]([H:10])=[C:11]2[C:13]([H:14])=[C:15]([H:16])[C:17]([H:18])([H:19])[C:20]2([H:12])[C:22]1([H:24])[H:25]'
+  note: 'Reaction index: Chemkin #35; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1670000000.0
+    Ea: 22.4
+    b: 1.14
+- equation: C1=CC[C]2CC=CC2C=C1>>[CH]1C=CC2C=CC=CCC12
+  mapped_rxn: '[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])([H:14])[C:4]2[C:5]([H:15])([H:16])[C:6]([H:17])=[C:7]([H:18])[C:8]2([H:19])[C:9]([H:20])=[C:10]1[H:21]>>[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])([H:14])[C:4]2([H:15])[C:5]([H:16])[C:6]([H:17])=[C:7]([H:18])[C:8]2([H:19])[C:9]([H:20])=[C:10]1[H:21]'
+  note: 'Reaction index: Chemkin #36; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 14600000.0
+    Ea: 31.6
+    b: 1.66
+- equation: CC=C[CH]c1ccccc1>>CC1C=CC2=CC=C[CH]C21
+  mapped_rxn: '[C:1]([C:2](=[C:3]([C:4]([c:5]1[c:7]([H:8])[c:9]([H:10])[c:11]([H:12])[c:13]([H:14])[c:15]1[H:17])[H:18])[H:19])[H:20])([H:21])([H:22])[H:23]>>[C:1]([C:2]1([H:20])[C:3]([H:19])=[C:4]([H:18])[C:5]2=[C:7]([H:8])[C:9]([H:10])=[C:11]([H:12])[C:13]([H:14])[C:15]12[H:17])([H:21])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #37; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 100000000000.0
+    Ea: 32.4
+    b: 0.41
+- equation: CC1C=CC2=CC=C[CH]C21>>C1=CC2=CC=CC2C=C1.[CH3]
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]2=[C:8]([H:9])[C:10]([H:11])=[C:12]([H:13])[C:14]([H:15])[C:16]2([H:18])[C:19]1([C:21]([H:22])([H:23])[H:24])[H:25]>>[C:1]1([H:3])=[C:4]([H:5])[C:6]2=[C:8]([H:9])[C:10]([H:11])=[C:12]([H:13])[C:16]2([H:18])[C:14]([H:15])=[C:19]1[H:25].[C:21]([H:22])([H:23])[H:24]'
+  note: 'Reaction index: Chemkin #38; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 57200000000.0
+    Ea: 51.9
+    b: 1.33
+- equation: C=CC=CC=C1[CH]C=CC1>>C=CC=CC=C1[CH]CC=C1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5](=[C:6]1[C:8]([H:9])[C:10]([H:11])=[C:12]([H:13])[C:14]1([H:16])[H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]>>[C:1](=[C:2]([C:3](=[C:4]([C:5](=[C:6]1[C:8]([H:9])[C:10]([H:11])([H:16])[C:12]([H:13])=[C:14]1[H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #39; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 11800000.0
+    Ea: 15.8
+    b: 1.8
+- equation: C=CC=CC=C1[CH]CC=C1>>CC=CC=CC1=CC=C[CH]1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5](=[C:6]1[C:8]([H:9])=[C:10]([H:11])[C:12]([H:13])([H:14])[C:15]1[H:17])[H:18])[H:19])[H:20])[H:21])([H:22])[H:23]>>[C:1]([C:2](=[C:3]([C:4](=[C:5]([C:6]1=[C:8]([H:9])[C:10]([H:11])=[C:12]([H:14])[C:15]1[H:17])[H:18])[H:19])[H:20])[H:21])([H:13])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #40; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 2270000.0
+    Ea: 33.7
+    b: 1.5
+- equation: C=CC=CC=C1[CH]CC=C1>>[CH]1C=CC=C2C=CCC2C1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5](=[C:6]1[C:7]([H:17])[C:8]([H:18])([H:19])[C:9]([H:20])=[C:10]1[H:21])[H:16])[H:15])[H:14])[H:13])([H:11])[H:12]>>[C:1]1([H:11])([H:12])[C:2]([H:13])[C:3]([H:14])=[C:4]([H:15])[C:5]([H:16])=[C:6]2[C:7]1([H:17])[C:8]([H:18])([H:19])[C:9]([H:20])=[C:10]2[H:21]'
+  note: 'Reaction index: Chemkin #41; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 91600000000.0
+    Ea: 24.2
+    b: 0.2
+- equation: C1=CC=C2C=CCC2C=C1.[H]>>[CH]1C=CC=C2C=CCC2C1
+  mapped_rxn: '[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])=[C:4]2[C:5]([H:14])=[C:6]([H:15])[C:7]([H:16])([H:17])[C:8]2([H:18])[C:9]([H:19])=[C:10]1[H:20].[H:21]>>[C:1]1([H:11])=[C:2]([H:12])[C:3]([H:13])=[C:4]2[C:5]([H:14])=[C:6]([H:15])[C:7]([H:16])([H:17])[C:8]2([H:18])[C:9]([H:19])([H:21])[C:10]1[H:20]'
+  note: 'Reaction index: Chemkin #42; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 193000000.0
+    Ea: 1.4
+    b: 1.6
+- equation: C1=CCC2C=CC=C2C=C1.[H]>>[CH]1C=CC=C2C=CCC2C1
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]2([H:8])[C:9](=[C:7]1[H:12])[C:13]([H:14])=[C:15]([H:16])[C:17]([H:18])=[C:19]([H:20])[C:21]2([H:23])[H:24].[H:25]>>[C:1]1([H:3])[C:4]([H:5])([H:25])[C:6]2([H:8])[C:15](=[C:13]([H:14])[C:9]([H:16])=[C:7]1[H:12])[C:17]([H:18])=[C:19]([H:20])[C:21]2([H:23])[H:24]'
+  note: 'Reaction index: Chemkin #43; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 193000000.0
+    Ea: 1.4
+    b: 1.6
+- equation: C1=CCC2=C(C=C1)C=CC2.[H]>>[CH]1C=CC=C2C=CCC2C1
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([H:7])=[C:8]([H:9])[C:10]2=[C:12]([C:13]([H:14])([H:15])[C:16]([H:17])=[C:18]2[H:20])[C:21]1([H:23])[H:24].[H:25]>>[C:1]1([H:3])[C:4]([H:5])=[C:6]([H:7])[C:8]([H:9])=[C:10]2[C:12]([H:25])([C:13]([H:14])([H:15])[C:16]([H:17])=[C:18]2[H:20])[C:21]1([H:23])[H:24]'
+  note: 'Reaction index: Chemkin #44; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 193000000.0
+    Ea: 1.4
+    b: 1.6
+- equation: '[CH]1C=CCC2C=CC=CC12>>[CH]1C=CC=C2CC=CCC12'
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([H:7])=[C:8]([H:9])[C:10]2([H:12])[C:13]([H:14])([H:15])[C:16]([H:17])=[C:18]([H:19])[C:20]([H:21])[C:22]12[H:24]>>[C:1]1([H:3])[C:4]([H:5])=[C:6]([H:7])[C:8]([H:9])=[C:10]2[C:13]([H:14])([H:15])[C:16]([H:17])=[C:18]([H:19])[C:20]([H:12])([H:21])[C:22]12[H:24]'
+  note: 'Reaction index: Chemkin #45; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 183000000.0
+    Ea: 31.9
+    b: 1.45
+- equation: C1=CCc2ccccc2C1.[H]>>[CH]1C=CC=C2CC=CCC12
+  mapped_rxn: '[H:1].[c:2]1([H:4])[c:5]([H:6])[c:7]([H:8])[c:9]([H:10])[c:11]2[c:13]1[C:15]([H:16])([H:17])[C:18]([H:19])=[C:20]([H:21])[C:22]2([H:24])[H:25]>>[H:1][C:13]12[C:2]([H:4])[C:5]([H:6])=[C:7]([H:8])[C:9]([H:10])=[C:11]1[C:22]([H:24])([H:25])[C:20]([H:21])=[C:18]([H:19])[C:15]2([H:16])[H:17]'
+  note: 'Reaction index: Chemkin #46; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 76100000.0
+    Ea: 4.7
+    b: 1.71
+- equation: '[CH]1C=CCC1C1=CC=CC1>>[CH]1C=CCC1C1=CCC=C1'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:15])[C:5]1([C:6]1=[C:7]([H:17])[C:8]([H:18])=[C:9]([H:19])[C:10]1([H:20])[H:21])[H:16]>>[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:15])[C:5]1([C:6]1=[C:10]([H:21])[C:9]([H:19])([H:20])[C:8]([H:18])=[C:7]1[H:17])[H:16]'
+  note: 'Reaction index: Chemkin #47; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 118000000.0
+    Ea: 21.8
+    b: 1.8
+- equation: '[CH]1C=CCC1C1=CCC=C1>>C=CC=CC=C1[CH]CC=C1'
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([C:7]2([H:9])[C:10]([H:11])([H:12])[C:13]([H:14])=[C:15]([H:16])[C:17]2[H:19])=[C:20]([H:21])[C:8]1([H:24])[H:25]>>[C:1]([H:3])(=[C:8]([C:20](=[C:6]([C:4]([H:5])=[C:13]1[C:10]([H:12])[C:7]([H:9])([H:11])[C:17]([H:19])=[C:15]1[H:16])[H:14])[H:21])[H:25])[H:24]'
+  note: 'Reaction index: Chemkin #48; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 9380000000.0
+    Ea: 42.3
+    b: 1.08
+- equation: C=CC=C[CH]C1C=CC=C1>>C=CC=CC1C2[CH]C=CC21
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5]([C:6]1([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]([H:20])=[C:10]1[H:21])[H:16])[H:15])[H:14])[H:13])([H:11])[H:12]>>[C:1](=[C:2]([C:3](=[C:4]([C:5]1([H:16])[C:6]2([H:17])[C:7]([H:18])=[C:8]([H:19])[C:9]([H:20])[C:10]12[H:21])[H:15])[H:14])[H:13])([H:11])[H:12]'
+  note: 'Reaction index: Chemkin #49; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 551000000000.0
+    Ea: 12.9
+    b: 0.28
+- equation: C=CC=CC1C2[CH]C=CC21>>C=CC=CC1[CH]C=CC=C1
+  mapped_rxn: '[C:1](=[C:2]([C:3](=[C:4]([C:5]1([H:16])[C:6]2([H:17])[C:7]([H:18])[C:8]([H:19])=[C:9]([H:20])[C:10]12[H:21])[H:15])[H:14])[H:13])([H:11])[H:12]>>[C:1](=[C:2]([C:3](=[C:4]([C:5]1([H:16])[C:6]([H:17])=[C:7]([H:18])[C:8]([H:19])=[C:9]([H:20])[C:10]1[H:21])[H:15])[H:14])[H:13])([H:11])[H:12]'
+  note: 'Reaction index: Chemkin #50; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 775000000000.0
+    Ea: 18.7
+    b: 0.44
+- equation: '[CH]1C=CCC1C1C=CC=C1>>[CH]1C=CC=C1C1CC=CC1'
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[C:6]([H:7])=[C:8]([H:9])[C:10]1([C:12]1([H:14])[C:15]([H:16])([H:17])[C:18]([H:19])=[C:20]([H:21])[C:22]1[H:24])[H:25]>>[C:1]1([H:3])[C:4]([H:5])=[C:6]([H:7])[C:8]([H:9])=[C:10]1[C:12]1([H:14])[C:15]([H:16])([H:17])[C:18]([H:19])=[C:20]([H:21])[C:22]1([H:24])[H:25]'
+  note: 'Reaction index: Chemkin #51; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 6360000.0
+    Ea: 31.7
+    b: 1.7
+- equation: '[CH]1C=CCC1C1=CC=CC1>>[CH]1C=CC=C1C1CC=CC1'
+  mapped_rxn: '[C:1]1([H:11])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:15])[C:5]1([C:6]1=[C:7]([H:17])[C:8]([H:18])=[C:9]([H:19])[C:10]1([H:20])[H:21])[H:16]>>[C:1]1([H:11])([H:20])[C:2]([H:12])=[C:3]([H:13])[C:4]([H:14])([H:15])[C:5]1([C:6]1=[C:7]([H:17])[C:8]([H:18])=[C:9]([H:19])[C:10]1[H:21])[H:16]'
+  note: 'Reaction index: Chemkin #52; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1780000.0
+    Ea: 25.3
+    b: 1.75
+- equation: '[CH]1C=CC=C1C1CC=CC1>>C=C[CH]CC=C1C=CC=C1'
+  mapped_rxn: '[C:1]1([H:3])[C:4]([C:5]2([H:7])[C:8]([H:9])([H:10])[C:11]([H:12])=[C:13]([H:14])[C:15]2([H:17])[H:18])=[C:19]([H:20])[C:21]([H:22])=[C:23]1[H:25]>>[C:1]([H:3])(=[C:4]([C:5]([H:7])[C:8]([H:9])([H:10])[C:11]([H:12])=[C:13]1[C:15]([H:18])=[C:23]([H:25])[C:21]([H:22])=[C:19]1[H:20])[H:17])[H:14]'
+  note: 'Reaction index: Chemkin #53; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 202000000000.0
+    Ea: 35.3
+    b: 0.79
+- equation: C=C[CH]CC=C1C=CC=C1>>CC=CC=CC1=CC=C[CH]1
+  mapped_rxn: '[C:1](=[C:2]([C:3]([C:4]([C:5](=[C:6]1[C:8]([H:9])=[C:10]([H:11])[C:12]([H:13])=[C:14]1[H:16])[H:17])([H:18])[H:19])[H:20])[H:21])([H:22])[H:23]>>[C:1]([C:2](=[C:3]([C:4](=[C:5]([C:6]1=[C:8]([H:9])[C:10]([H:11])=[C:12]([H:13])[C:14]1[H:16])[H:17])[H:19])[H:20])[H:21])([H:18])([H:22])[H:23]'
+  note: 'Reaction index: Chemkin #54; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 10400000.0
+    Ea: 27.1
+    b: 1.61
+- equation: '[CH]1C=Cc2ccccc21>>[CH]1C2=CC3C=CC2=CC13'
+  mapped_rxn: '[c:1]1([H:3])[c:4]([H:5])[c:6]([H:7])[c:8]2[c:10]([c:11]1[H:13])[C:14]([H:15])=[C:16]([H:17])[C:18]2[H:20]>>[C:1]1([H:3])[C:4]2=[C:6]([H:7])[C:8]3([H:5])[C:11]([H:13])=[C:10]([H:15])[C:14]2=[C:16]([H:17])[C:18]13[H:20]'
+  note: 'Reaction index: Chemkin #55; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1.0e-11
+    Ea: 0.0
+    b: 0.0
+- equation: '[CH]1C=Cc2ccccc21>>C1=CC2[C]3C(=C1)C=CC32'
+  mapped_rxn: '[c:1]1([H:3])[c:4]([H:5])[c:6]([H:7])[c:8]2[c:10]([c:11]1[H:13])[C:14]([H:15])[C:16]([H:17])=[C:18]2[H:20]>>[C:1]1([H:3])=[C:4]([H:5])[C:6]2([H:7])[C:8]3[C:10](=[C:11]1[H:13])[C:14]([H:15])=[C:16]([H:17])[C:18]23[H:20]'
+  note: 'Reaction index: Chemkin #56; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1.0e-11
+    Ea: 0.0
+    b: 0.0
+- equation: '[CH]1C=Cc2ccccc21>>[CH]1C2c3ccccc3C12'
+  mapped_rxn: '[C:1]1([H:3])=[C:4]([H:5])[c:6]2[c:8]([H:9])[c:10]([H:11])[c:12]([H:13])[c:14]([H:15])[c:16]2[C:18]1[H:20]>>[C:1]1([H:3])[C:4]2([H:5])[c:6]3[c:8]([H:9])[c:10]([H:11])[c:12]([H:13])[c:14]([H:15])[c:16]3[C:18]12[H:20]'
+  note: 'Reaction index: Chemkin #57; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1.0e-11
+    Ea: 0.0
+    b: 0.0
+- equation: '[CH]1C=Cc2ccccc21>>[CH]1C=CC2C3=CC2C=C13'
+  mapped_rxn: '[c:1]1([H:3])[c:4]([H:5])[c:6]([H:7])[c:8]2[c:10]([c:11]1[H:13])[C:14]([H:15])[C:16]([H:17])=[C:18]2[H:20]>>[C:1]1([H:3])[C:4]([H:5])=[C:6]([H:7])[C:8]2([H:15])[C:10]3=[C:11]([H:13])[C:18]2([H:20])[C:16]([H:17])=[C:14]13'
+  note: 'Reaction index: Chemkin #58; RMG #-1
+
+    Library reaction: C10H11'
+  rate-constant:
+    A: 1.0e-11
+    Ea: 0.0
+    b: 0.0

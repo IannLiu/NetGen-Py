@@ -1,0 +1,1730 @@
+ELEMENTS
+	H
+	D /2.014/
+	T /3.016/
+	C
+	CI /13.003/
+	O
+	OI /17.999/
+	N
+	Ne
+	Ar
+	He
+	Si
+	S
+	F
+	Cl
+	Br
+	I
+	X /195.083/
+END
+
+SPECIES
+    C(T)(1)             ! C(T)(1)
+    CH2(S)(2)           ! CH2(S)(2)
+    N2(3)               ! N2(3)
+    HNO(4)              ! HNO(4)
+    CH3OH(5)            ! CH3OH(5)
+    HOCN(6)             ! HOCN(6)
+    HCNO(7)             ! HCNO(7)
+    HCNN(8)             ! HCNN(8)
+    CH2O(9)             ! CH2O(9)
+    CH2OH(10)           ! CH2OH(10)
+    O2(11)              ! O2(11)
+    NO2(12)             ! NO2(12)
+    N2O(13)             ! N2O(13)
+    CH2CHO(14)          ! CH2CHO(14)
+    C2H4(15)            ! C2H4(15)
+    H2O2(16)            ! H2O2(16)
+    HCCOH(17)           ! HCCOH(17)
+    NO(18)              ! NO(18)
+    HCN(19)             ! HCN(19)
+    C2H2(20)            ! C2H2(20)
+    HNCO(21)            ! HNCO(21)
+    CH3(22)             ! CH3(22)
+    HO2(23)             ! HO2(23)
+    CH4(24)             ! CH4(24)
+    C2H(25)             ! C2H(25)
+    O(T)(26)            ! O(T)(26)
+    HCCO(27)            ! HCCO(27)
+    CH2(T)(28)          ! CH2(T)(28)
+    NH(29)              ! NH(29)
+    CH(30)              ! CH(30)
+    CO(31)              ! CO(31)
+    CN(32)              ! CN(32)
+    H(33)               ! H(33)
+    N(34)               ! N(34)
+    C3H8(35)            ! C3H8(35)
+    NH3(36)             ! NH3(36)
+    NH2(37)             ! NH2(37)
+    CH3CHO(38)          ! CH3CHO(38)
+    C2H6(39)            ! C2H6(39)
+    C2H5(40)            ! C2H5(40)
+    CH3O(41)            ! CH3O(41)
+    C2H3(42)            ! C2H3(42)
+    HCO(43)             ! HCO(43)
+    CO2(44)             ! CO2(44)
+    OH(45)              ! OH(45)
+    H2(46)              ! H2(46)
+    NNH(47)             ! NNH(47)
+    H2O(48)             ! H2O(48)
+    NCO(49)             ! NCO(49)
+    CH2CO(50)           ! CH2CO(50)
+    H2CN(51)            ! H2CN(51)
+END
+
+
+
+THERM ALL
+   300.000  1000.000  5000.000
+
+! Thermo library: GRI-Mech3.0
+C(T)(1)                 C   1               G   200.000  3500.000 1000.00      1
+ 2.49267000E+00 4.79889000E-05-7.24335000E-08 3.74291000E-11-4.87278000E-15    2
+ 8.54513000E+04 4.80150000E+00 2.55424000E+00-3.21538000E-04 7.33792000E-07    3
+-7.32235000E-10 2.66521000E-13 8.54439000E+04 4.53131000E+00                   4
+
+! Thermo library: Narayanaswamy
+CH2(S)(2)               C   1H   2          G   100.000  5000.000 1442.37      1
+ 2.62649000E+00 3.94761000E-03-1.49923000E-06 2.54537000E-10-1.62954000E-14    2
+ 5.06917000E+04 6.78371000E+00 4.10264000E+00-1.44068000E-03 5.45067000E-06    3
+-3.58000000E-09 7.56187000E-13 5.04006000E+04-4.11763000E-01                   4
+
+! Thermo library: Narayanaswamy
+N2(3)                   N   2               G   200.000  6000.000 1000.00      1
+ 2.95258000E+00 1.39690000E-03-4.92632000E-07 7.86010000E-11-4.60755000E-15    2
+-9.23949000E+02 5.87189000E+00 3.53101000E+00-1.23661000E-04-5.02999000E-07    3
+ 2.43531000E-09-1.40881000E-12-1.04698000E+03 2.96747000E+00                   4
+
+! Thermo library: GRI-Mech3.0
+HNO(4)                  H   1N   1O   1     G   200.000  6000.000 1000.00      1
+ 2.97925000E+00 3.49441000E-03-7.85498000E-07 5.74796000E-11-1.93359000E-16    2
+ 1.17506000E+04 8.60637000E+00 4.53349000E+00-5.66962000E-03 1.84732000E-05    3
+-1.71371000E-08 5.54546000E-12 1.15483000E+04 1.74984000E+00                   4
+
+! Thermo library: Narayanaswamy
+CH3OH(5)                C   1H   4O   1     G   200.000  3500.000 1000.00      1
+ 1.78971000E+00 1.40938000E-02-6.36501000E-06 1.38171000E-09-1.17060000E-13    2
+-2.53749000E+04 1.45024000E+01 5.71540000E+00-1.52309000E-02 6.52441000E-05    3
+-7.10807000E-08 2.61353000E-11-2.56428000E+04-1.50410000E+00                   4
+
+! Thermo library: GRI-Mech3.0
+HOCN(6)                 C   1H   1N   1O   1G   298.000  5000.000 1368.00      1
+ 5.89785000E+00 3.16789000E-03-1.11801000E-06 1.77243000E-10-1.04339000E-14    2
+-3.70653000E+03-6.18168000E+00 3.78605000E+00 6.88668000E-03-3.21488000E-06    3
+ 5.17196000E-10 1.19361000E-14-2.82698000E+03 5.63292000E+00                   4
+
+! Thermo library: GRI-Mech3.0-N
+HCNO(7)                 C   1H   1N   1O   1G   100.000  5000.000 2375.51      1
+ 7.32902389E+00 3.20927277E-03-1.67775193E-06 3.15442666E-10-2.07937634E-14    2
+ 1.72141127E+04-1.53813038E+01 3.04435693E+00 1.04241949E-02-6.23368668E-06    3
+ 1.59406070E-09-1.55359787E-13 1.92497129E+04 8.99677040E+00                   4
+
+! Thermo library: GRI-Mech3.0-N
+HCNN(8)                 C   1H   1N   2     G   100.000  5000.000 1253.38      1
+ 5.75490258E+00 4.28142026E-03-1.78884837E-06 3.33962629E-10-2.32600742E-14    2
+ 5.34957824E+04-4.35183825E+00 2.84385142E+00 1.35715943E-02-1.29069115E-05    3
+ 6.24756199E-09-1.20278176E-12 5.42255185E+04 1.03497655E+01                   4
+
+! Thermo library: Narayanaswamy
+CH2O(9)                 C   1H   2O   1     G   200.000  3500.000 1000.00      1
+ 1.76069000E+00 9.20000000E-03-4.42259000E-06 1.00641000E-09-8.83856000E-14    2
+-1.39958000E+04 1.36563000E+01 4.79372000E+00-9.90833000E-03 3.73220000E-05    3
+-3.79285000E-08 1.31773000E-11-1.43090000E+04 6.02813000E-01                   4
+
+! Thermo library: Narayanaswamy
+CH2OH(10)               C   1H   3O   1     G   200.000  3500.000 1000.00      1
+ 3.69267000E+00 8.64577000E-03-3.75101000E-06 7.87235000E-10-6.48554000E-14    2
+-3.24251000E+03 5.81043000E+00 3.86389000E+00 5.59672000E-03 5.93272000E-06    3
+-1.04532000E-08 4.36967000E-12-3.19391000E+03 5.47302000E+00                   4
+
+! Thermo library: Narayanaswamy
+O2(11)                  O   2               G   100.000  5000.000 1074.56      1
+ 3.15382000E+00 1.67804000E-03-7.69971000E-07 1.51275000E-10-1.08782000E-14    2
+-1.04082000E+03 6.16754000E+00 3.53732000E+00-1.21571000E-03 5.31618000E-06    3
+-4.89443000E-09 1.45845000E-12-1.03859000E+03 4.68368000E+00                   4
+
+! Thermo library: GRI-Mech3.0
+NO2(12)                 N   1O   2          G   200.000  6000.000 1000.00      1
+ 4.88475000E+00 2.17240000E-03-8.28069000E-07 1.57475000E-10-1.05109000E-14    2
+ 2.31650000E+03-1.17417000E-01 3.94403000E+00-1.58543000E-03 1.66578000E-05    3
+-2.04754000E-08 7.83506000E-12 2.89662000E+03 6.31199000E+00                   4
+
+! Thermo library: GRI-Mech3.0
+N2O(13)                 N   2O   1          G   200.000  6000.000 1000.00      1
+ 4.82307000E+00 2.62703000E-03-9.58509000E-07 1.60007000E-10-9.77523000E-15    2
+ 8.07340000E+03-2.20172000E+00 2.25715000E+00 1.13047000E-02-1.36713000E-05    3
+ 9.68198000E-09-2.93072000E-12 8.74177000E+03 1.07580000E+01                   4
+
+! Thermo library: Narayanaswamy
+CH2CHO(14)              C   2H   3O   1     G   298.000  3000.000 1000.00      1
+ 2.42606000E+00 1.72400000E-02-9.77132000E-06 2.66556000E-09-2.82120000E-13    2
+ 8.33107000E+02 1.26039000E+01 1.09686000E+00 2.20229000E-02-1.44583000E-05    3
+ 3.00780000E-09 6.08993000E-13 1.06943000E+03 1.90095000E+01                   4
+
+! Thermo library: Narayanaswamy
+C2H4(15)                C   2H   4          G   200.000  3500.000 1000.00      1
+ 2.03611000E+00 1.46454000E-02-6.71078000E-06 1.47223000E-09-1.25706000E-13    2
+ 4.93989000E+03 1.03054000E+01 3.95920000E+00-7.57052000E-03 5.70990000E-05    3
+-6.91589000E-08 2.69884000E-11 5.08978000E+03 4.09733000E+00                   4
+
+! Thermo library: Narayanaswamy
+H2O2(16)                H   2O   2          G   200.000  3500.000 1000.00      1
+ 4.16500000E+00 4.90832000E-03-1.90139000E-06 3.71186000E-10-2.87908000E-14    2
+-1.78618000E+04 2.91616000E+00 4.27611000E+00-5.42822000E-04 1.67336000E-05    3
+-2.15771000E-08 8.62454000E-12-1.77026000E+04 3.43505000E+00                   4
+
+! Thermo library: Narayanaswamy
+HCCOH(17)               C   2H   2O   1     G   298.000  5000.000 1000.00      1
+ 5.92383000E+00 6.79236000E-03-2.56586000E-06 4.49878000E-10-2.99401000E-14    2
+ 7.26463000E+03-7.60177000E+00 1.24237000E+00 3.10722000E-02-5.08669000E-05    3
+ 4.31371000E-08-1.40146000E-11 8.03161000E+03 1.38743000E+01                   4
+
+! Thermo library: GRI-Mech3.0
+NO(18)                  N   1O   1          G   200.000  6000.000 1000.00      1
+ 3.26061000E+00 1.19110000E-03-4.29170000E-07 6.94577000E-11-4.03361000E-15    2
+ 9.92097000E+03 6.36930000E+00 4.21848000E+00-4.63898000E-03 1.10410000E-05    3
+-9.33614000E-09 2.80358000E-12 9.84462000E+03 2.28085000E+00                   4
+
+! Thermo library: GRI-Mech3.0
+HCN(19)                 C   1H   1N   1     G   200.000  6000.000 1000.00      1
+ 3.80224000E+00 3.14642000E-03-1.06322000E-06 1.66198000E-10-9.79976000E-15    2
+ 1.44073000E+04 1.57546000E+00 2.25899000E+00 1.00512000E-02-1.33518000E-05    3
+ 1.00923000E-08-3.00890000E-12 1.47126000E+04 8.91644000E+00                   4
+
+! Thermo library: Narayanaswamy
+C2H2(20)                C   2H   2          G   200.000  3500.000 1000.00      1
+ 4.14757000E+00 5.96167000E-03-2.37295000E-06 4.67412000E-10-3.61235000E-14    2
+ 2.59360000E+04-1.23028000E+00 8.08681000E-01 2.33616000E-02-3.55172000E-05    3
+ 2.80152000E-08-8.50073000E-12 2.64290000E+04 1.39397000E+01                   4
+
+! Thermo library: GRI-Mech3.0
+HNCO(21)                C   1H   1N   1O   1G   298.000  5000.000 1478.00      1
+ 6.22395000E+00 3.17864000E-03-1.09379000E-06 1.70735000E-10-9.95022000E-15    2
+-1.66599000E+04-8.38225000E+00 3.63096000E+00 7.30282000E-03-2.28050000E-06    3
+-6.61271000E-10 3.62236000E-13-1.55874000E+04 6.19458000E+00                   4
+
+! Thermo library: Narayanaswamy
+CH3(22)                 C   1H   3          G   200.000  6000.000 1000.00      1
+ 2.97812000E+00 5.79785000E-03-1.97558000E-06 3.07298000E-10-1.79174000E-14    2
+ 1.65095000E+04 4.72248000E+00 3.65718000E+00 2.12660000E-03 5.45839000E-06    3
+-6.61810000E-09 2.46571000E-12 1.64227000E+04 1.67354000E+00                   4
+
+! Thermo library: Narayanaswamy
+HO2(23)                 H   1O   2          G   200.000  3500.000 1000.00      1
+ 4.01721000E+00 2.23982000E-03-6.33658000E-07 1.14246000E-10-1.07909000E-14    2
+ 1.11857000E+02 3.78510000E+00 4.30180000E+00-4.74912000E-03 2.11583000E-05    3
+-2.42764000E-08 9.29225000E-12 2.94808000E+02 3.71666000E+00                   4
+
+! Thermo library: Narayanaswamy
+CH4(24)                 C   1H   4          G   100.000  5000.000 1084.11      1
+ 9.08224000E-01 1.14542000E-02-4.57178000E-06 8.29201000E-10-5.66322000E-14    2
+-9.71996000E+03 1.39933000E+01 4.20542000E+00-5.35566000E-03 2.51126000E-05    3
+-2.13766000E-08 5.97538000E-12-1.01619000E+04-9.21305000E-01                   4
+
+! Thermo library: Narayanaswamy
+C2H(25)                 C   2H   1          G   200.000  3500.000 1000.00      1
+ 3.16781000E+00 4.75222000E-03-1.83787000E-06 3.04190000E-10-1.77233000E-14    2
+ 6.71211000E+04 6.63589000E+00 2.88966000E+00 1.34100000E-02-2.84770000E-05    3
+ 2.94791000E-08-1.09332000E-11 6.68394000E+04 6.22296000E+00                   4
+
+! Thermo library: Narayanaswamy
+O(T)(26)                O   1               G   100.000  5000.000 4563.27      1
+ 2.50167000E+00-1.43051000E-06 4.60250000E-10-6.57826000E-14 3.52412000E-18    2
+ 2.92287000E+04 4.08044000E+00 2.50000000E+00-1.91243000E-12 2.45329000E-15    3
+-1.02377000E-18 1.31369000E-22 2.92302000E+04 4.09104000E+00                   4
+
+! Thermo library: Narayanaswamy
+HCCO(27)                C   2H   1O   1     G   298.000  4000.000 1000.00      1
+ 5.62821000E+00 4.08534000E-03-1.59345000E-06 2.86261000E-10-1.94078000E-14    2
+ 1.93272000E+04-3.93026000E+00 2.25172000E+00 1.76550000E-02-2.37291000E-05    3
+ 1.72758000E-08-5.06648000E-12 2.00594000E+04 1.24904000E+01                   4
+
+! Thermo library: Narayanaswamy
+CH2(T)(28)              C   1H   2          G   100.000  5000.000 1104.58      1
+ 3.14983000E+00 2.96674000E-03-9.76055000E-07 1.54115000E-10-9.50337000E-15    2
+ 4.60581000E+04 4.77807000E+00 4.01192000E+00-1.54979000E-04 3.26298000E-06    3
+-2.40422000E-09 5.69497000E-13 4.58677000E+04 5.33200000E-01                   4
+
+! Thermo library: GRI-Mech3.0
+NH(29)                  H   1N   1          G   200.000  6000.000 1000.00      1
+ 2.78369000E+00 1.32984000E-03-4.24780000E-07 7.83485000E-11-5.50445000E-15    2
+ 4.21208000E+04 5.74078000E+00 3.49291000E+00 3.11792000E-04-1.48905000E-06    3
+ 2.48164000E-09-1.03570000E-12 4.18806000E+04 1.84833000E+00                   4
+
+! Thermo library: GRI-Mech3.0
+CH(30)                  C   1H   1          G   200.000  3500.000 1000.00      1
+ 2.87846000E+00 9.70914000E-04 1.44446000E-07-1.30688000E-10 1.76079000E-14    2
+ 7.10124000E+04 5.48498000E+00 3.48982000E+00 3.23836000E-04-1.68899000E-06    3
+ 3.16217000E-09-1.40609000E-12 7.07973000E+04 2.08401000E+00                   4
+
+! Thermo library: Narayanaswamy
+CO(31)                  C   1O   1          G   200.000  3500.000 1000.00      1
+ 2.71519000E+00 2.06253000E-03-9.98826000E-07 2.30053000E-10-2.03648000E-14    2
+-1.41519000E+04 7.81869000E+00 3.57953000E+00-6.10354000E-04 1.01681000E-06    3
+ 9.07006000E-10-9.04424000E-13-1.43441000E+04 3.50841000E+00                   4
+
+! Thermo library: GRI-Mech3.0
+CN(32)                  C   1N   1          G   200.000  6000.000 1000.00      1
+ 3.74598000E+00 4.34508000E-05 2.97060000E-07-6.86518000E-11 4.41342000E-15    2
+ 5.15362000E+04 2.78676000E+00 3.61294000E+00-9.55513000E-04 2.14430000E-06    3
+-3.15163000E-10-4.64304000E-13 5.17083000E+04 3.98050000E+00                   4
+
+! Thermo library: Narayanaswamy
+H(33)                   H   1               G   100.000  5000.000 4563.27      1
+ 2.50167000E+00-1.43051000E-06 4.60250000E-10-6.57826000E-14 3.52412000E-18    2
+ 2.54727000E+04-4.55578000E-01 2.50000000E+00-1.91243000E-12 2.45329000E-15    3
+-1.02377000E-18 1.31369000E-22 2.54742000E+04-4.44973000E-01                   4
+
+! Thermo library: primaryNS
+N(34)                   N   1               G   100.000  5000.000 4879.80      1
+ 4.28461071E+00-1.45494649E-03 4.44804306E-07-6.04359642E-11 3.07921551E-15    2
+ 5.43474889E+04-7.25616923E+00 2.50000000E+00-3.01680531E-12 3.74582141E-15    3
+-1.50856878E-18 1.86626471E-22 5.60986144E+04 4.19198858E+00                   4
+
+! Thermo library: Narayanaswamy
+C3H8(35)                C   3H   8          G   298.000  5000.000 1000.00      1
+ 7.53414000E+00 1.88722000E-02-6.27185000E-06 9.14756000E-10-4.78381000E-14    2
+-1.64675000E+04-1.78923000E+01 9.33554000E-01 2.64246000E-02 6.10597000E-06    3
+-2.19775000E-08 9.51493000E-12-1.39585000E+04 1.92017000E+01                   4
+
+! Thermo library: GRI-Mech3.0
+NH3(36)                 H   3N   1          G   200.000  6000.000 1000.00      1
+ 2.63445000E+00 5.66626000E-03-1.72787000E-06 2.38672000E-10-1.25788000E-14    2
+-6.54470000E+03 6.56629000E+00 4.28603000E+00-4.66052000E-03 2.17185000E-05    3
+-2.28089000E-08 8.26380000E-12-6.74173000E+03-6.25373000E-01                   4
+
+! Thermo library: GRI-Mech3.0
+NH2(37)                 H   2N   1          G   200.000  6000.000 1000.00      1
+ 2.83474000E+00 3.20731000E-03-9.33908000E-07 1.37030000E-10-7.92061000E-15    2
+ 2.21720000E+04 6.52042000E+00 4.20400000E+00-2.10614000E-03 7.10683000E-06    3
+-5.61152000E-09 1.64407000E-12 2.18859000E+04-1.41842000E-01                   4
+
+! Thermo library: Narayanaswamy
+CH3CHO(38)              C   2H   4O   1     G   298.000  3000.000 1000.00      1
+ 2.68543000E+00 1.76802000E-02-8.65403000E-06 2.03681000E-09-1.87631000E-13    2
+-2.21654000E+04 1.11636000E+01 1.40654000E+00 2.16984000E-02-1.47573000E-05    3
+ 7.30435000E-09-2.09119000E-12-2.17973000E+04 1.77513000E+01                   4
+
+! Thermo library: Narayanaswamy
+C2H6(39)                C   2H   6          G   200.000  3500.000 1000.00      1
+ 1.07188000E+00 2.16853000E-02-1.00256000E-05 2.21412000E-09-1.90003000E-13    2
+-1.14264000E+04 1.51156000E+01 4.29142000E+00-5.50154000E-03 5.99438000E-05    3
+-7.08466000E-08 2.68686000E-11-1.15222000E+04 2.66682000E+00                   4
+
+! Thermo library: Narayanaswamy
+C2H5(40)                C   2H   5          G   200.000  3500.000 1000.00      1
+ 1.95466000E+00 1.73973000E-02-7.98207000E-06 1.75218000E-09-1.49642000E-13    2
+ 1.28575000E+04 1.34624000E+01 4.30647000E+00-4.18659000E-03 4.97143000E-05    3
+-5.99127000E-08 2.30509000E-11 1.28416000E+04 4.70721000E+00                   4
+
+! Thermo library: Narayanaswamy
+CH3O(41)                C   1H   3O   1     G   298.000  3000.000 1000.00      1
+ 3.77080000E+00 7.87150000E-03-2.65638000E-06 3.94443000E-10-2.11262000E-14    2
+ 1.27833000E+02 2.92957000E+00 2.10620000E+00 7.21660000E-03 5.33847000E-06    3
+-7.37764000E-09 2.07561000E-12 9.78601000E+02 1.31522000E+01                   4
+
+! Thermo library: Narayanaswamy
+C2H3(42)                C   2H   3          G   200.000  3500.000 1000.00      1
+ 3.01672000E+00 1.03302000E-02-4.68082000E-06 1.01763000E-09-8.62607000E-14    2
+ 3.46129000E+04 7.78732000E+00 3.21247000E+00 1.51479000E-03 2.59209000E-05    3
+-3.57658000E-08 1.47151000E-11 3.48598000E+04 8.51054000E+00                   4
+
+! Thermo library: Narayanaswamy
+HCO(43)                 C   1H   1O   1     G   200.000  3500.000 1000.00      1
+ 2.77217000E+00 4.95696000E-03-2.48446000E-06 5.89162000E-10-5.33509000E-14    2
+ 4.01192000E+03 9.79834000E+00 4.22119000E+00-3.24393000E-03 1.37799000E-05    3
+-1.33144000E-08 4.33769000E-12 3.83956000E+03 3.39437000E+00                   4
+
+! Thermo library: Narayanaswamy
+CO2(44)                 C   1O   2          G   200.000  3500.000 1000.00      1
+ 3.85746000E+00 4.41437000E-03-2.21481000E-06 5.23490000E-10-4.72084000E-14    2
+-4.87592000E+04 2.27164000E+00 2.35677000E+00 8.98460000E-03-7.12356000E-06    3
+ 2.45919000E-09-1.43700000E-13-4.83720000E+04 9.90105000E+00                   4
+
+! Thermo library: Narayanaswamy
+OH(45)                  H   1O   1          G   100.000  5000.000 1145.75      1
+ 3.07194000E+00 6.04013000E-04-1.39770000E-08-2.13449000E-11 2.48068000E-15    2
+ 3.57939000E+03 4.57799000E+00 3.51457000E+00 2.92796000E-05-5.32171000E-07    3
+ 1.01950000E-09-3.85948000E-13 3.41425000E+03 2.10435000E+00                   4
+
+! Thermo library: Narayanaswamy
+H2(46)                  H   2               G   100.000  5000.000 1959.09      1
+ 2.78813000E+00 5.87687000E-04 1.58989000E-07-5.52696000E-11 4.34279000E-15    2
+-5.96123000E+02 1.12943000E-01 3.43536000E+00 2.12707000E-04-2.78618000E-07    3
+ 3.40262000E-10-7.76019000E-14-1.03136000E+03-3.90842000E+00                   4
+
+! Thermo library: GRI-Mech3.0
+NNH(47)                 H   1N   2          G   200.000  6000.000 1000.00      1
+ 3.76675000E+00 2.89151000E-03-1.04166000E-06 1.68426000E-10-1.00919000E-14    2
+ 2.86507000E+04 4.47051000E+00 4.34469000E+00-4.84971000E-03 2.00595000E-05    3
+-2.17265000E-08 7.94695000E-12 2.87920000E+04 2.97794000E+00                   4
+
+! Thermo library: Narayanaswamy
+H2O(48)                 H   2O   1          G   100.000  5000.000 1130.24      1
+ 2.84325000E+00 2.75109000E-03-7.81032000E-07 1.07244000E-10-5.79392000E-15    2
+-2.99586000E+04 5.91042000E+00 4.05764000E+00-7.87936000E-04 2.90878000E-06    3
+-1.47519000E-09 2.12843000E-13-3.02816000E+04-3.11364000E-01                   4
+
+! Thermo library: GRI-Mech3.0
+NCO(49)                 C   1N   1O   1     G   200.000  6000.000 1000.00      1
+ 5.15218000E+00 2.30518000E-03-8.80332000E-07 1.47891000E-10-9.09780000E-15    2
+ 1.40041000E+04-2.54427000E+00 2.82693000E+00 8.80517000E-03-8.38661000E-06    3
+ 4.80170000E-09-1.33136000E-12 1.46825000E+04 9.55046000E+00                   4
+
+! Thermo library: Narayanaswamy
+CH2CO(50)               C   2H   2O   1     G   200.000  3500.000 1000.00      1
+ 4.51130000E+00 9.00360000E-03-4.16940000E-06 9.23346000E-10-7.94838000E-14    2
+-7.55105000E+03 6.32247000E-01 2.13584000E+00 1.81189000E-02-1.73947000E-05    3
+ 9.34398000E-09-2.01458000E-12-7.04292000E+03 1.22156000E+01                   4
+
+! Thermo library: GRI-Mech3.0
+H2CN(51)                C   1H   2N   1     G   298.000  4000.000 1000.00      1
+ 5.20970000E+00 2.96929000E-03-2.85559000E-07-1.63555000E-10 3.04326000E-14    2
+ 2.76771000E+04-4.44448000E+00 2.85166000E+00 5.69523000E-03 1.07114000E-06    3
+-1.62261000E-09-2.35111000E-13 2.86378000E+04 8.99275000E+00                   4
+
+END
+
+
+
+REACTIONS    KCAL/MOLE   MOLES
+
+! Reaction index: Chemkin #1; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+H2(46)<=>H(33)+OH(45)                      3.870000e+04 2.700     6.260    
+
+! Reaction index: Chemkin #2; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+HO2(23)<=>OH(45)+O2(11)                    2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #3; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+H2O2(16)<=>OH(45)+HO2(23)                  9.630000e+06 2.000     4.000    
+
+! Reaction index: Chemkin #4; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH(30)<=>H(33)+CO(31)                      5.700000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #5; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH2(T)(28)<=>H(33)+HCO(43)                 8.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #6; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH2(S)(2)<=>H2(46)+CO(31)                  1.500000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #7; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH2(S)(2)<=>H(33)+HCO(43)                  1.500000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #8; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH3(22)<=>H(33)+CH2O(9)                    5.060000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #9; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH4(24)<=>OH(45)+CH3(22)                   1.020000e+09 1.500     8.600    
+
+! Reaction index: Chemkin #10; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+HCO(43)<=>OH(45)+CO(31)                    3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #11; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+HCO(43)<=>H(33)+CO2(44)                    3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #12; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH2O(9)<=>OH(45)+HCO(43)                   3.900000e+13 0.000     3.540    
+
+! Reaction index: Chemkin #13; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH2OH(10)<=>OH(45)+CH2O(9)                 1.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #14; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH3O(41)<=>OH(45)+CH2O(9)                  1.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #15; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH3OH(5)<=>OH(45)+CH2OH(10)                3.880000e+05 2.500     3.100    
+
+! Reaction index: Chemkin #16; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH3OH(5)<=>OH(45)+CH3O(41)                 1.300000e+05 2.500     5.000    
+
+! Reaction index: Chemkin #17; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H(25)<=>CH(30)+CO(31)                    5.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #18; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H2(20)<=>H(33)+HCCO(27)                  1.350000e+07 2.000     1.900    
+
+! Reaction index: Chemkin #19; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H2(20)<=>OH(45)+C2H(25)                  4.600000e+19 -1.410    28.950   
+
+! Reaction index: Chemkin #20; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H2(20)<=>CO(31)+CH2(T)(28)               6.940000e+06 2.000     1.900    
+
+! Reaction index: Chemkin #21; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H3(42)<=>H(33)+CH2CO(50)                 3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #22; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H4(15)<=>CH3(22)+HCO(43)                 1.250000e+07 1.830     0.220    
+
+! Reaction index: Chemkin #23; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H5(40)<=>CH3(22)+CH2O(9)                 2.240000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #24; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H6(39)<=>OH(45)+C2H5(40)                 8.980000e+07 1.920     5.690    
+
+! Reaction index: Chemkin #25; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+HCCO(27)<=>H(33)+CO(31)+CO(31)             1.000000e+14 0.000     0.000    
+
+! Reaction index: Chemkin #26; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH2CO(50)<=>OH(45)+HCCO(27)                1.000000e+13 0.000     8.000    
+
+! Reaction index: Chemkin #27; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH2CO(50)<=>CH2(T)(28)+CO2(44)             1.750000e+12 0.000     1.350    
+
+! Reaction index: Chemkin #28; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O2(11)+CO(31)<=>O(T)(26)+CO2(44)                    2.500000e+12 0.000     47.800   
+
+! Reaction index: Chemkin #29; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O2(11)+CH2O(9)<=>HO2(23)+HCO(43)                    1.000000e+14 0.000     40.000   
+
+! Reaction index: Chemkin #30; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+O2(11)+O2(11)<=>HO2(23)+O2(11)                2.080000e+19 -1.240    0.000    
+
+! Reaction index: Chemkin #31; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+O2(11)+H2O(48)<=>HO2(23)+H2O(48)              1.126000e+19 -0.760    0.000    
+
+! Reaction index: Chemkin #32; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+O2(11)+N2(3)<=>HO2(23)+N2(3)                  2.600000e+19 -1.240    0.000    
+
+! Reaction index: Chemkin #33; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+O2(11)<=>O(T)(26)+OH(45)                      2.650000e+16 -0.671    17.041   
+
+! Reaction index: Chemkin #34; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+H(33)+H2(46)<=>H2(46)+H2(46)                  9.000000e+16 -0.600    0.000    
+
+! Reaction index: Chemkin #35; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+H(33)+H2O(48)<=>H2(46)+H2O(48)                6.000000e+19 -1.250    0.000    
+
+! Reaction index: Chemkin #36; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+H(33)+CO2(44)<=>H2(46)+CO2(44)                5.500000e+20 -2.000    0.000    
+
+! Reaction index: Chemkin #37; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+HO2(23)<=>O(T)(26)+H2O(48)                    3.970000e+12 0.000     0.671    
+
+! Reaction index: Chemkin #38; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+HO2(23)<=>O2(11)+H2(46)                       4.480000e+13 0.000     1.068    
+
+! Reaction index: Chemkin #39; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+HO2(23)<=>OH(45)+OH(45)                       8.400000e+13 0.000     0.635    
+
+! Reaction index: Chemkin #40; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+H2O2(16)<=>HO2(23)+H2(46)                     1.210000e+07 2.000     5.200    
+
+! Reaction index: Chemkin #41; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+H2O2(16)<=>OH(45)+H2O(48)                     1.000000e+13 0.000     3.600    
+
+! Reaction index: Chemkin #42; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH(30)<=>C(T)(1)+H2(46)                       1.650000e+14 0.000     0.000    
+
+! Reaction index: Chemkin #43; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2(S)(2)<=>CH(30)+H2(46)                     3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #44; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH4(24)<=>CH3(22)+H2(46)                      6.600000e+08 1.620     10.840   
+
+! Reaction index: Chemkin #45; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+HCO(43)<=>H2(46)+CO(31)                       7.340000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #46; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2O(9)<=>HCO(43)+H2(46)                      5.740000e+07 1.900     2.742    
+
+! Reaction index: Chemkin #47; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2OH(10)<=>H2(46)+CH2O(9)                    2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #48; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2OH(10)<=>OH(45)+CH3(22)                    1.650000e+11 0.650     -0.284   
+
+! Reaction index: Chemkin #49; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2OH(10)<=>CH2(S)(2)+H2O(48)                 3.280000e+13 -0.090    0.610    
+
+! Reaction index: Chemkin #50; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3O(41)<=>H(33)+CH2OH(10)                    4.150000e+07 1.630     1.924    
+
+! Reaction index: Chemkin #51; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3O(41)<=>H2(46)+CH2O(9)                     2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #52; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3O(41)<=>OH(45)+CH3(22)                     1.500000e+12 0.500     -0.110   
+
+! Reaction index: Chemkin #53; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3O(41)<=>CH2(S)(2)+H2O(48)                  2.620000e+14 -0.230    1.070    
+
+! Reaction index: Chemkin #54; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3OH(5)<=>CH2OH(10)+H2(46)                   1.700000e+07 2.100     4.870    
+
+! Reaction index: Chemkin #55; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3OH(5)<=>CH3O(41)+H2(46)                    4.200000e+06 2.100     4.870    
+
+! Reaction index: Chemkin #56; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H3(42)<=>H2(46)+C2H2(20)                    3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #57; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H4(15)<=>C2H3(42)+H2(46)                    1.325000e+06 2.530     12.240   
+
+! Reaction index: Chemkin #58; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H5(40)<=>H2(46)+C2H4(15)                    2.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #59; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H6(39)<=>C2H5(40)+H2(46)                    1.150000e+08 1.900     7.530    
+
+! Reaction index: Chemkin #60; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+HCCO(27)<=>CH2(S)(2)+CO(31)                   1.000000e+14 0.000     0.000    
+
+! Reaction index: Chemkin #61; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2CO(50)<=>HCCO(27)+H2(46)                   5.000000e+13 0.000     8.000    
+
+! Reaction index: Chemkin #62; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2CO(50)<=>CH3(22)+CO(31)                    1.130000e+13 0.000     3.428    
+
+! Reaction index: Chemkin #63; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+HCCOH(17)<=>H(33)+CH2CO(50)                   1.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #64; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+H2(46)<=>H(33)+H2O(48)                       2.160000e+08 1.510     3.430    
+
+! Reaction index: Chemkin #65; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+OH(45)<=>O(T)(26)+H2O(48)                    3.570000e+04 2.400     -2.110   
+
+! Reaction index: Chemkin #66; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+HO2(23)<=>O2(11)+H2O(48)                     1.450000e+13 0.000     -0.500   
+DUPLICATE
+! Reaction index: Chemkin #67; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+HO2(23)<=>O2(11)+H2O(48)                     5.000000e+15 0.000     17.330   
+DUPLICATE
+
+
+! Reaction index: Chemkin #68; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+H2O2(16)<=>HO2(23)+H2O(48)                   2.000000e+12 0.000     0.427    
+DUPLICATE
+! Reaction index: Chemkin #69; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+H2O2(16)<=>HO2(23)+H2O(48)                   1.700000e+18 0.000     29.410   
+DUPLICATE
+
+
+! Reaction index: Chemkin #70; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C(T)(1)<=>H(33)+CO(31)                       5.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #71; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH(30)<=>H(33)+HCO(43)                       3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #72; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH2(T)(28)<=>H(33)+CH2O(9)                   2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #73; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH2(T)(28)<=>CH(30)+H2O(48)                  1.130000e+07 2.000     3.000    
+
+! Reaction index: Chemkin #74; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH2(S)(2)<=>H(33)+CH2O(9)                    3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #75; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH3(22)<=>CH2(T)(28)+H2O(48)                 5.600000e+07 1.600     5.420    
+
+! Reaction index: Chemkin #76; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH3(22)<=>CH2(S)(2)+H2O(48)                  6.440000e+17 -1.340    1.417    
+
+! Reaction index: Chemkin #77; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH4(24)<=>CH3(22)+H2O(48)                    1.000000e+08 1.600     3.120    
+
+! Reaction index: Chemkin #78; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CO(31)<=>H(33)+CO2(44)                       4.760000e+07 1.228     0.070    
+
+! Reaction index: Chemkin #79; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+HCO(43)<=>H2O(48)+CO(31)                     5.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #80; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH2O(9)<=>HCO(43)+H2O(48)                    3.430000e+09 1.180     -0.447   
+
+! Reaction index: Chemkin #81; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH2OH(10)<=>H2O(48)+CH2O(9)                  5.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #82; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH3O(41)<=>H2O(48)+CH2O(9)                   5.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #83; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH3OH(5)<=>CH2OH(10)+H2O(48)                 1.440000e+06 2.000     -0.840   
+
+! Reaction index: Chemkin #84; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH3OH(5)<=>CH3O(41)+H2O(48)                  6.300000e+06 2.000     1.500    
+
+! Reaction index: Chemkin #85; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C2H(25)<=>H(33)+HCCO(27)                     2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #86; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C2H2(20)<=>H(33)+CH2CO(50)                   2.180000e-04 4.500     -1.000   
+
+! Reaction index: Chemkin #87; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C2H2(20)<=>H(33)+HCCOH(17)                   5.040000e+05 2.300     13.500   
+
+! Reaction index: Chemkin #88; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C2H2(20)<=>C2H(25)+H2O(48)                   3.370000e+07 2.000     14.000   
+
+! Reaction index: Chemkin #89; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C2H2(20)<=>CH3(22)+CO(31)                    4.830000e-04 4.000     -2.000   
+
+! Reaction index: Chemkin #90; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C2H3(42)<=>H2O(48)+C2H2(20)                  5.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #91; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C2H4(15)<=>C2H3(42)+H2O(48)                  3.600000e+06 2.000     2.500    
+
+! Reaction index: Chemkin #92; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+C2H6(39)<=>C2H5(40)+H2O(48)                  3.540000e+06 2.120     0.870    
+
+! Reaction index: Chemkin #93; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH2CO(50)<=>HCCO(27)+H2O(48)                 7.500000e+12 0.000     2.000    
+
+! Reaction index: Chemkin #94; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+HO2(23)<=>O2(11)+H2O2(16)                   1.300000e+11 0.000     -1.630   
+DUPLICATE
+! Reaction index: Chemkin #95; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+HO2(23)<=>O2(11)+H2O2(16)                   4.200000e+14 0.000     12.000   
+DUPLICATE
+
+
+! Reaction index: Chemkin #96; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+CH2(T)(28)<=>OH(45)+CH2O(9)                 2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #97; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+CH3(22)<=>O2(11)+CH4(24)                    1.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #98; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+CH3(22)<=>OH(45)+CH3O(41)                   3.780000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #99; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+CO(31)<=>OH(45)+CO2(44)                     1.500000e+14 0.000     23.600   
+
+! Reaction index: Chemkin #100; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+CH2O(9)<=>HCO(43)+H2O2(16)                  5.600000e+06 2.000     12.000   
+
+! Reaction index: Chemkin #101; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C(T)(1)+O2(11)<=>O(T)(26)+CO(31)                    5.800000e+13 0.000     0.576    
+
+! Reaction index: Chemkin #102; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C(T)(1)+CH2(T)(28)<=>H(33)+C2H(25)                  5.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #103; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C(T)(1)+CH3(22)<=>H(33)+C2H2(20)                    5.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #104; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+O2(11)<=>O(T)(26)+HCO(43)                    6.710000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #105; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+H2(46)<=>H(33)+CH2(T)(28)                    1.080000e+14 0.000     3.110    
+
+! Reaction index: Chemkin #106; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+H2O(48)<=>H(33)+CH2O(9)                      5.710000e+12 0.000     -0.755   
+
+! Reaction index: Chemkin #107; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+CH2(T)(28)<=>H(33)+C2H2(20)                  4.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #108; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+CH3(22)<=>H(33)+C2H3(42)                     3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #109; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+CH4(24)<=>H(33)+C2H4(15)                     6.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #110; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+CO2(44)<=>HCO(43)+CO(31)                     1.900000e+14 0.000     15.792   
+
+! Reaction index: Chemkin #111; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+CH2O(9)<=>H(33)+CH2CO(50)                    9.460000e+13 0.000     -0.515   
+
+! Reaction index: Chemkin #112; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+HCCO(27)<=>CO(31)+C2H2(20)                   5.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #113; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+O2(11)=>OH(45)+H(33)+CO(31)              5.000000e+12 0.000     1.500    
+
+! Reaction index: Chemkin #114; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+H2(46)<=>H(33)+CH3(22)                   5.000000e+05 2.000     7.230    
+
+! Reaction index: Chemkin #115; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+CH2(T)(28)<=>H2(46)+C2H2(20)             1.600000e+15 0.000     11.944   
+
+! Reaction index: Chemkin #116; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+CH3(22)<=>H(33)+C2H4(15)                 4.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #117; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+CH4(24)<=>CH3(22)+CH3(22)                2.460000e+06 2.000     8.270    
+
+! Reaction index: Chemkin #118; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+HCCO(27)<=>C2H3(42)+CO(31)               3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #119; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+N2(3)<=>CH2(T)(28)+N2(3)                  1.500000e+13 0.000     0.600    
+
+! Reaction index: Chemkin #120; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+O2(11)<=>H(33)+OH(45)+CO(31)              2.800000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #121; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+O2(11)<=>CO(31)+H2O(48)                   1.200000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #122; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+H2(46)<=>CH3(22)+H(33)                    7.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #123; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+H2O(48)<=>CH2(T)(28)+H2O(48)              3.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #124; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+CH3(22)<=>H(33)+C2H4(15)                  1.200000e+13 0.000     -0.570   
+
+! Reaction index: Chemkin #125; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+CH4(24)<=>CH3(22)+CH3(22)                 1.600000e+13 0.000     -0.570   
+
+! Reaction index: Chemkin #126; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+CO(31)<=>CH2(T)(28)+CO(31)                9.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #127; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+CO2(44)<=>CH2(T)(28)+CO2(44)              7.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #128; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+CO2(44)<=>CO(31)+CH2O(9)                  1.400000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #129; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+C2H6(39)<=>CH3(22)+C2H5(40)               4.000000e+13 0.000     -0.550   
+
+! Reaction index: Chemkin #130; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+O2(11)<=>O(T)(26)+CH3O(41)                  3.560000e+13 0.000     30.480   
+
+! Reaction index: Chemkin #131; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+O2(11)<=>OH(45)+CH2O(9)                     2.310000e+12 0.000     20.315   
+
+! Reaction index: Chemkin #132; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+H2O2(16)<=>HO2(23)+CH4(24)                  2.450000e+04 2.470     5.180    
+
+! Reaction index: Chemkin #133; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+CH3(22)<=>H(33)+C2H5(40)                    6.840000e+12 0.100     10.600   
+
+! Reaction index: Chemkin #134; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+HCO(43)<=>CH4(24)+CO(31)                    2.648000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #135; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+CH2O(9)<=>HCO(43)+CH4(24)                   3.320000e+03 2.810     5.860    
+
+! Reaction index: Chemkin #136; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+CH3OH(5)<=>CH2OH(10)+CH4(24)                3.000000e+07 1.500     9.940    
+
+! Reaction index: Chemkin #137; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+CH3OH(5)<=>CH3O(41)+CH4(24)                 1.000000e+07 1.500     9.940    
+
+! Reaction index: Chemkin #138; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+C2H4(15)<=>C2H3(42)+CH4(24)                 2.270000e+05 2.000     9.200    
+
+! Reaction index: Chemkin #139; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+C2H6(39)<=>C2H5(40)+CH4(24)                 6.140000e+06 1.740     10.450   
+
+! Reaction index: Chemkin #140; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCO(43)+H2O(48)<=>H(33)+CO(31)+H2O(48)              1.500000e+18 -1.000    17.000   
+
+! Reaction index: Chemkin #141; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCO(43)+O2(11)<=>HO2(23)+CO(31)                     1.345000e+13 0.000     0.400    
+
+! Reaction index: Chemkin #142; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2OH(10)+O2(11)<=>HO2(23)+CH2O(9)                  1.800000e+13 0.000     0.900    
+
+! Reaction index: Chemkin #143; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3O(41)+O2(11)<=>HO2(23)+CH2O(9)                   4.280000e-13 7.600     -3.530   
+
+! Reaction index: Chemkin #144; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C2H(25)+O2(11)<=>HCO(43)+CO(31)                     1.000000e+13 0.000     -0.755   
+
+! Reaction index: Chemkin #145; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C2H(25)+H2(46)<=>H(33)+C2H2(20)                     5.680000e+10 0.900     1.993    
+
+! Reaction index: Chemkin #146; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C2H3(42)+O2(11)<=>HCO(43)+CH2O(9)                   4.580000e+16 -1.390    1.015    
+
+! Reaction index: Chemkin #147; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C2H5(40)+O2(11)<=>HO2(23)+C2H4(15)                  8.400000e+11 0.000     3.875    
+
+! Reaction index: Chemkin #148; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCCO(27)+O2(11)<=>OH(45)+CO(31)+CO(31)              3.200000e+12 0.000     0.854    
+
+! Reaction index: Chemkin #149; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCCO(27)+HCCO(27)<=>CO(31)+CO(31)+C2H2(20)          1.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #150; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N(34)+NO(18)<=>N2(3)+O(T)(26)                       2.700000e+13 0.000     0.355    
+
+! Reaction index: Chemkin #151; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N(34)+O2(11)<=>NO(18)+O(T)(26)                      9.000000e+09 1.000     6.500    
+
+! Reaction index: Chemkin #152; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N(34)+OH(45)<=>NO(18)+H(33)                         3.360000e+13 0.000     0.385    
+
+! Reaction index: Chemkin #153; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N2O(13)+O(T)(26)<=>N2(3)+O2(11)                     1.400000e+12 0.000     10.810   
+
+! Reaction index: Chemkin #154; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N2O(13)+O(T)(26)<=>NO(18)+NO(18)                    2.900000e+13 0.000     23.150   
+
+! Reaction index: Chemkin #155; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N2O(13)+H(33)<=>N2(3)+OH(45)                        3.870000e+14 0.000     18.880   
+
+! Reaction index: Chemkin #156; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N2O(13)+OH(45)<=>N2(3)+HO2(23)                      2.000000e+12 0.000     21.060   
+
+! Reaction index: Chemkin #157; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+NO(18)<=>NO2(12)+OH(45)                     2.110000e+12 0.000     -0.480   
+
+! Reaction index: Chemkin #158; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NO2(12)+O(T)(26)<=>NO(18)+O2(11)                    3.900000e+12 0.000     -0.240   
+
+! Reaction index: Chemkin #159; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NO2(12)+H(33)<=>NO(18)+OH(45)                       1.320000e+14 0.000     0.360    
+
+! Reaction index: Chemkin #160; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+O(T)(26)<=>NO(18)+H(33)                      4.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #161; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+H(33)<=>N(34)+H2(46)                         3.200000e+13 0.000     0.330    
+
+! Reaction index: Chemkin #162; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+OH(45)<=>HNO(4)+H(33)                        2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #163; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+OH(45)<=>N(34)+H2O(48)                       2.000000e+09 1.200     0.000    
+
+! Reaction index: Chemkin #164; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+O2(11)<=>HNO(4)+O(T)(26)                     4.610000e+05 2.000     6.500    
+
+! Reaction index: Chemkin #165; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+O2(11)<=>NO(18)+OH(45)                       1.280000e+06 1.500     0.100    
+
+! Reaction index: Chemkin #166; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+N(34)<=>N2(3)+H(33)                          1.500000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #167; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+H2O(48)<=>HNO(4)+H2(46)                      2.000000e+13 0.000     13.850   
+
+! Reaction index: Chemkin #168; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+NO(18)<=>N2(3)+OH(45)                        2.160000e+13 -0.230    0.000    
+
+! Reaction index: Chemkin #169; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+NO(18)<=>N2O(13)+H(33)                       3.650000e+14 -0.450    0.000    
+
+! Reaction index: Chemkin #170; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH2(37)+O(T)(26)<=>OH(45)+NH(29)                    3.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #171; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH2(37)+O(T)(26)<=>H(33)+HNO(4)                     3.900000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #172; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH2(37)+H(33)<=>NH(29)+H2(46)                       4.000000e+13 0.000     3.650    
+
+! Reaction index: Chemkin #173; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH2(37)+OH(45)<=>NH(29)+H2O(48)                     9.000000e+07 1.500     -0.460   
+
+! Reaction index: Chemkin #174; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NNH(47)<=>N2(3)+H(33)                               3.300000e+08 0.000     0.000    
+
+! Reaction index: Chemkin #175; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NNH(47)+O2(11)<=>HO2(23)+N2(3)                      5.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #176; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NNH(47)+O(T)(26)<=>OH(45)+N2(3)                     2.500000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #177; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NNH(47)+O(T)(26)<=>NH(29)+NO(18)                    7.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #178; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NNH(47)+H(33)<=>H2(46)+N2(3)                        5.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #179; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NNH(47)+OH(45)<=>H2O(48)+N2(3)                      2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #180; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NNH(47)+CH3(22)<=>CH4(24)+N2(3)                     2.500000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #181; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNO(4)+O(T)(26)<=>NO(18)+OH(45)                     2.500000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #182; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNO(4)+H(33)<=>H2(46)+NO(18)                        9.000000e+11 0.720     0.660    
+
+! Reaction index: Chemkin #183; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNO(4)+OH(45)<=>NO(18)+H2O(48)                      1.300000e+07 1.900     -0.950   
+
+! Reaction index: Chemkin #184; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNO(4)+O2(11)<=>HO2(23)+NO(18)                      1.000000e+13 0.000     13.000   
+
+! Reaction index: Chemkin #185; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CN(32)+O(T)(26)<=>CO(31)+N(34)                      7.700000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #186; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CN(32)+OH(45)<=>NCO(49)+H(33)                       4.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #187; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CN(32)+H2O(48)<=>HCN(19)+OH(45)                     8.000000e+12 0.000     7.460    
+
+! Reaction index: Chemkin #188; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CN(32)+O2(11)<=>NCO(49)+O(T)(26)                    6.140000e+12 0.000     -0.440   
+
+! Reaction index: Chemkin #189; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CN(32)+H2(46)<=>HCN(19)+H(33)                       2.950000e+05 2.450     2.240    
+
+! Reaction index: Chemkin #190; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+O(T)(26)<=>NO(18)+CO(31)                    2.350000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #191; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+H(33)<=>NH(29)+CO(31)                       5.400000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #192; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+OH(45)<=>NO(18)+H(33)+CO(31)                2.500000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #193; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+N(34)<=>N2(3)+CO(31)                        2.000000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #194; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+O2(11)<=>NO(18)+CO2(44)                     2.000000e+12 0.000     20.000   
+
+! Reaction index: Chemkin #195; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+NO(18)<=>N2O(13)+CO(31)                     1.900000e+17 -1.520    0.740    
+
+! Reaction index: Chemkin #196; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+NO(18)<=>N2(3)+CO2(44)                      3.800000e+18 -2.000    0.800    
+
+! Reaction index: Chemkin #197; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCN(19)+O(T)(26)<=>NCO(49)+H(33)                    2.030000e+04 2.640     4.980    
+
+! Reaction index: Chemkin #198; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCN(19)+O(T)(26)<=>NH(29)+CO(31)                    5.070000e+03 2.640     4.980    
+
+! Reaction index: Chemkin #199; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCN(19)+O(T)(26)<=>CN(32)+OH(45)                    3.910000e+09 1.580     26.600   
+
+! Reaction index: Chemkin #200; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCN(19)+OH(45)<=>HOCN(6)+H(33)                      1.100000e+06 2.030     13.370   
+
+! Reaction index: Chemkin #201; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCN(19)+OH(45)<=>HNCO(21)+H(33)                     4.400000e+03 2.260     6.400    
+
+! Reaction index: Chemkin #202; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCN(19)+OH(45)<=>NH2(37)+CO(31)                     1.600000e+02 2.560     9.000    
+
+! Reaction index: Chemkin #203; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H2CN(51)+N(34)<=>N2(3)+CH2(T)(28)                   6.000000e+13 0.000     0.400    
+
+! Reaction index: Chemkin #204; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C(T)(1)+N2(3)<=>CN(32)+N(34)                        6.300000e+13 0.000     46.020   
+
+! Reaction index: Chemkin #205; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+N2(3)<=>HCN(19)+N(34)                        3.120000e+09 0.880     20.130   
+
+! Reaction index: Chemkin #206; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+N2(3)<=>HCN(19)+NH(29)                   1.000000e+13 0.000     74.000   
+
+! Reaction index: Chemkin #207; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+N2(3)<=>NH(29)+HCN(19)                    1.000000e+11 0.000     65.000   
+
+! Reaction index: Chemkin #208; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C(T)(1)+NO(18)<=>CN(32)+O(T)(26)                    1.900000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #209; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C(T)(1)+NO(18)<=>CO(31)+N(34)                       2.900000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #210; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+NO(18)<=>HCN(19)+O(T)(26)                    4.100000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #211; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+NO(18)<=>H(33)+NCO(49)                       1.620000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #212; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+NO(18)<=>N(34)+HCO(43)                       2.460000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #213; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+NO(18)<=>H(33)+HNCO(21)                  3.100000e+17 -1.380    1.270    
+
+! Reaction index: Chemkin #214; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+NO(18)<=>OH(45)+HCN(19)                  2.900000e+14 -0.690    0.760    
+
+! Reaction index: Chemkin #215; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+NO(18)<=>H(33)+HCNO(7)                   3.800000e+13 -0.360    0.580    
+
+! Reaction index: Chemkin #216; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+NO(18)<=>H(33)+HNCO(21)                   3.100000e+17 -1.380    1.270    
+
+! Reaction index: Chemkin #217; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+NO(18)<=>OH(45)+HCN(19)                   2.900000e+14 -0.690    0.760    
+
+! Reaction index: Chemkin #218; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+NO(18)<=>H(33)+HCNO(7)                    3.800000e+13 -0.360    0.580    
+
+! Reaction index: Chemkin #219; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+NO(18)<=>HCN(19)+H2O(48)                    9.600000e+13 0.000     28.800   
+
+! Reaction index: Chemkin #220; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+NO(18)<=>H2CN(51)+OH(45)                    1.000000e+12 0.000     21.750   
+
+! Reaction index: Chemkin #221; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCNN(8)+O(T)(26)<=>CO(31)+H(33)+N2(3)               2.200000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #222; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCNN(8)+O(T)(26)<=>HCN(19)+NO(18)                   2.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #223; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCNN(8)+O2(11)<=>O(T)(26)+HCO(43)+N2(3)             1.200000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #224; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCNN(8)+OH(45)<=>H(33)+HCO(43)+N2(3)                1.200000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #225; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCNN(8)+H(33)<=>CH2(T)(28)+N2(3)                    1.000000e+14 0.000     0.000    
+
+! Reaction index: Chemkin #226; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNCO(21)+O(T)(26)<=>NH(29)+CO2(44)                  9.800000e+07 1.410     8.500    
+
+! Reaction index: Chemkin #227; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNCO(21)+O(T)(26)<=>HNO(4)+CO(31)                   1.500000e+08 1.570     44.000   
+
+! Reaction index: Chemkin #228; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNCO(21)+O(T)(26)<=>NCO(49)+OH(45)                  2.200000e+06 2.110     11.400   
+
+! Reaction index: Chemkin #229; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNCO(21)+H(33)<=>NH2(37)+CO(31)                     2.250000e+07 1.700     3.800    
+
+! Reaction index: Chemkin #230; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNCO(21)+H(33)<=>H2(46)+NCO(49)                     1.050000e+05 2.500     13.300   
+
+! Reaction index: Chemkin #231; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNCO(21)+OH(45)<=>NCO(49)+H2O(48)                   3.300000e+07 1.500     3.600    
+
+! Reaction index: Chemkin #232; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNCO(21)+OH(45)<=>NH2(37)+CO2(44)                   3.300000e+06 1.500     3.600    
+
+! Reaction index: Chemkin #233; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCNO(7)+H(33)<=>H(33)+HNCO(21)                      2.100000e+15 -0.690    2.850    
+
+! Reaction index: Chemkin #234; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCNO(7)+H(33)<=>OH(45)+HCN(19)                      2.700000e+11 0.180     2.120    
+
+! Reaction index: Chemkin #235; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCNO(7)+H(33)<=>NH2(37)+CO(31)                      1.700000e+14 -0.750    2.890    
+
+! Reaction index: Chemkin #236; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HOCN(6)+H(33)<=>H(33)+HNCO(21)                      2.000000e+07 2.000     2.000    
+
+! Reaction index: Chemkin #237; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCCO(27)+NO(18)<=>HCNO(7)+CO(31)                    9.000000e+12 0.000     0.000    
+
+! Reaction index: Chemkin #238; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+N(34)<=>H2CN(51)+H(33)                      6.100000e+14 -0.310    0.290    
+
+! Reaction index: Chemkin #239; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+N(34)<=>HCN(19)+H2(46)                      3.700000e+12 0.150     -0.090   
+
+! Reaction index: Chemkin #240; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH3(36)+H(33)<=>NH2(37)+H2(46)                      5.400000e+05 2.400     9.915    
+
+! Reaction index: Chemkin #241; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH3(36)+OH(45)<=>NH2(37)+H2O(48)                    5.000000e+07 1.600     0.955    
+
+! Reaction index: Chemkin #242; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH3(36)+O(T)(26)<=>NH2(37)+OH(45)                   9.400000e+06 1.940     6.460    
+
+! Reaction index: Chemkin #243; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NH(29)+CO2(44)<=>HNO(4)+CO(31)                      1.000000e+13 0.000     14.350   
+
+! Reaction index: Chemkin #244; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CN(32)+NO2(12)<=>NCO(49)+NO(18)                     6.160000e+15 -0.752    0.345    
+
+! Reaction index: Chemkin #245; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+NO2(12)<=>N2O(13)+CO2(44)                   3.250000e+12 0.000     -0.705   
+
+! Reaction index: Chemkin #246; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N(34)+CO2(44)<=>NO(18)+CO(31)                       3.000000e+12 0.000     11.300   
+
+! Reaction index: Chemkin #247; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH3(22)=>H(33)+H2(46)+CO(31)               3.370000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #248; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H4(15)<=>H(33)+CH2CHO(14)                6.700000e+06 1.830     0.220    
+
+! Reaction index: Chemkin #249; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+C2H5(40)<=>H(33)+CH3CHO(38)                1.096000e+14 0.000     0.000    
+
+! Reaction index: Chemkin #250; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH3(22)=>H2(46)+CH2O(9)                      8.000000e+09 0.500     -1.755   
+
+! Reaction index: Chemkin #251; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+O2(11)=>H(33)+H(33)+CO2(44)              5.800000e+12 0.000     1.500    
+
+! Reaction index: Chemkin #252; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+O2(11)<=>O(T)(26)+CH2O(9)                2.400000e+12 0.000     1.500    
+
+! Reaction index: Chemkin #253; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+CH2(T)(28)=>H(33)+H(33)+C2H2(20)         2.000000e+14 0.000     10.989   
+
+! Reaction index: Chemkin #254; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+H2O(48)=>H2(46)+CH2O(9)                   6.820000e+10 0.250     -0.935   
+
+! Reaction index: Chemkin #255; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C2H3(42)+O2(11)<=>O(T)(26)+CH2CHO(14)               3.030000e+11 0.290     0.011    
+
+! Reaction index: Chemkin #256; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C2H3(42)+O2(11)<=>HO2(23)+C2H2(20)                  1.337000e+06 1.610     -0.384   
+
+! Reaction index: Chemkin #257; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH3CHO(38)<=>OH(45)+CH2CHO(14)             2.920000e+12 0.000     1.808    
+
+! Reaction index: Chemkin #258; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH3CHO(38)=>OH(45)+CH3(22)+CO(31)          2.920000e+12 0.000     1.808    
+
+! Reaction index: Chemkin #259; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O2(11)+CH3CHO(38)=>HO2(23)+CH3(22)+CO(31)           3.010000e+13 0.000     39.150   
+
+! Reaction index: Chemkin #260; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3CHO(38)<=>CH2CHO(14)+H2(46)                2.050000e+09 1.160     2.405    
+
+! Reaction index: Chemkin #261; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3CHO(38)=>CH3(22)+H2(46)+CO(31)             2.050000e+09 1.160     2.405    
+
+! Reaction index: Chemkin #262; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH3CHO(38)=>CH3(22)+H2O(48)+CO(31)           2.343000e+10 0.730     -1.113   
+
+! Reaction index: Chemkin #263; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HO2(23)+CH3CHO(38)=>CH3(22)+H2O2(16)+CO(31)         3.010000e+12 0.000     11.923   
+
+! Reaction index: Chemkin #264; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+CH3CHO(38)=>CH3(22)+CH4(24)+CO(31)          2.720000e+06 1.770     5.920    
+
+! Reaction index: Chemkin #265; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CH2CHO(14)=>H(33)+CH2(T)(28)+CO2(44)       1.500000e+14 0.000     0.000    
+
+! Reaction index: Chemkin #266; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O2(11)+CH2CHO(14)=>OH(45)+CO(31)+CH2O(9)            1.810000e+10 0.000     0.000    
+
+! Reaction index: Chemkin #267; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O2(11)+CH2CHO(14)=>OH(45)+HCO(43)+HCO(43)           2.350000e+10 0.000     0.000    
+
+! Reaction index: Chemkin #268; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2CHO(14)<=>CH3(22)+HCO(43)                  2.200000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #269; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2CHO(14)<=>CH2CO(50)+H2(46)                 1.100000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #270; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH2CHO(14)<=>H2O(48)+CH2CO(50)               1.200000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #271; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH2CHO(14)<=>HCO(43)+CH2OH(10)               3.010000e+13 0.000     0.000    
+
+! Reaction index: Chemkin #272; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+O(T)(26)+M<=>O2(11)+M                      1.200e+17 -1.000    0.000    
+CH4(24)/2.00/ CO2(44)/3.60/ C2H6(39)/3.00/ H2O(48)/15.40/ H2(46)/2.40/ 
+
+! Reaction index: Chemkin #273; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+H(33)+M<=>OH(45)+M                         5.000e+17 -1.000    0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+
+! Reaction index: Chemkin #274; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+O2(11)+M<=>HO2(23)+M                          2.800e+18 -0.860    0.000    
+CO2(44)/1.50/ C2H6(39)/1.50/ H2O(48)/0.00/ O2(11)/0.00/ N2(3)/0.00/ 
+
+! Reaction index: Chemkin #275; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+H(33)+M<=>H2(46)+M                            1.000e+18 -1.000    0.000    
+CH4(24)/2.00/ CO2(44)/0.00/ C2H6(39)/3.00/ H2O(48)/0.00/ H2(46)/0.00/ 
+
+! Reaction index: Chemkin #276; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+OH(45)+M<=>H2O(48)+M                          2.200e+22 -2.000    0.000    
+C2H6(39)/3.00/ CH4(24)/2.00/ H2(46)/0.73/ H2O(48)/3.65/ 
+
+! Reaction index: Chemkin #277; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCO(43)+M<=>H(33)+CO(31)+M                          1.870e+17 -1.000    17.000   
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/0.00/ H2(46)/2.00/ 
+
+! Reaction index: Chemkin #278; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NO(18)+O(T)(26)+M<=>NO2(12)+M                       1.060e+20 -1.410    0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+
+! Reaction index: Chemkin #279; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NNH(47)+M<=>N2(3)+H(33)+M                           1.300e+14 -0.110    4.980    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+
+! Reaction index: Chemkin #280; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+NO(18)+M<=>HNO(4)+M                           4.480e+19 -1.320    0.740    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+
+! Reaction index: Chemkin #281; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+NCO(49)+M<=>N(34)+CO(31)+M                          3.100e+14 0.000     54.050   
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+
+! Reaction index: Chemkin #282; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HCN(19)+M<=>H(33)+CN(32)+M                          1.040e+29 -3.300    126.600  
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+
+! Reaction index: Chemkin #283; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+HNCO(21)+M<=>NH(29)+CO(31)+M                        1.180e+16 0.000     84.720   
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+
+! Reaction index: Chemkin #284; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+O(T)(26)+CO(31)(+M)<=>CO2(44)(+M)                   1.800e+10 0.000     2.385    
+CH4(24)/2.00/ CO2(44)/3.50/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ O2(11)/6.00/ 
+    LOW/ 6.020e+14 0.000     3.000    /
+
+! Reaction index: Chemkin #285; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+N2O(13)(+M)<=>N2(3)+O(T)(26)(+M)                    7.910e+10 0.000     56.020   
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 6.370e+14 0.000     56.640   /
+
+! Reaction index: Chemkin #286; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+HCN(19)(+M)<=>H2CN(51)(+M)                    3.300e+13 0.000     0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.400e+26 -3.400    1.900    /
+
+! Reaction index: Chemkin #287; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2(T)(28)(+M)<=>CH3(22)(+M)                  6.000e+14 0.000     0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.040e+26 -2.760    1.600    /
+    TROE/ 5.620e-01 91        5.84e+03  8.55e+03 /
+
+! Reaction index: Chemkin #288; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3(22)(+M)<=>CH4(24)(+M)                     1.390e+16 -0.534    0.536    
+CH4(24)/3.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 2.620e+33 -4.760    2.440    /
+    TROE/ 7.830e-01 74        2.94e+03  6.96e+03 /
+
+! Reaction index: Chemkin #289; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+HCO(43)(+M)<=>CH2O(9)(+M)                     1.090e+12 0.480     -0.260   
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 2.470e+24 -2.570    0.425    /
+    TROE/ 7.824e-01 271       2.76e+03  6.57e+03 /
+
+! Reaction index: Chemkin #290; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2O(9)(+M)<=>CH2OH(10)(+M)                   5.400e+11 0.454     3.600    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.270e+32 -4.820    6.530    /
+    TROE/ 7.187e-01 103       1.29e+03  4.16e+03 /
+
+! Reaction index: Chemkin #291; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2O(9)(+M)<=>CH3O(41)(+M)                    5.400e+11 0.454     2.600    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 2.200e+30 -4.800    5.560    /
+    TROE/ 7.580e-01 94        1.56e+03  4.2e+03  /
+
+! Reaction index: Chemkin #292; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2OH(10)(+M)<=>CH3OH(5)(+M)                  1.055e+12 0.500     0.086    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 4.360e+31 -4.650    5.080    /
+    TROE/ 6.000e-01 100       9e+04     1e+04    /
+
+! Reaction index: Chemkin #293; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH3O(41)(+M)<=>CH3OH(5)(+M)                   2.430e+12 0.515     0.050    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 4.660e+41 -7.440    14.080   /
+    TROE/ 7.000e-01 100       9e+04     1e+04    /
+
+! Reaction index: Chemkin #294; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H(25)(+M)<=>C2H2(20)(+M)                    1.000e+17 -1.000    0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 3.750e+33 -4.800    1.900    /
+    TROE/ 6.464e-01 132       1.32e+03  5.57e+03 /
+
+! Reaction index: Chemkin #295; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H2(20)(+M)<=>C2H3(42)(+M)                   5.600e+12 0.000     2.400    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 3.800e+40 -7.270    7.220    /
+    TROE/ 7.507e-01 98.5      1.3e+03   4.17e+03 /
+
+! Reaction index: Chemkin #296; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H3(42)(+M)<=>C2H4(15)(+M)                   6.080e+12 0.270     0.280    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.400e+30 -3.860    3.320    /
+    TROE/ 7.820e-01 208       2.66e+03  6.1e+03  /
+
+! Reaction index: Chemkin #297; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H4(15)(+M)<=>C2H5(40)(+M)                   5.400e+11 0.454     1.820    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 6.000e+41 -7.620    6.970    /
+    TROE/ 9.753e-01 210       984       4.37e+03 /
+
+! Reaction index: Chemkin #298; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+C2H5(40)(+M)<=>C2H6(39)(+M)                   5.210e+17 -0.990    1.580    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.990e+41 -7.080    6.685    /
+    TROE/ 8.422e-01 125       2.22e+03  6.88e+03 /
+
+! Reaction index: Chemkin #299; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H2(46)+CO(31)(+M)<=>CH2O(9)(+M)                     4.300e+07 1.500     79.600   
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 5.070e+27 -3.420    84.350   /
+    TROE/ 9.320e-01 197       1.54e+03  1.03e+04 /
+
+! Reaction index: Chemkin #300; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+OH(45)(+M)<=>H2O2(16)(+M)                    7.400e+13 -0.370    0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 2.300e+18 -0.900    -1.700   /
+    TROE/ 7.346e-01 94        1.76e+03  5.18e+03 /
+
+! Reaction index: Chemkin #301; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+OH(45)+CH3(22)(+M)<=>CH3OH(5)(+M)                   2.790e+18 -1.430    1.330    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 4.000e+36 -5.920    3.140    /
+    TROE/ 4.120e-01 195       5.9e+03   6.39e+03 /
+
+! Reaction index: Chemkin #302; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+CO(31)(+M)<=>HCCO(27)(+M)                    5.000e+13 0.000     0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 2.690e+28 -3.740    1.936    /
+    TROE/ 5.757e-01 237       1.65e+03  5.07e+03 /
+
+! Reaction index: Chemkin #303; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(T)(28)+CO(31)(+M)<=>CH2CO(50)(+M)               8.100e+11 0.500     4.510    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 2.690e+33 -5.110    7.095    /
+    TROE/ 5.907e-01 275       1.23e+03  5.18e+03 /
+
+! Reaction index: Chemkin #304; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH2(S)(2)+H2O(48)(+M)<=>CH3OH(5)(+M)                4.820e+17 -1.160    1.145    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.880e+38 -6.360    5.040    /
+    TROE/ 6.027e-01 208       3.92e+03  1.02e+04 /
+
+! Reaction index: Chemkin #305; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+CH3(22)(+M)<=>C2H6(39)(+M)                  6.770e+16 -1.180    0.654    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 3.400e+41 -7.030    2.762    /
+    TROE/ 6.190e-01 73.2      1.18e+03  1e+04    /
+
+! Reaction index: Chemkin #306; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+C2H4(15)(+M)<=>H2(46)+C2H2(20)(+M)                  8.000e+12 0.440     86.770   
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.580e+51 -9.300    97.800   /
+    TROE/ 7.345e-01 180       1.04e+03  5.42e+03 /
+
+! Reaction index: Chemkin #307; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+N2(3)(+M)<=>HCNN(8)(+M)                      3.100e+12 0.150     0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.300e+25 -3.160    0.740    /
+    TROE/ 6.670e-01 235       2.12e+03  4.54e+03 /
+
+! Reaction index: Chemkin #308; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH(30)+H2(46)(+M)<=>CH3(22)(+M)                     1.970e+12 0.430     -0.370   
+H2O(48)/6.00/ H2(46)/2.00/ CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ 
+    LOW/ 4.820e+25 -2.800    0.590    /
+    TROE/ 5.780e-01 122       2.54e+03  9.36e+03 /
+
+! Reaction index: Chemkin #309; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+H(33)+CH2CO(50)(+M)<=>CH2CHO(14)(+M)                4.865e+11 0.422     -1.755   
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 1.012e+42 -7.630    3.854    /
+    TROE/ 4.650e-01 201       1.77e+03  5.33e+03 /
+
+! Reaction index: Chemkin #310; RMG #-1
+! Library reaction: GRI-Mech3.0-N
+CH3(22)+C2H5(40)(+M)<=>C3H8(35)(+M)                 9.430e+12 0.000     0.000    
+CH4(24)/2.00/ CO2(44)/2.00/ C2H6(39)/3.00/ H2O(48)/6.00/ H2(46)/2.00/ 
+    LOW/ 2.710e+74 -16.820   13.065   /
+    TROE/ 1.527e-01 291       2.74e+03  7.75e+03 /
+
+END
+
