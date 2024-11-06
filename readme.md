@@ -25,7 +25,7 @@ commands to create the new environment named 'netgen':
 ```conda create -c defaults -c rmg -c rdkit -c cantera -c pytorch -c conda-forge --name netgen rmg rmgdatabase```  
 #### 3. Removing the chemprop package  
 We utilized [chemprop](https://github.com/chemprop/chemprop/tree/v1.7.1) package to predict reaction rates. This package
-is included in our codes. Therefore, the default chemprop package should be removed by:  
+is provided in our codes. Therefore, the default chemprop package should be removed by:  
 ```conda remove --force chemprop```
 
 #### 4. Checking the chemprop dependency
