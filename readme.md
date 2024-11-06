@@ -61,4 +61,4 @@ controlling your remote servers.
 
 ### Running NetGen codes
 We will release `NetGen-Py` as a python package in the future. Now, these codes are developed for the coupling of machine learning and 
-other method for kinetic model generation. Try our demo `n-C5H12_pyrolysis/crns_test.ipynb` on jupyter notebook.
+other methods for kinetic model generation. Try our demo `n-C5H12_pyrolysis/crns_test.ipynb` on jupyter notebook.
